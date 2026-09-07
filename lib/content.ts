@@ -61,3 +61,30 @@ export function getEntry(type: EntryType, slug: string): Entry {
 export function getAllEntries(): Entry[] {
   return (Object.keys(DIRECTORY) as EntryType[]).flatMap((type) => getEntries(type));
 }
+
+const HREF: Record<EntryType, string> = {
+  thinker: '/thinkers',
+  domain: '/domains',
+  milieu: '/milieus',
+  essay: '',
+};
+
+export interface CrossRef {
+  slug: string;
+  title: string;
+  href: string;
+}
+
+/** Cross-references to entries that actually exist. While the site is being
+    written, a reference to an unwritten entry is dropped rather than rendered
+    as a link to a page that is not there. */
+export function crossRefs(type: EntryType, slugs: string[] | undefined): CrossRef[] {
+  if (!slugs || slugs.length === 0) return [];
+  const entries = getEntries(type);
+
+  return slugs.flatMap((slug) => {
+    const match = entries.find((entry) => entry.frontmatter.slug === slug);
+    if (!match) return [];
+    return [{ slug, title: match.frontmatter.title, href: `${HREF[type]}/${slug}` }];
+  });
+}
