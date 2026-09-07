@@ -1,0 +1,134 @@
+CLAUDE CODE KICKOFF PROMPT
+Paste this as your first message in a new Claude Code session, in an empty directory,
+with INVISIBLE_CONTROL.md and CLAUDE.md already in it.
+
+================================================================================
+
+PROJECT
+
+Build a static content site from INVISIBLE_CONTROL.md, the research document in this
+directory. It covers how power sustains itself without appearing as power: six core
+thinkers, five domains of control, twelve institutional milieus, and a comparison of
+Eastern and Western regimes of control.
+
+Read INVISIBLE_CONTROL.md in full before writing any code. Read CLAUDE.md, which
+contains the standing editorial rules for this repo and applies to every session.
+
+The audience is readers aged roughly 18 to 40 with no background in social theory. The
+document is source material, not copy. Every page has to be rewritten from it in plain
+language. Do not paste sections of the research document into the site.
+
+FIRST SESSION, IN ORDER
+
+1. Initialize the repo. git init, a Node .gitignore, a README describing the project in
+   five lines, and an initial commit before writing any application code.
+2. Scaffold Next.js App Router with TypeScript and Tailwind, configured for static
+   export. No database, no auth, no API routes, no server components that need a
+   runtime. It has to deploy to a free Vercel project.
+3. Set up MDX content under /content, one file per entry, read at build time. Frontmatter
+   fields: title, slug, type (thinker | domain | milieu | essay), thesis, order.
+4. Build the route skeleton and one complete page end to end before building the rest.
+   Build the Schmitt page first. It is the hardest editorial problem in the project, and
+   if the tone works there it will work everywhere.
+5. Commit at each step with real messages. Do not batch the whole build into one commit.
+
+ROUTES
+
+/                     The through-line. Open with C. Wright Mills on personal troubles
+                      versus public issues, then the comparison table from section 0.1.
+                      One paragraph establishing that these thinkers come from opposed
+                      political traditions and converge anyway.
+
+/thinkers/[slug]      Six pages: Bourdieu, Gramsci, Schmitt, Foucault, Illich, Agamben.
+                      Fixed structure, from Part Two: thesis in one sentence, the
+                      mechanism step by step, key concepts, psychological underpinning,
+                      primary works, serious objections, where to go next. The objections
+                      section is never optional, never collapsed, never hidden.
+
+/domains/[slug]       Five pages: education, media, law, psychology, bureaucracy. From
+                      Part Three. Cross-linked to thinkers and milieus.
+
+/milieus/[slug]       Twelve pages from Part Four. Different structure from thinkers:
+                      setting, climate, who was in the room, what came out, what it adds,
+                      institutional history. This is the section that answers "who paid
+                      for this thinking", and it is what makes the site different from
+                      every other explainer on this material. Do not collapse it into the
+                      thinker pages.
+
+/east-west            Part Five. The two-regime comparison and the Central European canon
+                      (Havel, Milosz, Konrad and Szelenyi, Krastev). Give this room. It
+                      matters most for the intended readership.
+
+/method               Part One. The four questions, the two failure modes, the editorial
+                      standard. Link to it from the footer of every page.
+
+/reading              Part Seven. Both reading paths, journals, archives, film.
+
+/open-questions       Part Eight. Six unresolved research problems, presented as an
+                      invitation rather than a conclusion.
+
+/glossary             Appendix B, linkable by anchor, one anchor per term.
+
+WRITING RULES FOR EVERY PAGE
+
+1. Define every technical term at first use, inline, in plain words. "Habitus" means
+   nothing to a new reader.
+2. Every entry opens with a single-sentence thesis before any elaboration.
+3. Concrete example before abstraction, always. Illich's car and Havel's greengrocer are
+   the models to follow.
+4. Short sentences. No throat-clearing. Never write "it is important to note".
+5. Never write "they don't want you to know" or any variant. The material is strong
+   enough without that register, and that register is what discredits it.
+6. Where a claim is contested, say who contests it and on what grounds.
+7. House style is in CLAUDE.md and is not optional: plain hyphens, no em dashes, no
+   shipping or maritime metaphors, no filler.
+
+INTERACTION
+
+Every technical term is a hover or tap definition sourced from the glossary, one source
+of truth, no duplicated definitions.
+
+Cross-references between thinkers, domains and milieus render as inline links. The
+cross-reference density is the point: this material is a network, not a list.
+
+Each thinker page gets a "trace the mechanism" component. The numbered steps from the
+document, rendered as a sequence the reader advances through one at a time. The mechanism
+is the actual content, so it should not be a wall of prose.
+
+Each milieu page gets a compact metadata strip at the top: years, location, funder,
+institution. Funding is displayed as a first-class fact, not a footnote.
+
+DESIGN
+
+Editorial and typographic. Not a dashboard, not a startup landing page. This should read
+like a serious publication.
+
+Long-form measure around 65 characters. Generous line height. A real type pairing rather
+than system defaults. Restrained palette, high contrast, dark mode.
+
+No stock imagery. No icons standing in for ideas. No gradient hero.
+
+Explicitly avoid every conspiracy visual convention: no red string, no redaction bars, no
+surveillance-camera motifs, no all-seeing eye. The visual argument is that this is
+scholarship, not exposure. Getting this wrong destroys the project.
+
+Responsive down to 360px. Most readers will be on a phone.
+
+TWO PAGES CARRY DISPROPORTIONATE WEIGHT
+
+The Schmitt page must state his Nazi party membership and his role as the regime's legal
+apologist in the opening paragraph, before any of his ideas. Frame as: take the scalpel,
+reject the surgery.
+
+The Agamben page must include his COVID interventions as a featured worked example of how
+a powerful framework fails when applied without discipline. This is what proves the site's good
+faith.
+
+Do not soften either. They are what separate this from the material it will otherwise be
+mistaken for.
+
+DEPLOYMENT
+
+Static export, pushed to GitHub, connected to Vercel. Confirm the build passes locally
+before the first push. Keep the dependency list short enough that a free-tier build stays
+under time limits.
