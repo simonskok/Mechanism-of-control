@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Dark mode is driven by data-theme on <html>, set before paint by the inline
+   script in app/layout.tsx. That keeps the reader's explicit choice and the
+   system preference in one place. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --font-serif: var(--font-source-serif), Iowan Old Style, Georgia, serif;
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --color-paper: #faf9f6;
+  --color-raised: #f1efe8;
+  --color-ink: #17160f;
+  --color-muted: #56534a;
+  --color-rule: #ddd9cd;
+  --color-accent: #2b4c6f;
+  --color-flag: #8a5a12;
+
+  --text-step--1: 0.875rem;
+  --text-step-0: 1.0625rem;
+  --text-step-1: 1.3125rem;
+  --text-step-2: 1.625rem;
+  --text-step-3: 2.125rem;
+  --text-step-4: 2.75rem;
+}
+
+[data-theme="dark"] {
+  --color-paper: #121210;
+  --color-raised: #1b1a17;
+  --color-ink: #eae7de;
+  --color-muted: #99958a;
+  --color-rule: #302f28;
+  --color-accent: #93b6d0;
+  --color-flag: #c79b45;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-serif);
+    font-size: var(--text-step-0);
+    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  }
+}
