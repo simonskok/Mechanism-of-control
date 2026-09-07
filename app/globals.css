@@ -1,56 +1,226 @@
 @import "tailwindcss";
 
 /* Dark mode is driven by data-theme on <html>, set before paint by the inline
-   script in app/layout.tsx. That keeps the reader's explicit choice and the
-   system preference in one place. */
+   script in app/layout.tsx, so the reader's explicit choice and the system
+   preference resolve in one place and there is no flash. */
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @theme {
+  /* Newsreader carries headings at 21px and above. Source Serif 4 carries the
+     argument. IBM Plex Mono carries the apparatus: years, funders, labels,
+     cross-references, flags. The split is the editorial claim in visual form. */
+  --font-display: var(--font-newsreader), Iowan Old Style, Georgia, serif;
   --font-serif: var(--font-source-serif), Iowan Old Style, Georgia, serif;
-  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --color-paper: #faf9f6;
-  --color-raised: #f1efe8;
-  --color-ink: #17160f;
-  --color-muted: #56534a;
-  --color-rule: #ddd9cd;
-  --color-accent: #2b4c6f;
+  --color-paper: #f5f4ef;
+  --color-raised: #ecebe3;
+  --color-ink: #1a1815;
+  --color-muted: #6b665c;
+  --color-rule: #d7d3c7;
+  --color-rule-strong: #b9b4a5;
+  --color-accent: #1d4e5a;
   --color-flag: #8a5a12;
 
-  --text-step--1: 0.875rem;
-  --text-step-0: 1.0625rem;
-  --text-step-1: 1.3125rem;
-  --text-step-2: 1.625rem;
-  --text-step-3: 2.125rem;
-  --text-step-4: 2.75rem;
+  --text-label: 0.6875rem;
+  --text-small: 0.875rem;
+  --text-body: 1.0625rem;
+  --text-lede: 1.1875rem;
+  --text-h3: 1.1875rem;
+  --text-h2: 1.3125rem;
+  --text-quote: 1.5rem;
+  --text-h1: 2.5rem;
+
+  --leading-body: 1.7;
 }
 
 [data-theme="dark"] {
-  --color-paper: #121210;
-  --color-raised: #1b1a17;
-  --color-ink: #eae7de;
+  --color-paper: #131412;
+  --color-raised: #1c1d19;
+  --color-ink: #e6e3da;
   --color-muted: #99958a;
-  --color-rule: #302f28;
-  --color-accent: #93b6d0;
+  --color-rule: #2c2d28;
+  --color-rule-strong: #43443d;
+  --color-accent: #86b6bf;
   --color-flag: #c79b45;
 }
 
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
+    color-scheme: light;
+  }
+
+  html[data-theme="dark"] {
+    color-scheme: dark;
   }
 
   body {
     background-color: var(--color-paper);
     color: var(--color-ink);
     font-family: var(--font-serif);
-    font-size: var(--text-step-0);
-    line-height: 1.7;
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
     text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
   }
 
   ::selection {
     background-color: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  }
+}
+
+@layer components {
+  /* The apparatus label. Mono, uppercase, tracked out. Used for every field
+     name, section marker and status flag on the site. */
+  .label {
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  /* Long-form measure. Roughly 65 characters at the body size. */
+  .measure {
+    max-width: 65ch;
+  }
+
+  /* Body copy rendered from MDX. Spacing lives here rather than on each
+     element, so a new entry needs no per-page styling. */
+  .prose {
+    max-width: 65ch;
+  }
+
+  .prose > * + * {
+    margin-top: 1.1rem;
+  }
+
+  .prose h2 {
+    font-size: var(--text-h2);
+    line-height: 1.25;
+    margin-top: 2.75rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--color-rule);
+  }
+
+  .prose h3 {
+    font-size: var(--text-h3);
+    line-height: 1.3;
+    margin-top: 2rem;
+  }
+
+  .prose a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+  }
+
+  .prose a:hover {
+    color: var(--color-accent);
+  }
+
+  .prose ul,
+  .prose ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-left: 1.15rem;
+  }
+
+  .prose ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .prose ul > li {
+    display: grid;
+    grid-template-columns: 1rem minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .prose ul > li::before {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 0.85rem;
+    background-color: var(--color-rule-strong);
+  }
+
+  .prose ol {
+    list-style: decimal;
+  }
+
+  .prose ol > li::marker {
+    font-family: var(--font-mono);
+    font-size: var(--text-small);
+    color: var(--color-muted);
+  }
+
+  .prose blockquote {
+    border-left: 2px solid var(--color-rule-strong);
+    padding-left: 1.1rem;
+    color: var(--color-muted);
+  }
+
+  .prose code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+  }
+
+  /* Any table on the site scrolls inside its own container rather than
+     pushing the page sideways. */
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  .table-scroll table {
+    width: 100%;
+    min-width: 34rem;
+    border-collapse: collapse;
+  }
+
+  .table-scroll th,
+  .table-scroll td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.7rem 1rem 0.7rem 0;
+    border-bottom: 1px solid var(--color-rule);
+    font-size: var(--text-small);
+    line-height: 1.5;
+  }
+
+  .table-scroll th {
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
-import { Source_Serif_4, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
+import { Source_Serif_4, Newsreader, IBM_Plex_Mono } from 'next/font/google';
+import { SiteHeader } from '@/components/SiteHeader';
+import { SiteFooter } from '@/components/SiteFooter';
 import './globals.css';
 
 const sourceSerif = Source_Serif_4({
@@ -8,11 +10,11 @@ const sourceSerif = Source_Serif_4({
   variable: '--font-source-serif',
 });
 
-const plexSans = IBM_Plex_Sans({
+const newsreader = Newsreader({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400', '500'],
   display: 'swap',
-  variable: '--font-plex-sans',
+  variable: '--font-newsreader',
 });
 
 const plexMono = IBM_Plex_Mono({
@@ -28,22 +30,26 @@ export const metadata: Metadata = {
     template: '%s - Invisible Control',
   },
   description:
-    'How power sustains itself without appearing as power. Six thinkers, five domains, twelve institutional milieus.',
+    'How power sustains itself without appearing as power. Six thinkers, five domains of control, twelve institutional milieus, and a comparison of Eastern and Western regimes.',
 };
 
-const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();`;
+const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${sourceSerif.variable} ${plexSans.variable} ${plexMono.variable}`}
+      className={`${sourceSerif.variable} ${newsreader.variable} ${plexMono.variable}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>{children}</body>
+      <body className="flex min-h-screen flex-col">
+        <SiteHeader />
+        <div className="flex-1">{children}</div>
+        <SiteFooter />
+      </body>
     </html>
   );
 }
