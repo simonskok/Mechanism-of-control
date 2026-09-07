@@ -7,6 +7,7 @@ import { Objections } from '@/components/mdx/Objections';
 import { Contested } from '@/components/mdx/Contested';
 import { Mechanism } from '@/components/mdx/Mechanism';
 import { MetaStrip } from '@/components/mdx/MetaStrip';
+import { WorkedExample } from '@/components/mdx/WorkedExample';
 import type { Entry } from './types';
 
 /** Internal links go through next/link, external ones open in a new tab and
@@ -41,6 +42,7 @@ export async function renderEntry(entry: Entry) {
       Thesis,
       Objections,
       Contested,
+      WorkedExample,
       Mechanism: () => <Mechanism steps={mechanism ?? []} />,
       MetaStrip: () => {
         if (!meta) {
