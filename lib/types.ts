@@ -31,6 +31,8 @@ export interface Frontmatter {
   domains?: string[];
   milieus?: string[];
   thinkers?: string[];
+  /** Essays only. The small label above the title. */
+  eyebrow?: string;
   /** Glossary terms this entry introduces, for the rail and for checking coverage. */
   terms?: string[];
 }

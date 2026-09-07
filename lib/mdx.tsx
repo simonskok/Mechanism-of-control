@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { compileMDX } from 'next-mdx-remote/rsc';
+import remarkGfm from 'remark-gfm';
 import { Term } from '@/components/mdx/Term';
 import { Framing } from '@/components/mdx/Framing';
 import { Thesis } from '@/components/mdx/Thesis';
@@ -9,6 +10,16 @@ import { Mechanism } from '@/components/mdx/Mechanism';
 import { MetaStrip } from '@/components/mdx/MetaStrip';
 import { WorkedExample } from '@/components/mdx/WorkedExample';
 import type { Entry } from './types';
+
+/** Every table scrolls inside its own container, so a wide comparison never
+    pushes the page sideways on a phone. */
+function Table({ children }: { children?: React.ReactNode }) {
+  return (
+    <div className="table-scroll">
+      <table>{children}</table>
+    </div>
+  );
+}
 
 /** Internal links go through next/link, external ones open in a new tab and
     say so to a screen reader. */
@@ -34,9 +45,10 @@ export async function renderEntry(entry: Entry) {
 
   const { content } = await compileMDX({
     source: entry.body,
-    options: { parseFrontmatter: false },
+    options: { parseFrontmatter: false, mdxOptions: { remarkPlugins: [remarkGfm] } },
     components: {
       a: Anchor,
+      table: Table,
       Term,
       Framing,
       Thesis,
