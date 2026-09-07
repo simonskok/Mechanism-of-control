@@ -12,7 +12,7 @@ export function MetaStrip({ meta }: { meta: MilieuMeta }) {
   ];
 
   return (
-    <dl className="mt-7 grid gap-px border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-4">
+    <dl className="mt-7 grid gap-px border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-[0.7fr_1.1fr_1.6fr_1fr]">
       {fields.map((field) => (
         <div key={field.key} className="flex flex-col gap-1.5 bg-paper px-3.5 py-3">
           <dt className="label">{field.key}</dt>

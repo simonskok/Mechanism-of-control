@@ -29,6 +29,7 @@ export default async function MilieuPage({ params }: { params: Promise<{ slug: s
     <EntryLayout
       eyebrow={`Milieu ${String(position).padStart(2, '0')} of ${String(all.length).padStart(2, '0')}`}
       title={frontmatter.title}
+      lede={frontmatter.thesis}
       fields={[
         { label: 'Thinkers', links: crossRefs('thinker', frontmatter.thinkers) },
         { label: 'Domains', links: crossRefs('domain', frontmatter.domains) },
