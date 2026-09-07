@@ -65,7 +65,7 @@ const PATHS = [
 
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-5xl px-5 py-12 sm:px-8 sm:py-16">
+    <main className="wide-tables mx-auto max-w-5xl px-5 py-12 sm:px-8 sm:py-16">
       <div className="measure">
         <p className="label text-accent">The through-line</p>
         <h1 className="mt-4 text-h1 leading-[1.08] tracking-tight">

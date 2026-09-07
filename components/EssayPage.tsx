@@ -9,7 +9,7 @@ export async function EssayPage({ slug }: { slug: string }) {
   const content = await renderEntry(entry);
 
   return (
-    <main className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
+    <main className="wide-tables mx-auto max-w-5xl px-5 py-12 sm:px-8">
       <div className="measure">
         {frontmatter.eyebrow ? <p className="label text-accent">{frontmatter.eyebrow}</p> : null}
         <h1 className="mt-3 text-h1 leading-[1.1] tracking-tight">{frontmatter.title}</h1>

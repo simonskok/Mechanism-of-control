@@ -190,6 +190,13 @@
     overflow-x: auto;
   }
 
+  /* A comparison table is the argument, not an illustration, so on the pages
+     built around one it steps outside the 65ch measure. The width stays inside
+     the viewport at every size, so the page itself never scrolls sideways. */
+  .wide-tables .table-scroll {
+    width: min(58rem, calc(100vw - 2.5rem));
+  }
+
   .table-scroll table {
     width: 100%;
     min-width: 34rem;
