@@ -33,6 +33,7 @@ export default async function DomainPage({ params }: { params: Promise<{ slug: s
       fields={[
         { label: 'Thinkers', links: crossRefs('thinker', frontmatter.thinkers) },
         { label: 'Milieus', links: crossRefs('milieu', frontmatter.milieus) },
+        { label: 'Figures', links: crossRefs('figure', frontmatter.figures) },
       ]}
     >
       <div className="prose">{content}</div>

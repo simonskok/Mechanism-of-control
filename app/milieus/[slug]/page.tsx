@@ -34,6 +34,7 @@ export default async function MilieuPage({ params }: { params: Promise<{ slug: s
         { label: 'Thinkers', links: crossRefs('thinker', frontmatter.thinkers) },
         { label: 'Domains', links: crossRefs('domain', frontmatter.domains) },
         { label: 'Reads with', links: crossRefs('milieu', frontmatter.milieus) },
+        { label: 'Figures', links: crossRefs('figure', frontmatter.figures) },
       ]}
     >
       <div className="prose">{content}</div>

@@ -167,8 +167,8 @@ export default function HomePage() {
         <p>
           If you would rather see the whole reading surface at once, the{' '}
           <Link href="/works">works index</Link> lists every book, essay and film the research
-          names, with the eight that are marked contested or discredited kept in place rather
-          than quietly dropped.
+          names, with the {works.filter((work) => work.contested).length} that are marked
+          contested or discredited kept in place rather than quietly dropped.
         </p>
       </div>
     </main>

@@ -35,6 +35,7 @@ export default async function ThinkerPage({ params }: { params: Promise<{ slug: 
         { label: 'Domains', links: crossRefs('domain', frontmatter.domains) },
         { label: 'Milieus', links: crossRefs('milieu', frontmatter.milieus) },
         { label: 'Reads with', links: crossRefs('thinker', frontmatter.thinkers) },
+        { label: 'Figures', links: crossRefs('figure', frontmatter.figures) },
       ]}
     >
       <div className="prose">{content}</div>
