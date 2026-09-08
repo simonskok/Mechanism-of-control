@@ -129,7 +129,7 @@ if (!/<WorkedExample[\s\S]*COVID/i.test(agamben)) {
   fail('content/thinkers/agamben.mdx', 'the COVID worked example is gone or is no longer featured');
 }
 
-const EXPECTED = { thinker: 6, figure: 20, domain: 5, milieu: 12, essay: 7 };
+const EXPECTED = { thinker: 6, figure: 20, domain: 5, milieu: 12, essay: 6 };
 for (const [type, count] of Object.entries(EXPECTED)) {
   if (seen[type] !== count) {
     fail('content', `expected ${count} ${type} entries, found ${seen[type]}`);
@@ -138,7 +138,7 @@ for (const [type, count] of Object.entries(EXPECTED)) {
 
 // Every href in the roster and the works index resolves to a page that exists.
 const routes = new Set(['/east-west', '/method', '/reading', '/open-questions', '/glossary',
-  '/counter-tradition', '/provenance', '/landscape', '/works', '/figures', '/thinkers', '/domains', '/milieus']);
+  '/counter-tradition', '/provenance', '/works', '/figures', '/thinkers', '/domains', '/milieus']);
 for (const file of files) {
   const raw = fs.readFileSync(file, 'utf8');
   const slug = raw.match(/^slug:\s*(.+)$/m)?.[1]?.trim();

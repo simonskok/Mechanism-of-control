@@ -35,9 +35,6 @@ export function SiteFooter() {
           <Link href="/open-questions" className="label hover:text-ink">
             Open questions
           </Link>
-          <Link href="/landscape" className="label hover:text-ink">
-            Landscape
-          </Link>
           <Link href="/provenance" className="label hover:text-ink">
             Provenance
           </Link>

@@ -149,17 +149,22 @@
     padding-left: 0;
   }
 
+  /* The marker is positioned rather than laid out as a grid column. A grid
+     list item breaks apart the moment a line starts with bold or italic,
+     because each inline run becomes its own grid item and the text ends up in
+     a one-character column. */
   .prose ul > li {
-    display: grid;
-    grid-template-columns: 1rem minmax(0, 1fr);
-    gap: 0.75rem;
+    position: relative;
+    padding-left: 1.75rem;
   }
 
   .prose ul > li::before {
     content: "";
-    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    width: 1rem;
     height: 1px;
-    margin-top: 0.85rem;
     background-color: var(--color-rule-strong);
   }
 
