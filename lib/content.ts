@@ -7,6 +7,7 @@ const CONTENT_DIR = path.join(process.cwd(), 'content');
 
 const DIRECTORY: Record<EntryType, string> = {
   thinker: 'thinkers',
+  figure: 'figures',
   domain: 'domains',
   milieu: 'milieus',
   essay: 'essays',
@@ -64,6 +65,7 @@ export function getAllEntries(): Entry[] {
 
 const HREF: Record<EntryType, string> = {
   thinker: '/thinkers',
+  figure: '/figures',
   domain: '/domains',
   milieu: '/milieus',
   essay: '',

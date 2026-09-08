@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { roster } from '@/content/roster';
+import { works } from '@/content/works';
 
 const CONVERGENCE = [
   {
@@ -49,17 +51,22 @@ const PATHS = [
   {
     href: '/thinkers',
     label: 'Six thinkers',
-    body: 'The arguments, each one laid out as a mechanism you can trace step by step, with the strongest objections attached.',
+    body: 'The arguments, each laid out as a mechanism you can trace step by step, with the strongest objections attached.',
+  },
+  {
+    href: '/figures',
+    label: `${roster.length} figures`,
+    body: 'Everyone the research names, with a line each and a link to where they are dealt with. Twenty have entries of their own.',
   },
   {
     href: '/domains',
     label: 'Five domains',
-    body: 'Education, media, law, psychology and bureaucracy. Where the mechanisms actually run, and which claims survive checking.',
+    body: 'Education, media, law, psychology and bureaucracy. Where the mechanisms run, and which claims survive checking.',
   },
   {
     href: '/milieus',
     label: 'Twelve milieus',
-    body: 'Who paid for the thinking. Organized by institution rather than by person, with the funder on the page before the argument.',
+    body: 'Who paid for the thinking. Organized by institution rather than person, with the funder on the page before the argument.',
   },
 ];
 
@@ -127,7 +134,7 @@ export default function HomePage() {
         </table>
       </div>
 
-      <nav className="mt-14 grid gap-px border border-rule bg-rule sm:grid-cols-3">
+      <nav className="mt-14 grid gap-px border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-4">
         {PATHS.map((path) => (
           <Link key={path.href} href={path.href} className="group bg-paper p-5 hover:bg-raised">
             <span className="font-display text-h2 leading-snug group-hover:text-accent">
@@ -137,6 +144,10 @@ export default function HomePage() {
           </Link>
         ))}
       </nav>
+
+      <p className="label mt-4">
+        {roster.length} people, {works.length} works, 6 thinkers, 5 domains, 12 milieus
+      </p>
 
       <div className="prose mt-14">
         <h2>Two more things to read first</h2>
@@ -152,6 +163,12 @@ export default function HomePage() {
           follow from them. Read it if you want to know why a Nazi jurist and an Italian
           communist appear on the same site, and why the contested sources are marked as
           contested.
+        </p>
+        <p>
+          If you would rather see the whole reading surface at once, the{' '}
+          <Link href="/works">works index</Link> lists every book, essay and film the research
+          names, with the eight that are marked contested or discredited kept in place rather
+          than quietly dropped.
         </p>
       </div>
     </main>

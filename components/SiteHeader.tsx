@@ -3,11 +3,10 @@ import { ThemeToggle } from './ThemeToggle';
 
 const SECTIONS = [
   { href: '/thinkers', label: 'Thinkers' },
+  { href: '/figures', label: 'Figures' },
   { href: '/domains', label: 'Domains' },
   { href: '/milieus', label: 'Milieus' },
   { href: '/east-west', label: 'East and West' },
-  { href: '/method', label: 'Method' },
-  { href: '/reading', label: 'Reading' },
   { href: '/glossary', label: 'Glossary' },
 ];
 

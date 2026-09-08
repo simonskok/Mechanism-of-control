@@ -57,7 +57,7 @@ const MARITIME = [
 ];
 
 const files = walk(CONTENT);
-const seen = { thinker: 0, domain: 0, milieu: 0, essay: 0 };
+const seen = { thinker: 0, figure: 0, domain: 0, milieu: 0, essay: 0 };
 
 for (const file of files) {
   const relative = path.relative(process.cwd(), file);
@@ -78,9 +78,9 @@ for (const file of files) {
     }
   }
 
-  // Every thinker carries objections, and they are never collapsed.
-  if (type === 'thinker' && !body.includes('<Objections>')) {
-    fail(relative, 'a thinker entry with no <Objections> block');
+  // Every thinker and every figure carries objections, never collapsed.
+  if ((type === 'thinker' || type === 'figure') && !body.includes('<Objections>')) {
+    fail(relative, `a ${type} entry with no <Objections> block`);
   }
 
   // Funding is a first-class fact. UNKNOWN is allowed. Blank is not.
@@ -129,11 +129,65 @@ if (!/<WorkedExample[\s\S]*COVID/i.test(agamben)) {
   fail('content/thinkers/agamben.mdx', 'the COVID worked example is gone or is no longer featured');
 }
 
-const EXPECTED = { thinker: 6, domain: 5, milieu: 12, essay: 4 };
+const EXPECTED = { thinker: 6, figure: 20, domain: 5, milieu: 12, essay: 6 };
 for (const [type, count] of Object.entries(EXPECTED)) {
   if (seen[type] !== count) {
     fail('content', `expected ${count} ${type} entries, found ${seen[type]}`);
   }
+}
+
+// Every href in the roster and the works index resolves to a page that exists.
+const routes = new Set(['/east-west', '/method', '/reading', '/open-questions', '/glossary',
+  '/counter-tradition', '/provenance', '/works', '/figures', '/thinkers', '/domains', '/milieus']);
+for (const file of files) {
+  const raw = fs.readFileSync(file, 'utf8');
+  const slug = raw.match(/^slug:\s*(.+)$/m)?.[1]?.trim();
+  const type = raw.match(/^type:\s*(\w+)/m)?.[1];
+  const section = { thinker: 'thinkers', figure: 'figures', domain: 'domains', milieu: 'milieus' }[type];
+  if (slug && section) routes.add(`/${section}/${slug}`);
+}
+
+const roster = fs.readFileSync(path.join(CONTENT, 'roster.ts'), 'utf8');
+const worksSource = fs.readFileSync(path.join(CONTENT, 'works.ts'), 'utf8');
+for (const [source, label] of [[roster, 'content/roster.ts'], [worksSource, 'content/works.ts']]) {
+  for (const match of source.matchAll(/href: '([^']+)'/g)) {
+    if (!routes.has(match[1])) fail(label, `href ${match[1]} does not resolve to a page`);
+  }
+}
+
+// Nobody the research document names disappears from the site. This rule exists
+// because the site once failed it: a hundred and forty people were inside the
+// prose with no way to reach any of them.
+const DOCUMENT = fs.readFileSync(path.join(process.cwd(), 'INVISIBLE_CONTROL.md'), 'utf8');
+const NOT_PEOPLE = new Set([
+  'Studies', 'Realism', 'Team', 'Institute', 'Society', 'Conferences', 'School', 'Project',
+  'Bureau', 'Corporation', 'Foundation', 'Notebooks', 'Freedom', 'Insights', 'Kitchen',
+  'Network', 'Forum', 'Tank', 'Think', 'Archive', 'Library', 'Preserve', 'Nemesis',
+  'Sacer', 'Sovieticus', 'Capital', 'Monat', 'Presente', 'Choice', 'Encounter', 'Preuves',
+  'War', 'Europe', 'America', 'Atlantic', 'Gymnasium', 'Volksschule', 'Prussian', 'Meiji',
+  'Four', 'Two', 'Frankfurt', 'Law', 'Legal', 'Panopticon', 'Sociological', 'Stanford',
+  'Student', 'Youth', 'Existing', 'Funding', 'Design',
+]);
+const corpus = [
+  ...files.map((file) => fs.readFileSync(file, 'utf8')),
+  roster,
+  worksSource,
+  fs.readFileSync(path.join(CONTENT, 'glossary.ts'), 'utf8'),
+].join('\n');
+
+// A name that opens a bold run in the document, whether or not the run carries
+// on into a title. Good enough as a regression guard, which is what it is for.
+const named = new Set();
+const NAME = /\*\*([A-Z][a-zà-ÿ'\u2019-]+(?:\s+(?:de|von|van|der|Le|Taylor|Jay|Wright|Leigh)\s+|\s+(?:[A-Z]\.\s+)*)[A-Z][a-zà-ÿ'\u2019-]+)/g;
+for (const match of DOCUMENT.matchAll(NAME)) {
+  const surname = match[1].split(/\s+/).pop();
+  if (surname.length < 4 || NOT_PEOPLE.has(surname)) continue;
+  named.add(surname);
+}
+
+const absent = [...named].filter((surname) => !corpus.includes(surname));
+if (absent.length > 0) {
+  fail('content', `named in the research document but nowhere on the site: ${absent.join(', ')}`);
 }
 
 if (failures.length > 0) {
@@ -144,5 +198,7 @@ if (failures.length > 0) {
 }
 
 console.log(
-  `content check passed: ${seen.thinker} thinkers, ${seen.domain} domains, ${seen.milieu} milieus, ${seen.essay} essays, ${glossarySlugs.size} glossary terms`,
+  `content check passed: ${seen.thinker} thinkers, ${seen.figure} figures, ${seen.domain} domains, ` +
+    `${seen.milieu} milieus, ${seen.essay} essays, ${glossarySlugs.size} glossary terms, ` +
+    `${named.size} named figures all present`,
 );

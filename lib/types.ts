@@ -1,4 +1,4 @@
-export type EntryType = 'thinker' | 'domain' | 'milieu' | 'essay';
+export type EntryType = 'thinker' | 'figure' | 'domain' | 'milieu' | 'essay';
 
 /** One numbered move in a thinker's mechanism, rendered by the stepper. */
 export interface MechanismStep {
@@ -31,6 +31,7 @@ export interface Frontmatter {
   domains?: string[];
   milieus?: string[];
   thinkers?: string[];
+  figures?: string[];
   /** Essays only. The small label above the title. */
   eyebrow?: string;
   /** Glossary terms this entry introduces, for the rail and for checking coverage. */

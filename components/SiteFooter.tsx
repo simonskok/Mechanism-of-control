@@ -23,11 +23,20 @@ export function SiteFooter() {
           <Link href="/method" className="label hover:text-ink">
             Method
           </Link>
-          <Link href="/open-questions" className="label hover:text-ink">
-            Open questions
+          <Link href="/counter-tradition" className="label hover:text-ink">
+            Counter-tradition
           </Link>
           <Link href="/reading" className="label hover:text-ink">
             Reading paths
+          </Link>
+          <Link href="/works" className="label hover:text-ink">
+            Works
+          </Link>
+          <Link href="/open-questions" className="label hover:text-ink">
+            Open questions
+          </Link>
+          <Link href="/provenance" className="label hover:text-ink">
+            Provenance
           </Link>
           <Link href="/glossary" className="label hover:text-ink">
             Glossary
