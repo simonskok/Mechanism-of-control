@@ -40,7 +40,7 @@ WHAT HAPPENS ON PUSH
 -------------------------------------------------------------------------------
 
 Vercel is already connected to this repository and builds on every push to the default
-branch, claude/invisible-control-site-lp1hbg.
+branch, main.
 
 It updates the SAME site at the SAME address. It does not create a new site. There is
 nothing to set up in Vercel.

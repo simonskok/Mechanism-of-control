@@ -18,7 +18,7 @@ Every page on the site is rewritten from it in plain language.
 
   Live at:     https://invisible-control.vercel.app
   Repository:  github.com/simonskok/Mechanism-of-control
-  Branch:      claude/invisible-control-site-lp1hbg (the repository default)
+  Branch:      main, the only branch and the repository default
   Deploys:     Vercel project "invisible-control", automatically on every push
 
 Note: Vercel Authentication is currently switched on, so the URL asks anyone who is not
