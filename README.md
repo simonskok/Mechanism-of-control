@@ -18,6 +18,10 @@ the strongest objections to their work, and contested sources are marked as cont
 - `content/` holds one MDX file per entry, plus `glossary.ts`, which is the single source of
   truth for every term definition on the site.
 - `scripts/check-content.mjs` enforces the editorial rules at build time.
+- `PROJECT_STATE.txt` is the current state of the project in plain text: what is built, how,
+  what the build enforces, and what is missing.
+- `RESEARCH_BRIEF.md` is written to be pasted into an LLM. It asks for the evidence layer the
+  site does not have yet, in a shape that pastes back into `/content`.
 
 ## Running it
 

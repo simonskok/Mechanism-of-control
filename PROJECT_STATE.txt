@@ -1,0 +1,227 @@
+INVISIBLE CONTROL
+State of the project, 12 September 2026
+
+Plain text on purpose. Paste it anywhere. Everything below is what is true today, not
+what is planned.
+
+
+-------------------------------------------------------------------------------
+1. WHAT THIS IS
+-------------------------------------------------------------------------------
+
+A static website on how power sustains itself without appearing as power, written for
+readers roughly 18 to 40 with no background in social theory.
+
+It is built from one source: INVISIBLE_CONTROL.md, a merged research document, version
+2.0, September 2026, in this repository. That document is source material and not copy.
+Every page on the site is rewritten from it in plain language.
+
+  Live at:     https://invisible-control.vercel.app
+  Repository:  github.com/simonskok/Mechanism-of-control
+  Branch:      claude/invisible-control-site-lp1hbg (the repository default)
+  Deploys:     Vercel project "invisible-control", automatically on every push
+
+Note: Vercel Authentication is currently switched on, so the URL asks anyone who is not
+logged into the owner's Vercel account to sign in. Turning it off, or attaching a custom
+domain, makes it public.
+
+
+-------------------------------------------------------------------------------
+2. WHAT EXISTS
+-------------------------------------------------------------------------------
+
+  58 pages built
+  15 commits
+  27,612 words of site content, against 14,963 words in the source document
+
+  6    thinker entries      Bourdieu, Gramsci, Schmitt, Foucault, Illich, Agamben
+  20   figure entries       La Boetie, Mosca, Michels, Pareto, Lippmann, Bernays,
+                            Mumford, Innis, Wiener, Milosz, Mills, Goffman, Ellul,
+                            Havel, Rose, Deleuze, Scott, Mbembe, Han, Zuboff
+  146  people in the roster every person the research document names, one line each,
+                            each linked to the page that deals with them
+  151  works in the index   every book, essay, lecture course and film the document
+                            names, 9 of them marked contested or discredited
+  5    domains              education, media, law, psychology, bureaucracy
+  12   milieus              Macy Conferences, Radio Project and the Bureau, RAND,
+                            Congress for Cultural Freedom, elite theory before fascism,
+                            the neoliberal thought collective, media materialism,
+                            control after discipline, institutions as manufacturers of
+                            persons, the behavioural state, older foundations and early
+                            crowd theory, infrastructural power
+  6    essays               method, East and West, reading paths, open questions,
+                            counter-tradition, provenance and status
+  56   glossary terms       one link target each, the single source of truth for tooltips
+
+Routes: / /thinkers /thinkers/[slug] /figures /figures/[slug] /domains /domains/[slug]
+/milieus /milieus/[slug] /east-west /method /reading /counter-tradition /open-questions
+/provenance /works /glossary
+
+
+-------------------------------------------------------------------------------
+3. HOW IT IS BUILT
+-------------------------------------------------------------------------------
+
+Next.js 16 App Router, TypeScript, Tailwind 4, static export to out/. No database, no
+auth, no API routes, nothing that needs a server at runtime.
+
+Six runtime dependencies: next, react, react-dom, gray-matter, next-mdx-remote,
+remark-gfm. Development adds typescript, tailwindcss, and playwright-core for screenshots.
+
+Content lives in /content and is read at build time.
+
+  content/thinkers/*.mdx     one file per entry, frontmatter plus body
+  content/figures/*.mdx
+  content/domains/*.mdx
+  content/milieus/*.mdx
+  content/essays/*.mdx
+  content/glossary.ts        56 term definitions, the single source of truth
+  content/roster.ts          146 people, name, one line, link
+  content/works.ts           151 works, author, title, year, link, contested flag
+
+  lib/content.ts             reads and validates frontmatter, builds cross-references
+  lib/mdx.tsx                compiles MDX and binds the custom components
+  components/mdx/*           Term, Framing, Thesis, Mechanism, Objections, MetaStrip,
+                             Contested, WorkedExample
+  scripts/check-content.mjs  the editorial rules, enforced before every build
+  scripts/shot.mjs           screenshots any built page at 360px and 1280px and reports
+                             any element wider than the viewport
+
+Frontmatter fields: title, slug, type (thinker | figure | domain | milieu | essay),
+thesis, order, and optionally years, country, mechanism (the numbered steps), meta (the
+milieu funding strip), and cross-reference lists.
+
+Commands:
+
+  npm run dev       local development
+  npm run build     runs the content check, then a static export
+  npm run check     the content check on its own
+  npx tsc --noEmit  typecheck
+
+
+-------------------------------------------------------------------------------
+4. THE EDITORIAL RULES, AND WHICH ONES THE BUILD ENFORCES
+-------------------------------------------------------------------------------
+
+The project resists two failure modes.
+
+  A. The sanctioned critique. Analysis that never threatens the institutions funding it.
+     The leash is incentive, not censorship.
+  B. Conspiratorial monism. An all-explaining framework applied to everything, which is
+     the same laziness wearing black.
+
+Four questions the site puts to every source: who paid and what did they want, what was
+the institution's actual job, what crisis was in the room, and what could not be said
+there.
+
+Standing rules: every claim traceable to a checkable source. Every thinker and figure
+page carries the strongest objections, never collapsed. Structural tendency is not
+conscious conspiracy. What a source established is not what it asserted. Say UNKNOWN
+rather than filling a gap. Where a section is North Atlantic by default, say so. Do not
+flatten the politics.
+
+Contested or discredited, and flagged wherever they appear: Wittfogel, MacLean, Le Bon,
+Stonor Saunders, Gatto, Milgram, Zimbardo.
+
+scripts/check-content.mjs runs before every build, locally and on Vercel, and fails the
+build on any of these:
+
+  - a <Term id> with no matching entry in the glossary
+  - a thinker or figure entry with no objections block
+  - a milieu with no funder recorded (UNKNOWN is allowed, blank is not)
+  - banned house style: "it is important to note", "it is worth noting", "they don't
+    want you to know", "dark psychology", any maritime metaphor, any em dash
+  - the Schmitt framing block losing the Nazi party membership or the phrase apologist
+  - the Agamben COVID worked example going missing
+  - a link in the roster or the works index that does not resolve to a real page
+  - a person named in INVISIBLE_CONTROL.md who appears nowhere on the site
+
+That last rule exists because the site failed it once. It was verified by running the
+check against an empty corpus, where it correctly reports every name as missing.
+
+
+-------------------------------------------------------------------------------
+5. DECISIONS TAKEN, AND WHY
+-------------------------------------------------------------------------------
+
+Design direction, the finding aid. The argument runs in a serif at a 65 character
+measure. The apparatus runs in mono: years, funders, institutions, cross-references,
+contested flags. That split carries the editorial claim without stating it, and it puts
+funding on the page as a fact rather than a footnote.
+
+Typefaces. Newsreader at 21px and above, Source Serif 4 for body, IBM Plex Mono for the
+apparatus. Palette: paper #f5f4ef, ink #1a1815, muted #6b665c, accent #1d4e5a petrol
+blue, flag #8a5a12 ochre. Dark theme inverts through the same tokens.
+
+Ochre does two jobs only: contested sources and funder values. The Schmitt framing block
+uses a heavy ink rule instead, because that is gravity and not a warning label.
+
+Structure comes from hairline rules. No cards, no shadows, no rounded corners, no icons
+standing in for ideas, and none of the conspiracy visual conventions: no red string, no
+redaction bars, no surveillance-camera motifs, no glitch.
+
+The mechanism stepper advances one step at a time and keeps the whole sequence readable
+underneath, so a reader who ignores the buttons still gets every step.
+
+Names in prose are not auto-linked. The network shows through the rails, the cross
+references and the indexes instead.
+
+Home opens with the thesis as the headline and Mills on personal troubles versus public
+issues as the first paragraph under it.
+
+The organizational landscape page, Appendix A of the document, was written and then
+removed at the owner's instruction. The funding constraint it argued already lives on
+the method page.
+
+
+-------------------------------------------------------------------------------
+6. KNOWN GAPS AND OPEN ITEMS
+-------------------------------------------------------------------------------
+
+The evidence layer is thin, and this is the main one. Every mechanism on the site is
+illustrated by the example the theory arrived with: Bentham's prison, Havel's
+greengrocer, Illich's car, the Prussian Volksschule. There is almost nothing showing
+these mechanisms operating in documented cases with named institutions, dates and
+records. RESEARCH_BRIEF.md exists to fix that.
+
+Open TODO in the content:
+
+  content/thinkers/schmitt.mdx - the Night of the Long Knives essay needs its title and
+  year checked against a primary bibliography. The research document names the subject
+  but not the citation, so the site does not give one.
+
+North Atlantic by default. Every milieu on the site is North Atlantic. The colonial
+testing-ground argument, which Mbembe and Mitchell make, would produce a different site.
+It is recorded as the largest gap on the open questions page and it is not filled.
+
+Unresolved theoretical conflict. Gramsci says build counter-hegemonic organizations.
+Michels says organization itself produces an oligarchy with interests distinct from its
+members, derived from the most internally democratic party of its day. Both cannot be
+fully right, and nothing on the site resolves it.
+
+Six research problems are stated as invitations on /open-questions:
+
+  1. Personnel flow between cybernetics, communications research and psychological
+     warfare, 1946 to 1960. Simpson does part of it and says so.
+  2. Tarde's public under recommender systems.
+  3. Illich's radical monopoly applied to platforms, which nobody has done properly.
+  4. Patronage control then and now, the Congress for Cultural Freedom model against
+     research funding and platform monetization.
+  5. The colonial angle.
+  6. Gramsci against Michels.
+
+Deployment: Vercel Authentication is on, so the site is not publicly readable yet.
+
+
+-------------------------------------------------------------------------------
+7. WHAT COMES NEXT
+-------------------------------------------------------------------------------
+
+RESEARCH_BRIEF.md in this repository is written to be pasted whole into Claude or
+ChatGPT. It asks for six things: documented real-world manifestations, a map of where
+the public is most exposed, where each named person actually worked and who paid them,
+the distribution channels both for the ideas and for the techniques, what is live
+between 2020 and 2026, and verification of what the site currently asserts.
+
+Results come back in a fixed shape that pastes into the repository. They are then held
+to the same rules as everything else here: a source that can be checked, or UNKNOWN.
