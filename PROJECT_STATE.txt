@@ -30,16 +30,22 @@ domain, makes it public.
 2. WHAT EXISTS
 -------------------------------------------------------------------------------
 
-  60 pages built
-  17 commits
-  29,729 words of site content, against 14,963 words in the source document
+  72 pages built
+  19 commits
+  37,652 words of site content, against 14,963 words in the source document
 
   6    thinker entries      Bourdieu, Gramsci, Schmitt, Foucault, Illich, Agamben
-  20   figure entries       La Boetie, Mosca, Michels, Pareto, Lippmann, Bernays,
-                            Mumford, Innis, Wiener, Milosz, Mills, Goffman, Ellul,
-                            Havel, Rose, Deleuze, Scott, Mbembe, Han, Zuboff
+  29   figure entries       Twenty from the research document, in the order their key
+                            work appeared: La Boetie, Mosca, Michels, Pareto, Lippmann,
+                            Bernays, Mumford, Innis, Wiener, Milosz, Mills, Goffman,
+                            Ellul, Havel, Rose, Deleuze, Scott, Mbembe, Han, Zuboff.
+                            Nine more behind the reception rules, who are not in the
+                            research document: Mezirow, Sloterdijk, Kegan, McClelland,
+                            Adler, Fromm, Perry, Janoff-Bulman, Tyler
   146  people in the roster every person the research document names, one line each,
-                            each linked to the page that deals with them
+                            each linked to the page that deals with them. The nine
+                            reception figures are not in it, because the roster is
+                            defined by the research document
   151  works in the index   every book, essay, lecture course and film the document
                             names, 9 of them marked contested or discredited
   5    domains              education, media, law, psychology, bureaucracy
@@ -49,14 +55,16 @@ domain, makes it public.
                             control after discipline, institutions as manufacturers of
                             persons, the behavioural state, older foundations and early
                             crowd theory, infrastructural power
-  8    essays               method, East and West, reading paths, open questions,
-                            counter-tradition, provenance and status, tools, and
-                            this site by its own standards
-  56   glossary terms       one link target each, the single source of truth for tooltips
+  11   essays               method, East and West, reading paths, open questions,
+                            counter-tradition, provenance and status, tools, this site
+                            by its own standards, revelation, what control reveals,
+                            and ritual
+  72   glossary terms       one link target each, the single source of truth for tooltips
 
 Routes: / /thinkers /thinkers/[slug] /figures /figures/[slug] /domains /domains/[slug]
-/milieus /milieus/[slug] /east-west /method /tools /reflexive /reading /counter-tradition
-/open-questions /provenance /works /glossary
+/milieus /milieus/[slug] /east-west /method /tools /reflexive /revelation
+/what-control-reveals /ritual /reading /counter-tradition /open-questions /provenance
+/works /glossary
 
 Documents in the repository, not on the site:
 
@@ -88,7 +96,7 @@ Content lives in /content and is read at build time.
   content/domains/*.mdx
   content/milieus/*.mdx
   content/essays/*.mdx
-  content/glossary.ts        56 term definitions, the single source of truth
+  content/glossary.ts        72 term definitions, the single source of truth
   content/roster.ts          146 people, name, one line, link
   content/works.ts           151 works, author, title, year, link, contested flag
 
@@ -185,6 +193,18 @@ references and the indexes instead.
 
 Home opens with the thesis as the headline and Mills on personal troubles versus public
 issues as the first paragraph under it.
+
+The mechanism stepper has a test mode. A reader can switch it on, and each step then
+hides until they have tried to predict it, Next stays disabled until they reveal, and
+after the last step a panel asks them to write the mechanism back from memory. Nothing is
+stored, sent or counted, and the default is unchanged: a reader who touches nothing still
+sees every step.
+
+The reason is the illusion of explanatory depth. Fluent reading feels like understanding,
+and a mechanism laid out in clean numbered steps feels understood the moment it is read.
+Being asked to predict the next step, or to reproduce the sequence without looking, is the
+cheapest available way to find out whether anything was actually learned. Failing at step
+two is the normal result and the page says so.
 
 The Bourdieu page opens with a framing block, the second page on the site to get one
 after Schmitt. Schmitt's exists to stop a reader taking the argument without the

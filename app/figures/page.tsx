@@ -8,7 +8,7 @@ import { SectionHeader } from '@/components/SectionHeader';
 export const metadata: Metadata = {
   title: 'Figures',
   description:
-    'Everyone named in the research document, with a line each and a link to the page that deals with them. Twenty have entries of their own.',
+    'Everyone named in the research document, with a line each and a link to the page that deals with them, plus the figures behind the reception rules.',
 };
 
 export default function FiguresIndex() {
@@ -19,12 +19,13 @@ export default function FiguresIndex() {
       <SectionHeader eyebrow="Everyone in here" title={`${roster.length} people`}>
         The six core thinkers carry the argument, and they are not the material. This is
         everyone the research document names, with a line each and a link to the page that
-        deals with them. Twenty have entries of their own, listed first, in the order their
-        key work appeared.
+        deals with them. {figures.length} have entries of their own, listed first: twenty
+        from the research document in the order their key work appeared, then the figures
+        behind the reception rules.
       </SectionHeader>
 
       <h2 className="label mt-12 border-t border-rule pt-4">
-        Twenty entries, from 1548 to 2019
+        {figures.length} entries with a page of their own
       </h2>
       <IndexList entries={figures} basePath="/figures" />
 

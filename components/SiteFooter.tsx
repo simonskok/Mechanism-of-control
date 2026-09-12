@@ -23,6 +23,15 @@ export function SiteFooter() {
           <Link href="/method" className="label hover:text-ink">
             Method
           </Link>
+          <Link href="/revelation" className="label hover:text-ink">
+            Revelation
+          </Link>
+          <Link href="/what-control-reveals" className="label hover:text-ink">
+            What control reveals
+          </Link>
+          <Link href="/ritual" className="label hover:text-ink">
+            Ritual
+          </Link>
           <Link href="/tools" className="label hover:text-ink">
             Tools
           </Link>

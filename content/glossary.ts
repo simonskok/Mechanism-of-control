@@ -16,6 +16,118 @@ export interface GlossaryTerm {
 
 export const glossary: GlossaryTerm[] = [
   {
+    slug: 'disorienting-dilemma',
+    term: 'Disorienting dilemma',
+    definition:
+      'An experience that does not fit the way you already make sense of things, so it cannot be filed away and forces you to rebuild the frame instead. The starting point of any real change of mind.',
+    attribution: 'Mezirow',
+  },
+  {
+    slug: 'assumptive-world',
+    term: 'Assumptive world',
+    definition:
+      'The background beliefs you run on without ever stating them: that the world is roughly benevolent, that it makes sense, that you are worth something. What breaks in a shock is usually this, not a fact.',
+    attribution: 'Parkes, Janoff-Bulman',
+  },
+  {
+    slug: 'subject-object-shift',
+    term: 'Subject-object shift',
+    definition:
+      'Moving from being inside something and unable to see it, to being able to hold it at arm\u2019s length and look at it. You stop being your assumptions and start having them.',
+    attribution: 'Kegan',
+  },
+  {
+    slug: 'enlightened-false-consciousness',
+    term: 'Enlightened false consciousness',
+    definition:
+      'Knowing exactly how the thing works and carrying on anyway. Not ignorance, and not hypocrisy either, because nothing is being hidden. Criticism absorbed until it costs nothing.',
+    attribution: 'Sloterdijk',
+  },
+  {
+    slug: 'unknown-knowns',
+    term: 'Unknown knowns',
+    definition:
+      'The things you do not know that you know. Beliefs you act on every day and have never once looked at directly. Usually the real target of any attempt to see clearly.',
+    attribution: 'Zizek',
+  },
+  {
+    slug: 'personalized-power',
+    term: 'Personalized power',
+    definition:
+      'Wanting influence for its own sake, treated as something won at someone else\u2019s expense. Associated with acting on impulse and with decisions that damage the group.',
+    attribution: 'McClelland',
+  },
+  {
+    slug: 'socialized-power',
+    term: 'Socialized power',
+    definition:
+      'Wanting influence in order to get something done for a group. Distinguished from the personal kind not by how much drive there is but by how much restraint sits on top of it.',
+    attribution: 'McClelland',
+  },
+  {
+    slug: 'activity-inhibition',
+    term: 'Activity inhibition',
+    definition:
+      'A steady disposition to restrain your own impulses. In McClelland\u2019s research it is the variable that decides whether a strong drive for influence turns useful or destructive.',
+    attribution: 'McClelland',
+  },
+  {
+    slug: 'procedural-justice',
+    term: 'Procedural justice',
+    definition:
+      'Fairness of the process rather than of the outcome. People comply with authority far more reliably when they judge the procedure fair than when they fear the punishment.',
+    attribution: 'Tyler',
+  },
+  {
+    slug: 'social-interest',
+    term: 'Social interest',
+    definition:
+      'Adler\u2019s name for the sense of being one among others, with something to contribute. He treated it as the mark of health and as the alternative to seeking superiority over people.',
+    attribution: 'Adler',
+  },
+  {
+    slug: 'striving-for-superiority',
+    term: 'Striving for superiority',
+    definition:
+      'The drive to rise above others, which Adler read as compensation for felt inferiority rather than as strength. He contrasted it with striving toward completion, which is aimed at a task instead of a person.',
+    attribution: 'Adler',
+  },
+  {
+    slug: 'fear-of-freedom',
+    term: 'Fear of freedom',
+    definition:
+      'The pull back toward being told what to do, because freedom brings isolation and the weight of choosing. Fromm argued people flee it into conformity, submission or destructiveness.',
+    attribution: 'Fromm, Freire',
+  },
+  {
+    slug: 'moral-licensing',
+    term: 'Moral licensing',
+    definition:
+      'Having established that you are one of the good ones, you do less afterwards rather than more. Understanding a problem can settle the account in your own mind.',
+    attribution: 'Monin and Miller',
+  },
+  {
+    slug: 'psychic-numbing',
+    term: 'Psychic numbing',
+    definition:
+      'Feeling less as the numbers get bigger. Response does not scale with the size of a harm, it fades, and the fading starts as early as the second victim.',
+    attribution: 'Slovic',
+  },
+  {
+    slug: 'illusion-of-explanatory-depth',
+    term: 'Illusion of explanatory depth',
+    definition:
+      'Believing you understand how something works until you are asked to explain it step by step, at which point the confidence collapses. Recognition of an idea feels like knowledge of it.',
+    attribution: 'Rozenblit and Keil',
+  },
+  {
+    slug: 'self-efficacy',
+    term: 'Self-efficacy',
+    definition:
+      'Your belief that you can actually do the thing. Built mainly by doing difficult things and succeeding, which means it is trained rather than given.',
+    attribution: 'Bandura',
+  },
+  {
     slug: 'habitus',
     term: 'Habitus',
     definition:

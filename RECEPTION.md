@@ -165,6 +165,37 @@ Where no documented capability exists for a mechanism, publish that absence as a
 question. Do not invent one. An honest gap is usable and an invented remedy is propaganda that
 will be detected.
 
+## 9.3b Correction: the risk is agreement, not rejection
+
+This document was drafted on the assumption that presenting people with information that
+threatens their self-image makes them dig in. That assumption is weaker than it looked and the
+correction matters for the whole design.
+
+The backfire effect, reported by Nyhan and Reifler in 2010, has largely failed to replicate.
+Failures have been widespread, including with identical items that previously produced it, and
+the largest attempt, Wood and Porter in 2019 across five experiments and more than ten thousand
+participants using items chosen as most conducive to backfire, found it stubbornly difficult
+to induce. Their conclusion was that people generally accede to factual corrections, including
+about political allies.
+
+What survives is narrower: Jost on system justification, which is about perceived
+inescapability rather than correction, and Festinger on dissonance.
+
+What replaces it is worse for a project like this one. Sloterdijk's enlightened false
+consciousness says the modern response to being shown a mechanism is to agree and carry on.
+Three documented effects give that a concrete shape here:
+
+- **Moral licensing.** Establishing that you are one of the good ones licenses doing less
+  afterwards. Understanding a problem can settle the account.
+- **Psychic numbing.** Response fades as scale grows, starting as early as the second victim.
+  More documented cases buys coverage at the cost of response, which argues against growth.
+- **The illusion of explanatory depth.** People believe they understand a mechanism until
+  asked to explain it step by step. Fluent reading feels like knowing.
+
+So the design target moves. Not lowering defences, which are less of an obstacle than
+assumed, but introducing friction. Fewer pages, more asked of the reader, and the mechanism
+stepper asking for a prediction before it shows a step. That intervention is now built.
+
 ## 9.4 Four mechanisms worth building around
 
 **Self-affirmation** (Steele, and Cohen's later work). Affirming a person's values in an
@@ -280,7 +311,10 @@ These are constraints on the content model, not style guidance.
    technique gets the same treatment.
 6. **Reflexivity is a pattern.** Every framework gets applied to the site at least once, and
    those applications are published.
-7. **Absence is published.** Where no capability is documented for a mechanism, that is stated
+7. **Friction over coverage.** The failure mode is frictionless agreement, not rejection.
+   Prefer asking the reader to produce something over telling them one more thing, and treat
+   any proposal to add pages as a proposal to reduce response per page.
+8. **Absence is published.** Where no capability is documented for a mechanism, that is stated
    rather than filled. This follows the existing UNKNOWN rule and extends it to the
    constructive side.
 
