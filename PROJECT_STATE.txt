@@ -30,9 +30,9 @@ domain, makes it public.
 2. WHAT EXISTS
 -------------------------------------------------------------------------------
 
-  58 pages built
-  15 commits
-  27,612 words of site content, against 14,963 words in the source document
+  60 pages built
+  17 commits
+  29,729 words of site content, against 14,963 words in the source document
 
   6    thinker entries      Bourdieu, Gramsci, Schmitt, Foucault, Illich, Agamben
   20   figure entries       La Boetie, Mosca, Michels, Pareto, Lippmann, Bernays,
@@ -49,13 +49,26 @@ domain, makes it public.
                             control after discipline, institutions as manufacturers of
                             persons, the behavioural state, older foundations and early
                             crowd theory, infrastructural power
-  6    essays               method, East and West, reading paths, open questions,
-                            counter-tradition, provenance and status
+  8    essays               method, East and West, reading paths, open questions,
+                            counter-tradition, provenance and status, tools, and
+                            this site by its own standards
   56   glossary terms       one link target each, the single source of truth for tooltips
 
 Routes: / /thinkers /thinkers/[slug] /figures /figures/[slug] /domains /domains/[slug]
-/milieus /milieus/[slug] /east-west /method /reading /counter-tradition /open-questions
-/provenance /works /glossary
+/milieus /milieus/[slug] /east-west /method /tools /reflexive /reading /counter-tradition
+/open-questions /provenance /works /glossary
+
+Documents in the repository, not on the site:
+
+  INVISIBLE_CONTROL.md          the research document, the source of every page
+  CLAUDE.md                     the standing editorial and technical rules
+  RECEPTION.md                  how the material is meant to land on a reader, and the
+                                rules that follow from it
+  RESEARCH_BRIEF.md             the evidence layer the site does not have yet, written
+                                to be pasted into an LLM
+  RESEARCH_BRIEF_AMENDMENTS.md  amendments to that brief
+  PROJECT_STATE.txt             this file
+  READ_ME_FIRST.txt             how the phase 1 archive was applied
 
 
 -------------------------------------------------------------------------------
@@ -96,6 +109,10 @@ Commands:
   npm run dev       local development
   npm run build     runs the content check, then a static export
   npm run check     the content check on its own
+  npm run new       scaffolds a new entry: the MDX file with correct frontmatter and the
+                    blocks its type requires, the route for an essay, the route added to
+                    the resolvable set, and the expected count in the check bumped.
+                    Usage: npm run new -- <type> <slug> "<Title>"
   npx tsc --noEmit  typecheck
 
 
@@ -168,6 +185,15 @@ references and the indexes instead.
 
 Home opens with the thesis as the headline and Mills on personal troubles versus public
 issues as the first paragraph under it.
+
+The Bourdieu page opens with a framing block, the second page on the site to get one
+after Schmitt. Schmitt's exists to stop a reader taking the argument without the
+politics. Bourdieu's exists because that page is the one most likely to be read as an
+insult or as a reason to give up: a reader who did well hears theft, and a reader who did
+not hears that nothing they do matters. The block names both readings before the argument
+starts, says the effects are contested and smaller than the rhetoric, and points at Paul
+Willis, whose boys saw through school completely and resisted it. Relief before threat,
+and the reader's agency kept inside the mechanism rather than outside it.
 
 The organizational landscape page, Appendix A of the document, was written and then
 removed at the owner's instruction. The funding constraint it argued already lives on
