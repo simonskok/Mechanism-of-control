@@ -165,9 +165,10 @@ for (const [source, label] of [[roster, 'content/roster.ts'], [worksSource, 'con
 // count, which is what the rule means by same view. The list must only ever
 // shrink, and a name comes off it by pairing that page, never by editing this
 // line. A new thinker entry is not on the list and so fails the build.
-const UNPAIRED = new Set([
-  'agamben', 'bourdieu', 'foucault', 'gramsci', 'illich', 'schmitt',
-]);
+// Empty, and it stays empty. Every thinker entry now carries a pairing or a
+// published absence. Cleared 2026-09-14: two paired, four absences published,
+// which is the honest split the research document supports.
+const UNPAIRED = new Set([]);
 
 for (const file of files) {
   const raw = fs.readFileSync(file, 'utf8');
@@ -177,9 +178,12 @@ for (const file of files) {
 
   const slug = frontmatter.match(/^slug:\s*(.+)$/m)?.[1]?.trim() ?? '';
   const flagged = /^noCounterPracticeFound:\s*true\s*$/m.test(frontmatter);
-  const capabilities = [
-    ...(frontmatter.match(/^capabilities:\n((?:\s+-\s+.+\n?)+)/m)?.[1] ?? '').matchAll(/-\s+(.+)/g),
-  ].map((match) => match[1].trim());
+  const capabilityBlock = frontmatter.match(/^capabilities:\n((?:\s+[-\w].*\n?)+)/m)?.[1] ?? '';
+  const capabilities = [...capabilityBlock.matchAll(/href:\s*(\S+)/g)].map((match) => match[1]);
+  const labels = [...capabilityBlock.matchAll(/label:\s*(.+)/g)].length;
+  if (capabilities.length !== labels) {
+    fail(relative, 'reception rule 1: every capability needs both an href and a label');
+  }
 
   if (capabilities.length > 0 && flagged) {
     fail(relative, 'reception rule 1: both capabilities and noCounterPracticeFound. Pick one');
@@ -196,10 +200,14 @@ for (const file of files) {
         'Pair it in the same view, or state that no counter-practice was found',
     );
   }
-  if (capabilities.length > 0 && UNPAIRED.has(slug)) {
+  // Resolved either way, by a pairing or by a published absence, and still listed
+  // as debt. The first version of this only caught the capabilities case, so an
+  // entry could carry noCounterPracticeFound and sit on the list forever.
+  if ((capabilities.length > 0 || flagged) && UNPAIRED.has(slug)) {
     fail(
       'scripts/check-content.mjs',
-      `${slug} is paired now. Take it out of UNPAIRED, the debt list only shrinks`,
+      `${slug} is resolved now, ${capabilities.length > 0 ? 'paired' : 'absence published'}. ` +
+        'Take it out of UNPAIRED, the debt list only shrinks',
     );
   }
 }
