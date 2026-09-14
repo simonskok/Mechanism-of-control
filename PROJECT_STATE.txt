@@ -278,15 +278,25 @@ Reception rule 8 is met. The sequencing logic, the pairing rule, the current two
 score and the contested status of the psychology behind all of it are on the method page
 rather than operating quietly.
 
-Open TODOs in the content:
+Open TODOs in the content. Both were closed against sources on 14 September and both
+left a narrower successor, which is the honest end state rather than a clean one:
 
-  content/thinkers/schmitt.mdx - the Night of the Long Knives essay needs its title and
-  year checked against a primary bibliography. The research document names the subject
-  but not the citation, so the site does not give one.
+  content/thinkers/schmitt.mdx - the Night of the Long Knives essay is identified and
+  cited: Der Fuehrer schuetzt das Recht, Deutsche Juristen-Zeitung 39, Heft 15, 1 August
+  1934, columns 945 to 950, English translation in Vagts, The Germanic Review 87.2 (2012).
+  What remains: no digitised copy of the printed 1934 issue was found, so the column
+  numbers rest on scholarly citation and a catalogue record. A library holding volume 39
+  closes it.
 
-  content/figures/lifton.mdx - the APA report is named DIMPAC in most accounts and the
-  year is usually given as 1987. The exact title, the board that rejected it and the
-  date need checking against an APA primary source before any of it goes on the page.
+  content/figures/lifton.mdx - the APA memorandum is identified and quoted: 11 May 1987,
+  Board of Social and Ethical Responsibility for Psychology, on the report of the Task
+  Force on Deceptive and Indirect Methods of Persuasion and Control chaired by Margaret
+  Singer. The checking also corrected the claim. The board refused the report and said in
+  the same memorandum that it lacked sufficient information to take a position on the
+  underlying question, so this is not the moment brainwashing was discredited, and it is
+  not a request for a rewrite either. What remains: no scan or archival original was
+  found, only re-keyed transcriptions, corroborated by two hosts on opposite sides of the
+  dispute carrying identical text. The APA Archives or Akron closes it.
 
 North Atlantic by default. Every milieu on the site is North Atlantic. The colonial
 testing-ground argument, which Mbembe and Mitchell make, would produce a different site.
