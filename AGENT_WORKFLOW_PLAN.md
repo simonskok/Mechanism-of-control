@@ -1,7 +1,13 @@
 # Agent Workflow Plan - Mechanism-of-control
 MODE: CC-LOCAL (cloud sandbox, egress open through the agent proxy) | Date: 2026-09-14 | Commit: 8dc811f
-SECTIONS DONE: 0.5, 1, 2, 3, 4, 5   SECTIONS OPEN: 6 (needs approval), 7 (two weeks out)
-NEXT: approve Tier 1, then run section 6 in this same environment.
+SECTIONS DONE: 0.5, 1, 2, 3, 4, 5, 6   SECTIONS OPEN: 7 (two weeks out)
+NEXT: run section 7 in two weeks. Operating manual in AGENT_SETUP.md.
+
+Tier 1 built and committed, one commit each, each proved against a real failure rather than
+described. T1.3 was taken as neither A nor B: the premise under option B was that the site
+might satisfy pairing structurally, and it does not, so the rule was enforced and the six
+failing entries were recorded as debt in the build instead of the claim being struck.
+Section 6 step 4 found four things and all four are fixed. Details in AGENT_SETUP.md.
 
 ## Current state
 

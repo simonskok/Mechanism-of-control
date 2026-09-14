@@ -18,6 +18,8 @@ the strongest objections to their work, and contested sources are marked as cont
 - `content/` holds one MDX file per entry, plus `glossary.ts`, which is the single source of
   truth for every term definition on the site.
 - `scripts/check-content.mjs` enforces the editorial rules at build time.
+- `AGENT_SETUP.md` is the operating manual for the agent tooling: the hooks, the skill, and
+  how to add to them.
 - `PROJECT_STATE.txt` is the current state of the project in plain text: what is built, how,
   what the build enforces, and what is missing.
 - `RESEARCH_BRIEF.md` is written to be pasted into an LLM. It asks for the evidence layer the
@@ -30,6 +32,7 @@ npm install
 npm run dev      # http://localhost:3000
 npm run build    # runs the content check, then a static export to out/
 npm run check    # the content check on its own
+npm run verify   # the content check, the typecheck and the build, one exit code
 ```
 
 `npm run build` fails if a term is used without a glossary entry, if a thinker page loses its
