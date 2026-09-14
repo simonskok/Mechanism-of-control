@@ -116,17 +116,41 @@ A subagent is for reading, not writing. It gets its own context window, so the n
 wide search never reaches the main session. It cannot see what other subagents decided, which
 is why it is wrong for interdependent edits.
 
-1. Create `.claude/agents/<name>.md`.
+1. Create `.claude/agents/<name>.md`. Frontmatter: `name` and `description` required, `tools`
+   and `model` optional. `model: inherit` uses whatever the main session is on.
 2. Give it read-only tools: `Read, Grep, Glob`. If it needs `Write` or `Edit`, it is probably
    the wrong mechanism.
 3. Say what it returns, not how to search. The value is the conclusion, not the transcript.
+4. **It will not exist until the next session.** `.claude/agents/` is read at session start,
+   the same as `.claude/settings.json`. Creating the file and then calling the agent in the
+   same session fails with "agent type not found". To test the prompt before restarting,
+   pass its body to a general-purpose worker.
 
-**The one this repository has a case for and has not built yet:** `INVISIBLE_CONTROL.md` is
-101KB, roughly 27k tokens. Any session that reads it whole spends a sixth of its window before
-writing a word. A subagent that answers questions against it, and returns the passage rather
-than the file, would pay for itself. Build it when you notice a session reading the document
-whole. Do not build it if content work has been running off targeted greps, because then it
-is a file that costs context and does nothing.
+## `source`, the one that exists
+
+`.claude/agents/source.md` answers questions against `INVISIBLE_CONTROL.md` and returns
+quoted passages with line numbers, so the 101KB document never enters the main window.
+
+Measured on its first real question, which was what the document supplies as counter-practice
+against Bourdieu's mechanism:
+
+| | |
+|---|---|
+| Lines of the document read | about 400 of 1563, never the whole file |
+| Returned to the main session | roughly 2k tokens |
+| Cost inside its own window | 71k tokens, 16 tool calls, 110s |
+
+**Read that honestly.** It removes noise decisively: 2k of quoted passages instead of 27k of
+document, and the main session never carries the file. It does not save tokens. It spends
+about three times what reading the document whole would have cost, in its own window rather
+than yours. Use it when context is the constraint, which here it is. Do not use it for a
+question a single grep answers, because then it is pure overhead.
+
+It earned its cost on that first question. It established that the document supplies no
+documented counter-practice for Bourdieu at all, only the word reflexivity in a list with no
+source, which makes Bourdieu a `noCounterPracticeFound` case rather than a `capabilities`
+case under reception rule 1. That is a finding from the outstanding list in section 8, not a
+test result.
 
 ---
 
@@ -173,5 +197,16 @@ again. That is not a figure of speech.
 are separate pages. This is editorial work, not configuration: choosing which capability pairs
 with which mechanism is a content decision. The list only shrinks, and a name comes off it by
 pairing the page rather than by editing the check.
+
+One of the six is already answered, by the `source` agent rather than by guessing. The
+research document gives no documented counter-practice for Bourdieu anywhere: no policy, no
+reform, no named instance of the conversion being limited or reversed, and nothing a reader
+could run. The only Bourdieu entry in Part Six is the single word reflexivity, in a list, with
+no source. Under rule 1 and rule 7 that makes Bourdieu a `noCounterPracticeFound: true` case,
+which still needs the rendered block on the page stating that no counter-practice was found
+and linking to the open questions. The document's own nearest pointer is Scott on the hidden
+transcript, which it calls "the strongest available answer to the agency problem in Bourdieu
+and Foucault", and which sits under a different thinker. Whether that counts as a pairing is
+the editorial call.
 
 **One TODO in `content/figures/lifton.mdx`**, on the APA citation. It says what would check it.

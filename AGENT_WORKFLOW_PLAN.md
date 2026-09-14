@@ -1,6 +1,6 @@
 # Agent Workflow Plan - Mechanism-of-control
 MODE: CC-LOCAL (cloud sandbox, egress open through the agent proxy) | Date: 2026-09-14 | Commit: 8dc811f
-SECTIONS DONE: 0.5, 1, 2, 3, 4, 5, 6   SECTIONS OPEN: 7 (two weeks out)
+SECTIONS DONE: 0.5, 1, 2, 3, 4, 5, 6, plus T2.1   SECTIONS OPEN: 7 (2026-09-28)
 NEXT: run section 7 in two weeks. Operating manual in AGENT_SETUP.md.
 
 Tier 1 built and committed, one commit each, each proved against a real failure rather than
@@ -267,6 +267,10 @@ most likely to be skipped.
 ## Tier 2 - after Tier 1 has been used a week
 
 ### T2.1 A subagent that reads the research document so the main session does not
+
+**BUILT AND TESTED 2026-09-14**, ahead of the one week wait, because the condition below could
+be settled by measurement rather than by waiting. Findings and real costs in AGENT_SETUP.md
+section 5. Short version: it removes noise decisively and does not save tokens.
 
 **Artifact** `.claude/agents/source.md`, tools `Read, Grep, Glob`
 
