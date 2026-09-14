@@ -191,22 +191,25 @@ again. That is not a figure of speech.
 
 ## 8. Outstanding
 
-**Six thinker pages fail reception rule 1.** They are listed in `UNPAIRED` in
-`scripts/check-content.mjs`. Each needs a real counter-practice in its own view, and
-`/counter-tradition` and `/tools` do not satisfy it, because the rule says same view and those
-are separate pages. This is editorial work, not configuration: choosing which capability pairs
-with which mechanism is a content decision. The list only shrinks, and a name comes off it by
-pairing the page rather than by editing the check.
+**Reception rule 1 is satisfied and the debt list is empty.** Resolved 2026-09-14 using the
+`source` agent on all six thinker entries, one question each. Two carry a real pairing and
+four publish an absence:
 
-One of the six is already answered, by the `source` agent rather than by guessing. The
-research document gives no documented counter-practice for Bourdieu anywhere: no policy, no
-reform, no named instance of the conversion being limited or reversed, and nothing a reader
-could run. The only Bourdieu entry in Part Six is the single word reflexivity, in a list, with
-no source. Under rule 1 and rule 7 that makes Bourdieu a `noCounterPracticeFound: true` case,
-which still needs the rendered block on the page stating that no counter-practice was found
-and linking to the open questions. The document's own nearest pointer is Scott on the hidden
-transcript, which it calls "the strongest available answer to the agency problem in Bourdieu
-and Foucault", and which sits under a different thinker. Whether that counts as a pairing is
-the editorial call.
+| Entry | Outcome |
+|---|---|
+| Gramsci | Paired. Mont Pelerin, which the document calls the best available empirical test of the war of position, and Mitchell on coal. |
+| Illich | Paired. Scott on metis, which the document calls the direct ancestor of conviviality. |
+| Bourdieu | Absence published. |
+| Foucault | Absence published. |
+| Schmitt | Absence published. |
+| Agamben | Absence published. |
+
+Four out of six is the honest answer, not a shortfall. In three of the four the nearest thing
+on offer was Scott on the agency problem in Bourdieu and Foucault, which answers a charge
+against the theory rather than supplying a practice against the mechanism. Using it as a
+pairing would have been the weak substitute rule 1 exists to refuse.
+
+`UNPAIRED` in `scripts/check-content.mjs` is now empty. Any new thinker entry fails the build
+without a pairing or a published absence.
 
 **One TODO in `content/figures/lifton.mdx`**, on the APA citation. It says what would check it.
