@@ -1,0 +1,496 @@
+{
+  "_note": "Track B, first pass, amended shape. Twelve arenas. North Atlantic by default: eight of the twelve entries are drawn from the US, UK, Netherlands or France, where the archives, court records and regulator files are open. Two entries lean on Australian material (Robodebt) and one on Australian and Dutch material, and those departures are flagged inside the entry. rank is ordered 1 = worst by the single criterion stated in every rankCriterion field. contestedness and whereItWasStopped are the second ordering required by amendment B1. collectiveRecourse names a proposed Track G slug; Track G had not been run when this file was written, so those slugs are proposals, not resolved links.",
+  "rankCriterionUsed": "Irreversibility of a single adverse output: how much of a person's life one decision forecloses, how long the resulting mark persists on them, and whether any alternative provider exists once the decision is made. Chosen instead of headcount because ranking by headcount ranks the arenas in order of how unstoppable they look, which is the opposite of what the evidence supports. Headcount is still recorded in every scale field, and it does not track this ordering: the two arenas that touch the most people, attention systems and hiring screening, rank tenth and eighth.",
+  "exposures": [
+    {
+      "slug": "welfare-and-disability-eligibility",
+      "arena": "welfare and disability eligibility",
+      "whoIsExposed": "People receiving means-tested income support, childcare subsidy, unemployment insurance or Medicaid home care, and disproportionately those with dual nationality, disabilities, or irregular earnings across a year.",
+      "lifeStage": "Any point at which earned income stops or care needs begin. In practice: job loss, the birth of a child, the onset of a disabling condition, or old age.",
+      "mechanisms": ["legibility", "goodhart", "continuous-measurement", "counterproductive-institution"],
+      "howItWorks": "An agency replaces caseworker judgement with a matching or scoring rule run against tax, employment and residence data. The rule produces a number where the underlying record is ambiguous, and the burden of proving the number wrong is placed on the claimant rather than on the agency. Because the claimant has no income while contesting it, delay functions as a penalty independent of the outcome.",
+      "scale": "Australia's Income Compliance Programme raised debts against about 470,000 people using an income-averaging method the Commonwealth later conceded was unlawful, and all of those debts were refunded or written off. In the Netherlands roughly 26,000 families were wrongly accused of childcare benefit fraud between 2005 and 2019, on a risk model that used second nationality as a fraud indicator. Sources: Royal Commission into the Robodebt Scheme, Final Report, 7 July 2023; Autoriteit Persoonsgegevens, Belastingdienst/Toeslagen fine decision, 2021.",
+      "visibility": "invisible to the person",
+      "individualRecourse": "Weak, and the appeal statistics are the reason to say so plainly. In Australia the Administrative Appeals Tribunal overturned income-averaging debts at first instance repeatedly from 2017, and the agency declined to appeal those decisions so that they would not create a published precedent, which meant an individual win changed nothing for the next claimant. Idaho's Medicaid agency refused to disclose the formula that cut assistance, on the ground that it was a trade secret, so an individual claimant could not identify the error to contest. The realistic outcome for one person acting alone is months without income, a possible reversal, and no change to the rule.",
+      "collectiveRecourse": "This is where every actual reversal came from. Prygodicz v Commonwealth of Australia (No 2) [2021] FCA 634: a class action that recovered A$112 million in compensation and extinguished the Commonwealth's claim to roughly A$744 million in partly repaid invalid debts and A$268 million in unpaid ones. NJCM and others v The Netherlands, District Court of The Hague, 5 February 2020, C-09-550982: SyRI struck down as incompatible with Article 8 ECHR. K.W. v. Armstrong (D. Idaho, 29 March 2016): class action, formula ordered disclosed and cuts enjoined. Proposed Track G slugs: prygodicz-robodebt-class-action, syri-hague-ruling, kw-v-armstrong.",
+      "rank": 1,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "partially reversed",
+      "whereItWasStopped": "Netherlands: SyRI struck down by the District Court of The Hague on 5 February 2020, and the Rutte III cabinet resigned over the childcare benefits scandal on 15 January 2021. Australia: income averaging abandoned in November 2019, all 470,000 debts refunded or written off, and a Royal Commission reported on 7 July 2023. Idaho: the budget-cutting formula for developmental disability assistance was enjoined and ordered disclosed in K.W. v. Armstrong. Note that Australia is outside the North Atlantic scope of this round and is included because the documentary record is unusually complete.",
+      "sources": [
+        {
+          "title": "Royal Commission into the Robodebt Scheme, Final Report",
+          "year": "2023",
+          "kind": "government report",
+          "where": "Commonwealth of Australia, tabled 7 July 2023, robodebt.royalcommission.gov.au"
+        },
+        {
+          "title": "Prygodicz v Commonwealth of Australia (No 2) [2021] FCA 634",
+          "author": "Murphy J, Federal Court of Australia",
+          "year": "2021",
+          "kind": "court record",
+          "where": "[2021] FCA 634, Federal Court of Australia, judgment 11 June 2021"
+        },
+        {
+          "title": "NJCM c.s. / De Staat der Nederlanden (SyRI)",
+          "year": "2020",
+          "kind": "court record",
+          "where": "Rechtbank Den Haag, 5 February 2020, ECLI:NL:RBDHA:2020:865, case C-09-550982-HA ZA 18-388"
+        },
+        {
+          "title": "Belastingdienst/Toeslagen: de verwerking van de nationaliteit van aanvragers van kinderopvangtoeslag",
+          "author": "Autoriteit Persoonsgegevens",
+          "year": "2020",
+          "kind": "government report",
+          "where": "Autoriteit Persoonsgegevens investigation report and 2021 fine decision, autoriteitpersoonsgegevens.nl"
+        },
+        {
+          "title": "K.W. v. Armstrong, Memorandum Decision and Order",
+          "year": "2016",
+          "kind": "court record",
+          "where": "US District Court for the District of Idaho, 29 March 2016, No. 1:12-cv-00022-BLW"
+        }
+      ]
+    },
+    {
+      "slug": "immigration-and-border-control",
+      "arena": "immigration and border control",
+      "whoIsExposed": "Visa applicants from countries an administrative rule has marked as high risk, and settled migrants whose right to work, rent and receive care is checked against a database they cannot inspect.",
+      "lifeStage": "Applying to study, to join a spouse, to take a job offer, or renewing leave to remain. The mark then follows every later application.",
+      "mechanisms": ["legibility", "emergency-permanence", "continuous-measurement", "modulation"],
+      "howItWorks": "An automated tool sorts applications into risk bands before a human sees them, and the band determines how much scrutiny the file receives and how likely a refusal becomes. Nationality is used as an input, and the refusal history of a nationality feeds back into its own risk rating, so the tool learns from the outcomes it produced. A refusal is recorded and disclosed on every future application, so the consequence outlasts the decision.",
+      "scale": "The UK Home Office used its visa streaming tool from 2015 to 2020 on entry clearance applications; the UK granted 3.1 million visas in the year ending September 2019, which indicates the order of magnitude of the caseload the tool sorted. Source: Home Office, Immigration Statistics, year ending September 2019. The exact number of applications passed through the streaming tool has not been published and is UNKNOWN.",
+      "visibility": "invisible to the person",
+      "individualRecourse": "Very weak. Most UK entry clearance refusals carry no right of appeal, only administrative review on the papers or judicial review, and judicial review requires a solicitor and a costs risk. An applicant is not told which risk band the tool assigned them, so there is nothing specific to rebut. The practical individual remedy is to reapply and pay the fee again.",
+      "collectiveRecourse": "The Joint Council for the Welfare of Immigrants, represented by Foxglove, filed for judicial review of the streaming tool in June 2020 on Equality Act 2010 and common law irrationality grounds. The Home Office conceded before the hearing and suspended the tool from 7 August 2020. This is the clearest documented case in this arena of a small organisation stopping a national system, and it cost two organisations a pre-action protocol letter and a filed claim rather than a trial. Proposed Track G slug: jcwi-foxglove-visa-streaming.",
+      "rank": 2,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "challenged and limited",
+      "whereItWasStopped": "United Kingdom, 7 August 2020: the Home Office withdrew the visa application streaming tool after JCWI and Foxglove filed for judicial review, and committed to redesign the process. The replacement has not been published in comparable detail, so whether the same nationality feedback loop survives inside it is UNKNOWN.",
+      "sources": [
+        {
+          "title": "Home Office statement on suspension of the visa application streaming tool",
+          "year": "2020",
+          "kind": "government report",
+          "where": "Letter from the Home Office to JCWI, 3 August 2020, reproduced by the Electronic Immigration Network and by Foxglove, foxglove.org.uk"
+        },
+        {
+          "title": "R (Joint Council for the Welfare of Immigrants) v Secretary of State for the Home Department, judicial review claim on the visa streaming tool",
+          "year": "2020",
+          "kind": "court record",
+          "where": "Claim filed in the Administrative Court, June 2020; papers and pre-action correspondence published by Foxglove and JCWI"
+        },
+        {
+          "title": "Immigration Statistics, year ending September 2019: summary of latest statistics",
+          "author": "Home Office",
+          "year": "2019",
+          "kind": "government report",
+          "where": "gov.uk, Home Office official statistics release, 28 November 2019"
+        }
+      ]
+    },
+    {
+      "slug": "policing-and-pretrial-risk-assessment",
+      "arena": "policing and pretrial risk assessment",
+      "whoIsExposed": "People arrested and awaiting a first appearance, and residents of neighbourhoods that historical arrest data marks as high risk. In the US both populations are disproportionately Black and low income.",
+      "lifeStage": "Arrest, which for most people who experience it happens between eighteen and thirty.",
+      "mechanisms": ["continuous-measurement", "legibility", "goodhart", "modulation"],
+      "howItWorks": "A scoring instrument converts prior record, age and failure-to-appear history into a risk band that a judge sees at the first hearing, and a separate class of tools ranks people or places for police attention. The inputs are past police contact, so places and people already policed heavily score high, and the resulting contact regenerates the input. A high band at the first hearing produces pretrial detention, and pretrial detention independently worsens plea and sentencing outcomes.",
+      "scale": "Chicago's Strategic Subject List scored more than 280,000 individuals at 250 or higher before it was decommissioned. Source: Chicago Office of Inspector General, Advisory Concerning the Chicago Police Department's Predictive Risk Models, January 2020, and the City of Chicago open data release of the historical list. Coverage of pretrial risk tools across the US is estimated rather than counted, and the widely cited figure that about two thirds of the US population lives under a jurisdiction using one comes from an advocacy database rather than an official count, so treat it as an estimate.",
+      "visibility": "visible but unexplained",
+      "individualRecourse": "Weak, and one appellate court has said so directly. In State v. Loomis, 881 N.W.2d 749 (Wis. 2016), the Wisconsin Supreme Court allowed a COMPAS score to be used at sentencing while holding that the defendant could not examine how it was calculated, because the vendor's method was a trade secret; the court required only a written caution attached to the score. A defendant can argue against the band at the hearing but cannot inspect it, and public defenders have minutes per case.",
+      "collectiveRecourse": "Decommissioning has been the effective route, not litigation. Chicago Police Department retired the Strategic Subject List on 1 November 2019 after the city's Office of Inspector General found it had no demonstrated effect. The LAPD ended its PredPol contract on 21 April 2020; Chief Michel Moore gave budget pressure as the stated reason, and it followed a critical March 2020 internal audit, so attributing the end solely to the audit would overstate the record. Santa Cruz, California banned predictive policing by ordinance in June 2020. Proposed Track G slugs: chicago-ssl-decommission, santa-cruz-predictive-policing-ban.",
+      "rank": 3,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "partially reversed",
+      "whereItWasStopped": "Chicago, 1 November 2019: the Strategic Subject List decommissioned after the city Inspector General's advisory. Santa Cruz, California, June 2020: predictive policing prohibited by city ordinance. Los Angeles, 21 April 2020: PredPol contract ended, stated reason budgetary. New Jersey, 1 January 2017: the Criminal Justice Reform Act largely replaced money bail with a risk assessment plus pretrial services, and the state's pretrial jail population fell 43.9 per cent between January 2015 and January 2018 with no measured rise in pretrial offending. New Jersey is the case that cuts both ways, because what was stopped there was cash bail and the instrument is what replaced it.",
+      "sources": [
+        {
+          "title": "Advisory Concerning the Chicago Police Department's Predictive Risk Models",
+          "author": "City of Chicago Office of Inspector General",
+          "year": "2020",
+          "kind": "government report",
+          "where": "OIG File #19-0353, January 2020, igchicago.org"
+        },
+        {
+          "title": "State v. Loomis, 881 N.W.2d 749",
+          "year": "2016",
+          "kind": "court record",
+          "where": "Supreme Court of Wisconsin, 2016 WI 68, decided 13 July 2016"
+        },
+        {
+          "title": "Machine Bias",
+          "author": "Angwin, Larson, Mattu and Kirchner",
+          "year": "2016",
+          "kind": "investigation",
+          "where": "ProPublica, 23 May 2016, with the Broward County dataset published alongside it"
+        },
+        {
+          "title": "The accuracy, fairness, and limits of predicting recidivism",
+          "author": "Dressel and Farid",
+          "year": "2018",
+          "kind": "peer-reviewed",
+          "where": "Science Advances 4(1), eaao5580, 17 January 2018"
+        },
+        {
+          "title": "Criminal Justice Reform: Report to the Governor and the Legislature",
+          "author": "New Jersey Judiciary",
+          "year": "2018",
+          "kind": "government report",
+          "where": "Administrative Office of the Courts, New Jersey, 2018 annual report, njcourts.gov"
+        }
+      ],
+      "contestedEvidenceNote": "The ProPublica COMPAS finding is contested on statistical grounds. Flores, Bechtel and Lowenkamp (Federal Probation, 2016) argue the analysis conflated different fairness definitions that cannot be satisfied simultaneously when base rates differ. Dressel and Farid found COMPAS was about 65 per cent accurate and no better than untrained humans at about 62 per cent, and Lowenkamp and colleagues published a rejoinder to that too. What is established is that the tool is roughly as accurate as a layperson and that its errors are distributed unevenly by race. What is asserted, and disputed, is that this constitutes bias in the tool rather than in the arrest data it is trained on."
+    },
+    {
+      "slug": "health-coverage-and-utilisation-management",
+      "arena": "health systems, coverage denial and care management",
+      "whoIsExposed": "In the US, people enrolled in Medicare Advantage plans who need post-acute care after a hospital stay, and patients sorted by care management algorithms that use past spending as a proxy for illness.",
+      "lifeStage": "Illness and recovery, concentrated in old age but not confined to it.",
+      "mechanisms": ["goodhart", "legibility", "counterproductive-institution", "continuous-measurement"],
+      "howItWorks": "An insurer requires prior authorisation for a category of care and runs the request against a predictive tool that estimates an expected length of stay or expected cost. Denial is cheap for the insurer and expensive for the patient to contest, so a denial rate above the clinically justified rate is profitable. Separately, care management tools rank patients by predicted future cost rather than predicted future illness, and because less is spent on some groups at equal illness, those groups are ranked as healthier than they are.",
+      "scale": "Medicare Advantage plans issued 3.4 million full or partial prior authorisation denials in 2022, out of 46.2 million requests. Only 9.9 per cent of denials were appealed, and 83.2 per cent of those appeals overturned the denial. Source: KFF analysis of CMS Medicare Advantage plan reporting, 2024. Separately, Obermeyer and colleagues estimated that the commercial care management algorithm they studied was applied to around 200 million people a year in the US.",
+      "visibility": "visible but unexplained",
+      "individualRecourse": "An appeal works and almost nobody uses it, which is the finding. An 83.2 per cent overturn rate on a 9.9 per cent appeal rate means the denials were mostly wrong and the process relies on patients not contesting them. The cost to the individual is the appeal itself, filed while ill or on behalf of a relative in a nursing home, usually within a short deadline. Say plainly that the high overturn rate is evidence the scoring was wrong, not evidence that appeals work.",
+      "collectiveRecourse": "Congressional investigation and litigation. The Senate Permanent Subcommittee on Investigations published a 54-page report on 17 October 2024 with denial rates obtained from UnitedHealthcare, Humana and CVS under subpoena, showing post-acute denial rates several times each insurer's overall rate. Estate of Gene B. Lokken et al. v. UnitedHealth Group, filed in the District of Minnesota in November 2023, challenges the nH Predict tool; it is live and the allegations in it are unproven. Proposed Track G slugs: senate-psi-medicare-advantage, lokken-v-unitedhealth.",
+      "rank": 4,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "actively litigated",
+      "whereItWasStopped": "Partially, and by disclosure rather than prohibition. CMS issued a final rule effective 1 January 2024 requiring Medicare Advantage plans to base medical necessity decisions on the individual's circumstances rather than on an algorithm alone, and a 2024 interoperability rule requiring public reporting of prior authorisation metrics from 2026. In the care management case, the vendor of the algorithm Obermeyer studied worked with the researchers to retrain it, cutting the measured disparity by 84 per cent, which is a fix rather than a stop. NONE FOUND for any jurisdiction that has prohibited predictive utilisation management outright.",
+      "sources": [
+        {
+          "title": "Refusal and Delay: How Medicare Advantage Plans Use Artificial Intelligence to Deny Care",
+          "author": "US Senate Permanent Subcommittee on Investigations, Majority Staff Report",
+          "year": "2024",
+          "kind": "government report",
+          "where": "US Senate Homeland Security and Governmental Affairs Committee, released 17 October 2024"
+        },
+        {
+          "title": "Medicare Advantage Plans Denied a Larger Share of Prior Authorization Requests in 2022 Than in Prior Years",
+          "author": "KFF",
+          "year": "2024",
+          "kind": "dataset",
+          "where": "KFF analysis of CMS Medicare Advantage plan-reported data, published August 2024, kff.org"
+        },
+        {
+          "title": "Dissecting racial bias in an algorithm used to manage the health of populations",
+          "author": "Obermeyer, Powers, Vogeli and Mullainathan",
+          "year": "2019",
+          "kind": "peer-reviewed",
+          "where": "Science 366(6464), 447-453, 25 October 2019, DOI 10.1126/science.aax2342"
+        },
+        {
+          "title": "Estate of Gene B. Lokken et al. v. UnitedHealth Group, Inc.",
+          "year": "2023",
+          "kind": "court record",
+          "where": "US District Court for the District of Minnesota, No. 0:23-cv-03514, complaint filed 14 November 2023"
+        }
+      ]
+    },
+    {
+      "slug": "housing-and-tenant-screening",
+      "arena": "housing and tenant screening",
+      "whoIsExposed": "Renters, and particularly renters with a housing voucher, an eviction filing on record whether or not it succeeded, or a common name that matches somebody else's criminal record.",
+      "lifeStage": "Every move. In practice, most acutely between eighteen and forty, when moves are frequent and savings are thin.",
+      "mechanisms": ["legibility", "continuous-measurement", "credential-laundering", "modulation"],
+      "howItWorks": "A landlord buys a screening report that merges credit data, court records and criminal records into a single score or a pass-fail recommendation. The matching is often done on name and date of birth alone, so records belonging to other people attach to the file, and eviction filings appear even where the tenant won. The applicant pays an application fee for each attempt, so a false record charges them repeatedly before they discover it.",
+      "scale": "The CFPB reports that the industry's size is not registered anywhere and is therefore unknown, cites an informal 2006 estimate of as many as 650 companies, and puts current tenant screening revenue at roughly $1.3 billion a year. About 44 million US rental units are occupied, and 68 per cent of renters report paying an application fee. Source: CFPB, Tenant Background Checks Market, November 2022. The unknown market size is itself the finding here.",
+      "visibility": "invisible to the person",
+      "individualRecourse": "Weak in the time available. The Fair Credit Reporting Act gives a right to dispute, but the dispute takes up to 30 days and the flat is gone in three. A denied applicant is entitled to an adverse action notice naming the screening company, and in practice many landlords do not send one. Realistic outcome: another application fee somewhere else.",
+      "collectiveRecourse": "Two cases, and they went opposite ways, which is why both belong here. Louis v. SafeRent Solutions, No. 1:22-cv-10800 (D. Mass.): final approval 20 November 2024 of a $2.275 million settlement under which SafeRent agreed to stop issuing approve or decline recommendations for voucher-holding applicants unless the model is validated by civil rights experts. Connecticut Fair Housing Center v. CoreLogic: after a bench trial the district court held on 20 July 2023 that CoreLogic was not liable under the Fair Housing Act, and the Second Circuit affirmed on 20 February 2026 on the ground that the landlord, not the vendor, made the decision. Proposed Track G slugs: louis-v-saferent, ct-fair-housing-v-corelogic.",
+      "rank": 5,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "challenged and limited",
+      "whereItWasStopped": "Massachusetts, November 2024, for one company and one class: SafeRent is barred by the Louis settlement from scoring housing voucher applicants for a set period unless the model is independently validated. This is a real stop with a narrow perimeter, and the CoreLogic result shows the limit: the route of holding the vendor rather than the landlord liable under the Fair Housing Act failed in the Second Circuit in February 2026.",
+      "sources": [
+        {
+          "title": "Tenant Background Checks Market",
+          "author": "Consumer Financial Protection Bureau",
+          "year": "2022",
+          "kind": "government report",
+          "where": "CFPB, November 2022, files.consumerfinance.gov"
+        },
+        {
+          "title": "Louis et al. v. SafeRent Solutions LLC, final approval order",
+          "year": "2024",
+          "kind": "court record",
+          "where": "US District Court for the District of Massachusetts, No. 1:22-cv-10800, final approval granted 20 November 2024"
+        },
+        {
+          "title": "Connecticut Fair Housing Center v. CoreLogic Rental Property Solutions LLC",
+          "year": "2026",
+          "kind": "court record",
+          "where": "US Court of Appeals for the Second Circuit, Nos. 23-1118(L), 23-1166(XAP), decided 20 February 2026; district court judgment D. Conn., 20 July 2023"
+        }
+      ]
+    },
+    {
+      "slug": "credit-scoring",
+      "arena": "credit scoring and consumer reporting",
+      "whoIsExposed": "Everyone with a credit file, and separately the people without one. In the US, 26 million adults have no file with a nationwide bureau and a further 19 million have a file that cannot be scored.",
+      "lifeStage": "First loan, first flat, first car, and then every renewal for the rest of a working life.",
+      "mechanisms": ["legibility", "continuous-measurement", "credential-laundering", "modulation"],
+      "howItWorks": "Three private bureaus assemble a file on each person from lender reports, and a score derived from that file sets the price of credit, and in many US states the price of insurance and the outcome of a job application. The person is not the customer and does not control the inputs. Having no file scores as risk rather than as absence of information, so people outside the system are priced as though they had failed inside it.",
+      "scale": "26 million US adults are credit invisible and 19 million more have unscorable records, about 8 per cent of the adult population. 15 per cent of Black and Hispanic consumers are credit invisible against 9 per cent of white consumers. Source: CFPB Office of Research, Data Point: Credit Invisibles, May 2015. On accuracy: the FTC's Section 319 study found 26 per cent of participants identified a potential material error and disputed it, and for 5 per cent the corrected error would have moved them into a better pricing tier.",
+      "visibility": "disclosed",
+      "individualRecourse": "Real but slow and individually bounded. The Fair Credit Reporting Act gives a right to a free file, a right to dispute, and a 30-day investigation deadline, and the FTC's own follow-up study found that most consumers who disputed saw some change. It costs time, it fixes one file, and it does nothing about the scoring rule. In the UK the equivalent rights sit under the Data Protection Act 2018 and UK GDPR Article 22, which is narrower than it sounds because it only bites on solely automated decisions with legal or similarly significant effect.",
+      "collectiveRecourse": "Regulatory enforcement rather than collective litigation has produced the changes here. The CFPB's supervisory work on dispute handling, and the 2015 multistate attorney general settlement with the three nationwide bureaus over dispute processing and medical debt reporting, are the documented instances. Proposed Track G slug: multistate-ag-credit-bureau-settlement. This entry has weaker collective evidence than the others in this file and is flagged as such.",
+      "rank": 6,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "challenged and limited",
+      "whereItWasStopped": "Partially, on specific inputs rather than on the practice. Medical debt reporting was restricted by the three nationwide bureaus from 2022 following the 2015 multistate settlement and subsequent CFPB pressure. A number of US states and cities restrict credit checks in hiring. NONE FOUND for a jurisdiction that has stopped credit scoring itself, and it is not obvious that stopping it is the right ask, since the alternative it replaced was branch manager discretion.",
+      "sources": [
+        {
+          "title": "Data Point: Credit Invisibles",
+          "author": "CFPB Office of Research",
+          "year": "2015",
+          "kind": "government report",
+          "where": "Consumer Financial Protection Bureau, May 2015, files.consumerfinance.gov"
+        },
+        {
+          "title": "Report to Congress Under Section 319 of the Fair and Accurate Credit Transactions Act of 2003",
+          "author": "Federal Trade Commission",
+          "year": "2012",
+          "kind": "government report",
+          "where": "FTC, fifth interim report, December 2012, and the sixth interim final report, January 2015, ftc.gov"
+        }
+      ]
+    },
+    {
+      "slug": "platform-and-gig-work",
+      "arena": "platform and gig work",
+      "whoIsExposed": "Drivers, riders and couriers whose access to work is an account that can be switched off, and who are classified as self-employed and so fall outside most employment protection.",
+      "lifeStage": "Often the first job, the second job, or the job taken after another one ended.",
+      "mechanisms": ["modulation", "continuous-measurement", "goodhart", "radical-monopoly"],
+      "howItWorks": "The platform sets pay per job, allocates jobs, and scores the worker continuously on acceptance, completion and customer rating. Because the terms change per job and per worker, there is no posted wage to compare or bargain over, which is what distinguishes this from a piece rate. Deactivation on a fraud probability score ends the income immediately, and the worker is told a conclusion rather than a reason.",
+      "scale": "More than 28 million people work through digital labour platforms in the EU, the figure the Council of the European Union used when adopting the Platform Work Directive on 14 October 2024. Source: Council of the EU press release, 14 October 2024, and Directive (EU) 2024/2831.",
+      "visibility": "invisible to the person",
+      "individualRecourse": "Weak by design, and the successful cases show why. Drivers who asked Uber and Ola for the logic behind deactivation and for their fraud probability score had to litigate for three years to get an answer, and most deactivated drivers do not litigate. In-app appeals go to the same system. The realistic individual outcome is to open an account on a competing platform, which is why the radical monopoly question matters here: the alternative is another platform, not a non-platform way of doing the work.",
+      "collectiveRecourse": "Unions and worker-data organisations, and this is the arena where they have won most clearly. Amsterdam Court of Appeal, 4 April 2023: Uber's deactivations were held to be decisions based solely on automated processing contrary to Article 22 GDPR, and the drivers, backed by the App Drivers and Couriers Union and Worker Info Exchange, obtained reinstatement and disclosure. Uber BV and others v Aslam and others [2021] UKSC 5, 19 February 2021: UK Supreme Court held the claimant drivers were workers, not self-employed. Directive (EU) 2024/2831 creates a presumption of employment and bans some automated decisions outright, applying from 2 December 2026. Proposed Track G slugs: amsterdam-uber-ola-article-22, aslam-v-uber-uksc, eu-platform-work-directive.",
+      "rank": 7,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "partially reversed",
+      "whereItWasStopped": "Netherlands, 4 April 2023: the Amsterdam Court of Appeal ordered Uber to reinstate drivers deactivated by automated decision and to disclose the logic, under Article 22 GDPR. United Kingdom, 19 February 2021: Uber BV v Aslam, drivers are workers with minimum wage and holiday pay. European Union, from 2 December 2026: the Platform Work Directive prohibits certain automated decisions, including account suspension taken without human review, and processing of emotional or psychological data. Note the reversal in the other direction: California Proposition 22, passed November 2020, wrote the self-employed classification into state law after a court had rejected it, so this arena contains a documented rollback of a capability as well as gains.",
+      "sources": [
+        {
+          "title": "Drivers v Uber BV and Ola, judgment of the Amsterdam Court of Appeal",
+          "year": "2023",
+          "kind": "court record",
+          "where": "Gerechtshof Amsterdam, 4 April 2023, ECLI:NL:GHAMS:2023:793 and ECLI:NL:GHAMS:2023:796"
+        },
+        {
+          "title": "Uber BV and others v Aslam and others [2021] UKSC 5",
+          "year": "2021",
+          "kind": "court record",
+          "where": "United Kingdom Supreme Court, judgment 19 February 2021"
+        },
+        {
+          "title": "Directive (EU) 2024/2831 on improving working conditions in platform work",
+          "year": "2024",
+          "kind": "government report",
+          "where": "Official Journal of the European Union, published 11 November 2024; Council of the EU press release, 14 October 2024"
+        }
+      ]
+    },
+    {
+      "slug": "hiring-and-recruitment-screening",
+      "arena": "hiring and recruitment screening",
+      "whoIsExposed": "Every applicant to a large employer, and disproportionately applicants over forty, applicants with employment gaps, and applicants whose disability affects how they perform in a timed or video assessment.",
+      "lifeStage": "Every job application from the first one onward, and hardest after a redundancy in mid-career.",
+      "mechanisms": ["credential-laundering", "legibility", "continuous-measurement", "goodhart"],
+      "howItWorks": "An applicant tracking system filters applications against inferred criteria before any person reads them, and personality or video assessments score candidates on traits the employer has not validated against job performance. The rejected candidate receives no reason and usually no notification. Because the filter is applied at the employer's volume rather than the candidate's, a small error rate becomes a large number of people.",
+      "scale": "Workday stated in the Mobley litigation that approximately 1.1 billion applications were rejected through its platform in the relevant period from 24 September 2020. Source: filings in Mobley v. Workday, Inc., No. 3:23-cv-00770 (N.D. Cal.), conditional certification granted 16 May 2025. On the transparency side: of 391 New York City employers examined under Local Law 144, only 18 had posted the required bias audit and 13 the required transparency notice. Source: Wright et al., Null Compliance, ACM FAccT 2024.",
+      "visibility": "invisible to the person",
+      "individualRecourse": "Almost none. A rejected applicant is not told a system was used, not told what it scored, and in most US states not entitled to be told. Illinois requires consent and disclosure for AI analysis of video interviews under the Artificial Intelligence Video Interview Act, in force since 1 January 2020, and Maryland restricts facial recognition in interviews, but neither gives an individual a route to see or contest a score. The one documented US case where an individual detected the discrimination did so by submitting two identical applications with different birth dates.",
+      "collectiveRecourse": "Regulator and collective action, both recent and both unfinished. EEOC v. iTutorGroup settled on 9 August 2023 for $365,000 covering more than 200 applicants aged 55 and over; the software there applied a hard-coded age cutoff rather than a learned model, so it is weaker evidence about algorithmic screening than it is usually made to carry. Mobley v. Workday was conditionally certified as a nationwide ADEA collective action on 16 May 2025, and the court held that a vendor can be liable as an agent of the employers using its tool; the allegations are unproven. Proposed Track G slugs: eeoc-v-itutorgroup, mobley-v-workday, nyc-local-law-144.",
+      "rank": 8,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "actively litigated",
+      "whereItWasStopped": "Partially, and mostly on disclosure rather than use. Illinois has required consent for AI video interview analysis since 1 January 2020. New York City has required annual published bias audits since 5 July 2023, and the Cornell study is the reason to be honest about what that achieved: 18 of 391 employers complied. HireVue announced in January 2021 that it had removed facial analysis from its assessments. NONE FOUND for a jurisdiction that has prohibited automated pre-screening of job applications.",
+      "sources": [
+        {
+          "title": "Mobley v. Workday, Inc., order granting preliminary certification of ADEA collective",
+          "year": "2025",
+          "kind": "court record",
+          "where": "US District Court for the Northern District of California, No. 3:23-cv-00770, order of 16 May 2025 (Lin J)"
+        },
+        {
+          "title": "iTutorGroup to Pay $365,000 to Settle EEOC Discriminatory Hiring Suit",
+          "author": "US Equal Employment Opportunity Commission",
+          "year": "2023",
+          "kind": "government report",
+          "where": "EEOC press release, 9 August 2023; consent decree, EEOC v. iTutorGroup, No. 1:22-cv-02565 (E.D.N.Y.)"
+        },
+        {
+          "title": "Null Compliance: NYC Local Law 144 and the challenges of algorithm accountability",
+          "author": "Wright, Muenster, Vecchione, Qu, Cai, Smith and others",
+          "year": "2024",
+          "kind": "peer-reviewed",
+          "where": "Proceedings of the 2024 ACM Conference on Fairness, Accountability and Transparency, DOI 10.1145/3630106.3658998"
+        }
+      ]
+    },
+    {
+      "slug": "school-and-university-admission",
+      "arena": "school and university admission",
+      "whoIsExposed": "Applicants to selective institutions without inherited institutional ties. The counterpart exposure is the applicant who has those ties and is told the result reflects merit.",
+      "lifeStage": "Seventeen and eighteen, and again at postgraduate entry.",
+      "mechanisms": ["credential-laundering", "legibility", "goodhart", "manufactured-consent"],
+      "howItWorks": "Selective admission combines a measured academic record with unmeasured criteria, and the unmeasured criteria correlate with parental income and institutional connection. The result is issued as a single verdict on the applicant's worth rather than as a description of the criteria applied. Because the verdict is framed as merit, the applicant who is rejected attributes it to themselves.",
+      "scale": "In the Harvard admissions data disclosed in litigation, more than 43 per cent of white admits were recruited athletes, legacies, on the dean's interest list, or children of faculty and staff, against under 16 per cent for Black, Hispanic and Asian American admits, and roughly three quarters of white ALDC admits would have been rejected without that status. Source: Arcidiacono, Kinsler and Ransom, Journal of Labor Economics 40(1), 2022, using data produced in SFFA v. Harvard. Chetty, Deming and Friedman found children from top 1 per cent families are more than twice as likely to attend an Ivy-Plus college as middle-class children with comparable test scores.",
+      "visibility": "visible but unexplained",
+      "individualRecourse": "None worth calling recourse. There is no appeal against a selective admissions decision and no disclosure of the criteria weights. The individual response available is to apply elsewhere, which works, and to know that the verdict was not a measurement of the applicant, which is the honest thing to say and is not a remedy.",
+      "collectiveRecourse": "Legislation, and it has moved fast since 2021. Colorado HB21-1173, signed 25 May 2021, was the first state law prohibiting consideration of legacy status at public institutions. Virginia followed in 2024, and Illinois and California enacted their own restrictions in 2024. The Harvard data itself only became public because Students for Fair Admissions litigated for it, which means the strongest evidence in this arena was produced by a case brought to end race-conscious admission rather than legacy admission. Proposed Track G slugs: colorado-hb21-1173-legacy-ban, sffa-harvard-data-disclosure.",
+      "rank": 9,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "challenged and limited",
+      "whereItWasStopped": "Colorado, 25 May 2021: legacy preference prohibited at state-supported institutions, the first such law in the US. Virginia, 2024: the same for public institutions. Illinois and California, 2024: further restrictions, California's reaching private institutions that participate in state aid. The stop is real, it is confined to legacy status, and it does not touch recruited athletics or the dean's interest list, which the Harvard data shows carry more weight.",
+      "sources": [
+        {
+          "title": "Legacy and Athlete Preferences at Harvard",
+          "author": "Arcidiacono, Kinsler and Ransom",
+          "year": "2022",
+          "kind": "peer-reviewed",
+          "where": "Journal of Labor Economics 40(1), 133-156, DOI 10.1086/713744, using data produced in SFFA v. Harvard, No. 1:14-cv-14176 (D. Mass.)"
+        },
+        {
+          "title": "Diversifying Society's Leaders? The Determinants and Causal Effects of Admission to Highly Selective Private Colleges",
+          "author": "Chetty, Deming and Friedman",
+          "year": "2023",
+          "kind": "peer-reviewed",
+          "where": "NBER Working Paper 31492, July 2023"
+        },
+        {
+          "title": "HB21-1173, Prohibiting Legacy Preferences in Higher Education Institutions",
+          "year": "2021",
+          "kind": "government report",
+          "where": "Colorado General Assembly, signed by Governor Polis 25 May 2021, leg.colorado.gov/bills/hb21-1173"
+        }
+      ]
+    },
+    {
+      "slug": "workplace-monitoring",
+      "arena": "workplace monitoring and algorithmic management",
+      "whoIsExposed": "Warehouse, logistics, call centre and remote office workers whose pace is measured by the equipment they use to do the job.",
+      "lifeStage": "Working life, and hardest in the jobs people take when other options have closed.",
+      "mechanisms": ["continuous-measurement", "goodhart", "modulation", "counterproductive-institution"],
+      "howItWorks": "The tool used to do the work also records the work, so measurement costs the employer nothing and there is no moment at which it is switched on. Rates are set from the observed distribution of worker performance rather than from a safe standard, so the rate rises as workers get faster. The worker experiences it as an alert or a score rather than as an instruction, which removes the point at which an instruction could be refused.",
+      "scale": "60 per cent of workers in England and Wales reported experiencing surveillance and monitoring at work in December 2021, up from 53 per cent in 2020, in a BritainThinks survey of 2,209 workers commissioned by the TUC. The French data protection regulator found Amazon France Logistique's scanner-derived indicators, including an alert for any scan under 1.25 seconds and an inactivity alert at 10 minutes, applied to several thousand employees.",
+      "visibility": "disclosed",
+      "individualRecourse": "Weak. In the EU and UK a worker can make a subject access request and can complain to a data protection regulator, and the CNIL case shows that route can work, but it took a complaint filed in 2019 to reach a decision in December 2023. In the US at-will employment states there is generally no legal limit on employer monitoring of work equipment. The realistic individual outcome is to leave.",
+      "collectiveRecourse": "Regulators and legislatures, prompted by unions and worker centres. CNIL fined Amazon France Logistique 32 million euros on 27 December 2023, published 23 January 2024, holding several of the scanner-derived indicators excessive under GDPR. California AB 701, in force 1 January 2022, requires warehouse employers to give workers a written description of any quota and bars quotas that prevent legally required breaks; the California Labor Commissioner cited Amazon $5,901,700 on 18 June 2024 for 59,017 violations at Moreno Valley and Redlands. Proposed Track G slugs: cnil-amazon-france-logistique, california-ab-701.",
+      "rank": 10,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "challenged and limited",
+      "whereItWasStopped": "France, December 2023: CNIL required Amazon France Logistique to stop the sub-1.25-second scan indicator and the 10-minute inactivity indicator and cut data retention, with a 32 million euro fine. California, 18 June 2024: the Labor Commissioner's $5.9 million citation against Amazon under AB 701 for undisclosed quotas at two warehouses. Both are enforcement against a named employer at named sites, which is the shape of stop that exists in this arena. NONE FOUND for a jurisdiction that has prohibited pace measurement itself.",
+      "sources": [
+        {
+          "title": "Délibération SAN-2023-021 du 27 décembre 2023, Amazon France Logistique",
+          "author": "Commission Nationale de l'Informatique et des Libertés",
+          "year": "2023",
+          "kind": "government report",
+          "where": "CNIL restricted committee decision, published 23 January 2024, cnil.fr; summarised by the EDPB"
+        },
+        {
+          "title": "Labor Commissioner cites Amazon $5.9 million for warehouse quota violations",
+          "author": "California Department of Industrial Relations",
+          "year": "2024",
+          "kind": "government report",
+          "where": "DIR news release 2024-46, 18 June 2024, dir.ca.gov"
+        },
+        {
+          "title": "Technology Managing People: the worker experience",
+          "author": "Trades Union Congress",
+          "year": "2022",
+          "kind": "investigation",
+          "where": "TUC report with BritainThinks polling of 2,209 workers in England and Wales, fieldwork December 2021, tuc.org.uk"
+        }
+      ]
+    },
+    {
+      "slug": "insurance-pricing",
+      "arena": "insurance pricing",
+      "whoIsExposed": "Existing customers who renew, who were priced on their predicted willingness to stay rather than on their risk. In practice this concentrated on older customers and on people who do not shop around.",
+      "lifeStage": "Every renewal, so it compounds across a lifetime rather than hitting at one point.",
+      "mechanisms": ["continuous-measurement", "modulation", "legibility"],
+      "howItWorks": "The insurer prices the same risk differently to different customers according to a model of how likely each is to switch. Price rises are applied at renewal, when the customer has already made a decision once and is least likely to reconsider. Because the price is quoted rather than explained, the customer cannot tell whether an increase reflects their risk or their inertia.",
+      "scale": "Before the UK ban, an existing home insurance policyholder paid on average £95.38 more than a new customer for equivalent cover; after the reform the differential nearly halved to £49.17. UK home and motor insurance generated £22.4 billion in gross written premiums in 2024. Source: FCA Evaluation Paper 25/2, July 2025.",
+      "visibility": "invisible to the person",
+      "individualRecourse": "Shopping around, and that is the point of the mechanism rather than a remedy for it. The FCA's own market study found that switching purely to escape price walking imposed costs on both consumers and firms without improving the match between price and risk. The individual can complain to the Financial Ombudsman Service in the UK, but before the rule change there was no rule being broken.",
+      "collectiveRecourse": "Regulation, and this is the best-evidenced stop in the whole file because the regulator evaluated its own intervention afterwards. The FCA banned price walking in home and motor insurance from 1 January 2022 under PS21/5. The FCA's July 2025 evaluation found a statistically significant fall in motor prices attributable to the reform, averaging £6.63 per policy, with a central ten-year estimate of about £1.6 billion against an ex ante forecast of £4.2 billion across both markets. It found no statistically significant effect in the home market. Proposed Track G slug: fca-gipp-price-walking-ban.",
+      "rank": 11,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists.",
+      "contestedness": "partially reversed",
+      "whereItWasStopped": "United Kingdom, 1 January 2022: price walking prohibited in home and motor insurance across the whole market, with a published regulator evaluation in July 2025 confirming a measurable effect in motor and no measurable effect in home. United States: at least thirteen states and the District of Columbia issued bulletins from 2014 to 2015 barring price optimisation in property and casualty ratemaking, including California, Maryland, Ohio, Pennsylvania and Washington. Record the gap between forecast and realised benefit honestly: the £4.2 billion figure was the forecast, and the measured central estimate is £1.6 billion in motor alone with home unproven.",
+      "sources": [
+        {
+          "title": "EP25/2: An evaluation of our general insurance pricing practices remedies",
+          "author": "Financial Conduct Authority",
+          "year": "2025",
+          "kind": "government report",
+          "where": "FCA Evaluation Paper 25/2, July 2025, fca.org.uk/publication/corporate/ep25-2.pdf"
+        },
+        {
+          "title": "PS21/5: General insurance pricing practices market study, final rules",
+          "author": "Financial Conduct Authority",
+          "year": "2021",
+          "kind": "government report",
+          "where": "FCA Policy Statement PS21/5, May 2021, fca.org.uk/publication/policy/ps21-5.pdf"
+        },
+        {
+          "title": "Price Optimization White Paper",
+          "author": "NAIC Casualty Actuarial and Statistical (C) Task Force",
+          "year": "2015",
+          "kind": "government report",
+          "where": "National Association of Insurance Commissioners, adopted 21 November 2015, content.naic.org"
+        }
+      ]
+    },
+    {
+      "slug": "attention-systems",
+      "arena": "the systems that manage attention",
+      "whoIsExposed": "Everyone using a recommender-driven service, and the exposure is not evenly distributed: it falls hardest on people whose alternative uses of time are least defended, which is a description of low income and long hours rather than of youth.",
+      "lifeStage": "Continuous from about the age of eight.",
+      "mechanisms": ["modulation", "continuous-measurement", "goodhart", "radical-monopoly"],
+      "howItWorks": "A ranking system selects what a person sees next by predicting which item will produce the most measured engagement from them specifically. The objective is a proxy for value, not value, so the system optimises the proxy and the gap between the two becomes the product. The person experiences the result as their own preference, because it was assembled from their own past behaviour.",
+      "scale": "UK adults spent an average of 4 hours 30 minutes a day online in 2025, and 51 per cent of that time was on services owned by Alphabet or Meta. 18 to 24 year olds averaged 6 hours 20 minutes. Source: Ofcom, Online Nation 2025, published 10 December 2025. Do not read the time figure as harm on its own; it is a measure of reach, and the harm claim is contested.",
+      "visibility": "visible but unexplained",
+      "individualRecourse": "Weak, and the Dutch litigation is the evidence for saying so rather than an opinion. EU users of very large platforms have had a right to a non-profiling feed since Article 38 of the Digital Services Act applied in 2024, and Meta reset that choice back to the profiled feed whenever a user changed page, closed the app or logged off, which made the right unusable without removing it. Blocking, muting and screen time limits are per-viewer settings that do not change the ranking objective.",
+      "collectiveRecourse": "Two documented stops, both European and both recent. The European Commission opened DSA proceedings against TikTok Lite Rewards on 22 April 2024 and made TikTok's commitment to withdraw the programme from the EU permanently legally binding on 5 August 2024, the first case closed under the DSA. Bits of Freedom v Meta, Amsterdam District Court, 2 October 2025: the first successful collective civil claim under the DSA, ordering Meta to make a user's chosen non-profiling feed persist across sections and sessions within two weeks; Meta implemented the change for Dutch users in January 2026. Proposed Track G slugs: tiktok-lite-rewards-withdrawal, bits-of-freedom-v-meta.",
+      "rank": 12,
+      "rankCriterion": "Irreversibility of a single adverse output: how much of a life one decision forecloses, how long the mark persists, and whether an alternative provider exists. This arena ranks last on that criterion and would rank first on headcount, which is the clearest illustration of why the criterion was chosen. No single output of a recommender forecloses anything, and that is exactly what makes it hard to contest.",
+      "contestedness": "challenged and limited",
+      "whereItWasStopped": "European Union, 5 August 2024: TikTok Lite Rewards permanently withdrawn from the EU under binding DSA commitments, with a further commitment not to launch a circumventing programme. Netherlands, 2 October 2025: Amsterdam District Court ordered Meta to stop resetting users out of their chosen non-profiling feed; implemented for Dutch users in January 2026. Both are recent, both are narrow, and both were won by small organisations rather than by regulators acting alone.",
+      "sources": [
+        {
+          "title": "Commission makes commitments by TikTok to permanently withdraw TikTok Lite Rewards programme from the EU binding",
+          "author": "European Commission",
+          "year": "2024",
+          "kind": "government report",
+          "where": "European Commission press release IP/24/4161, 5 August 2024, and the Article 71 DSA commitments decision"
+        },
+        {
+          "title": "Bits of Freedom v Meta Platforms Ireland, preliminary relief judgment",
+          "year": "2025",
+          "kind": "court record",
+          "where": "Rechtbank Amsterdam, 2 October 2025, kort geding on DSA Articles 25, 27(3) and 38"
+        },
+        {
+          "title": "Online Nation 2025",
+          "author": "Ofcom",
+          "year": "2025",
+          "kind": "government report",
+          "where": "Ofcom, published 10 December 2025, ofcom.org.uk"
+        }
+      ]
+    }
+  ],
+  "_gapsAndCaveats": [
+    "Not attempted in this pass: school discipline and exclusion, child protection risk scoring, energy and utility disconnection, and consumer scoring by data brokers outside the credit bureaus. Each looked substantial and none was worked to the evidentiary standard here.",
+    "The credit scoring entry has the weakest collectiveRecourse evidence in the file. The multistate attorney general settlement is real but the causal link between it and the later medical debt reporting changes was not established from a primary source in this pass, and it is flagged rather than asserted.",
+    "Robodebt is Australian and the SyRI and childcare benefit cases are Dutch. The Dutch material is within scope. The Australian material is outside the stated North Atlantic scope of this round and is included because it is the most completely documented welfare automation failure available, with a Royal Commission, a Federal Court judgment and full refund figures.",
+    "Reported Robodebt monetary totals differ between sources. The Royal Commission and Services Australia figures for refunds are quoted variously as A$746 million and A$751 million, and written-off debt as A$1.751 billion and A$1.76 billion. This file cites the class action components from the Federal Court judgment and the count of 470,000 debts, which is consistent across sources, and records the discrepancy rather than picking a number.",
+    "Every scale figure in this file is paired in the same view with a whereItWasStopped entry, as required by CLAUDE.md reception rule 4. Two entries carry a NONE FOUND inside whereItWasStopped for a specific sub-question while recording a partial stop elsewhere: health coverage (no jurisdiction has prohibited predictive utilisation management) and credit scoring (no jurisdiction has stopped credit scoring itself). Workplace monitoring and hiring each carry a NONE FOUND for the core practice while recording enforcement against named employers.",
+    "Track G had not been run when this file was written. Every Track G slug named in a collectiveRecourse field is a proposal for that track to confirm, create or reject, not a resolved link."
+  ]
+}

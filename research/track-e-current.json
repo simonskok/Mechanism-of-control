@@ -1,0 +1,608 @@
+{
+  "cases": [
+    {
+      "slug": "eu-entry-exit-system-biometric-border",
+      "title": "The EU Entry/Exit System replaces the passport stamp with a biometric record",
+      "years": "2025 to 2026",
+      "location": "European Union and associated Schengen states, 29 countries. This whole file is North Atlantic by default.",
+      "institution": "eu-LISA, the EU Agency for the Operational Management of Large-Scale IT Systems in the Area of Freedom, Security and Justice, operating with national border authorities",
+      "funder": "European Union budget. The exact allocation for the 2025 to 2026 rollout is UNKNOWN.",
+      "mechanisms": ["legibility", "continuous-measurement", "modulation"],
+      "claim": "Crossing an external EU border as a non-EU national is now a biometric database transaction rather than an ink stamp, and the change was made by a regulation passed eight years before it took effect.",
+      "whatHappened": "Regulation (EU) 2017/2226 created the Entry/Exit System in 2017. The Commission set 12 October 2025 as the start of progressive operations, and from that date each participating country had to run the system at at least one border crossing point. The Commission announced that the system became fully operational on 10 April 2026, replacing passport stamping across all 29 countries.",
+      "howItWorked": "At the first crossing the system records the traveller's name, travel document data, facial image and fingerprints, and then the date and place of every subsequent entry and exit. Overstay is no longer something a border guard has to notice from stamps in a passport. It is computed automatically from the record, which means the enforcement of the 90-day short-stay rule stops depending on human attention and becomes continuous.",
+      "whoBoreIt": "Non-EU nationals making short stays in the 29 participating countries. The number of individuals registered since 12 October 2025 is UNKNOWN, and the Commission pages consulted give no crossing figures.",
+      "strongestObjection": "Entry and exit were already recorded by stamping, and biometric checks at EU borders predate the EES through the Visa Information System. On this reading the EES improves the accuracy of a record that already existed rather than creating a new form of monitoring, and automatic overstay detection replaces a discretionary process that was inconsistent and open to bias.",
+      "status": "documented",
+      "trajectory": "expanding",
+      "trajectoryEvidence": "The Commission's own notices mark the direction. On 13 October 2025 it announced the system had gone live at a subset of crossing points, and on 30 March 2026 it announced full operation from 10 April 2026 across all participating countries. The Regulation contains no sunset clause. The scheduled start date of the related ETIAS travel authorisation is UNKNOWN and has moved more than once, so no claim is made about it here.",
+      "sources": [
+        {
+          "title": "Regulation (EU) 2017/2226 establishing an Entry/Exit System (EES)",
+          "year": "2017",
+          "kind": "government report",
+          "where": "Official Journal of the European Union, adopted 30 November 2017, in force 29 December 2017. EUR-Lex, Regulation (EU) 2017/2226"
+        },
+        {
+          "title": "The new Entry/Exit System went live on 12 October",
+          "year": "2025",
+          "kind": "government report",
+          "where": "European Commission, Directorate-General for Migration and Home Affairs, news item dated 13 October 2025, https://home-affairs.ec.europa.eu/news/new-entryexit-system-went-live-12-october-2025-10-13_en"
+        },
+        {
+          "title": "The Entry/Exit System will become fully operational on 10 April 2026",
+          "year": "2026",
+          "kind": "government report",
+          "where": "European Commission, Directorate-General for Migration and Home Affairs, news item dated 30 March 2026, https://home-affairs.ec.europa.eu/news/entryexit-system-will-become-fully-operational-10-april-2026-2026-03-30_en"
+        },
+        {
+          "title": "With start of operation of new EES border control system the EU will strengthen border security and increase efficiency for travellers",
+          "year": "2025",
+          "kind": "government report",
+          "where": "Council of the European Union press release, 11 October 2025, https://www.consilium.europa.eu/en/press/press-releases/2025/10/11/"
+        }
+      ]
+    },
+    {
+      "slug": "uk-online-safety-act-age-assurance",
+      "title": "Ofcom makes age checks a condition of using large parts of the UK internet",
+      "years": "2023 to 2026",
+      "location": "United Kingdom",
+      "institution": "Ofcom, under the Online Safety Act 2023",
+      "funder": "Ofcom is funded by industry fees. The cost borne by services for age assurance is UNKNOWN.",
+      "mechanisms": ["legibility", "continuous-measurement", "modulation"],
+      "claim": "A duty written in 2023 turned identity checking into a routine condition of access to pornography, social media and dating services in one country, and the regulator's own first-year report shows both the scale and the leakage.",
+      "whatHappened": "The Online Safety Act 2023 required services that allow pornography, and services likely to be accessed by children, to use what the Act calls highly effective age assurance. Ofcom's Protection of Children Codes took effect on 25 July 2025. Ofcom published a statutory report on the use of age assurance on 15 July 2026 covering the first six months of the duties.",
+      "howItWorked": "The duty falls on the service, not on the state, so the identity check is performed by the platform or by a third-party age assurance vendor rather than by a government body. Access is conditioned on passing the check, which converts an anonymous act into an authenticated one. The same statutory pattern is running in the United States through state law rather than a regulator, after the Supreme Court upheld Texas HB 1181 in Free Speech Coalition, Inc. v. Paxton on 27 June 2025.",
+      "whoBoreIt": "UK internet users. Ofcom's report records more than 69 million age checks completed across a sample of 32 services in the second half of 2025, a 23-fold increase on the previous six months.",
+      "strongestObjection": "The figures for how many children encounter age checks come from Ofcom's own survey work, and 'encountered a highly effective age check' is a self-reported measure rather than a log. Ofcom is also the body whose regime is being assessed, which is a reason to treat its effectiveness findings as an interested party's account rather than an independent audit. The underlying duty is aimed at a harm that is not in dispute.",
+      "status": "documented",
+      "trajectory": "expanding",
+      "trajectoryEvidence": "Ofcom's July 2026 statutory report records the 23-fold rise in checks, states that all ten of the UK's most popular pornography sites and a majority of the top 100 now have age checks, and records 23 investigations covering 88 adult services with fines issued to seven providers. The same report records where the regime has not reached: 4 per cent of children in the study still reached at least one pornography service with no age assurance, and 33 per cent of first-page Google results and 54 per cent of first-page Bing results led to sites with no checks. Ofcom's stated position is that tougher action is needed, which is an expansion signal rather than a retreat.",
+      "sources": [
+        {
+          "title": "Report on the use of age assurance",
+          "author": "Ofcom",
+          "year": "2026",
+          "kind": "government report",
+          "where": "Ofcom statutory report published 15 July 2026, https://www.ofcom.org.uk/siteassets/resources/documents/online-safety/information-for-industry/age-assurance-report-2026/report-on-the-use-of-age-assurance.pdf"
+        },
+        {
+          "title": "Online Safety Act 2023",
+          "year": "2023",
+          "kind": "government report",
+          "where": "legislation.gov.uk, Online Safety Act 2023 c. 50"
+        },
+        {
+          "title": "Free Speech Coalition, Inc. v. Paxton",
+          "year": "2025",
+          "kind": "court record",
+          "where": "Supreme Court of the United States, No. 23-1122, decided 27 June 2025, 606 U.S. ___ (2025)"
+        },
+        {
+          "title": "Age checks to protect children online",
+          "author": "Ofcom",
+          "year": "2025",
+          "kind": "government report",
+          "where": "Ofcom guidance and implementation page, duties effective 25 July 2025, https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-to-protect-children-online"
+        }
+      ]
+    },
+    {
+      "slug": "uk-live-facial-recognition-national-rollout",
+      "title": "Live facial recognition goes from van-based trials to fixed cameras and a national fleet, with no dedicated statute",
+      "years": "2020 to 2026",
+      "location": "England and Wales, with the largest deployments in London",
+      "institution": "Metropolitan Police Service and other police forces in England and Wales, funded and coordinated by the Home Office",
+      "funder": "Home Office. Reported figures of more than £26 million for a national facial recognition system and £11.6 million for live facial recognition capability come from press reporting on the January 2026 policing white paper and were not read in the primary document.",
+      "mechanisms": ["continuous-measurement", "modulation", "legibility"],
+      "claim": "A policing capability that the Court of Appeal found in 2020 had an inadequate legal framework was expanded from mobile trials to fixed street cameras and a national van fleet without a statute being passed for it.",
+      "whatHappened": "In R (Bridges) v Chief Constable of South Wales Police the Court of Appeal held in August 2020 that the use of live facial recognition was unlawful on data protection and equality grounds and that the legal framework left too much to the discretion of individual officers. Forces revised their policies and continued. In August 2025 the Home Office funded ten live facial recognition vans for seven forces, a policing white paper of 26 January 2026 announced funding for a further forty, and the Metropolitan Police ran a six-month fixed-camera pilot in Croydon from October 2025 to March 2026.",
+      "howItWorked": "A camera compares faces in a public street against a watchlist in real time and alerts an officer on a match. The mechanism is not the arrest but the condition of being continuously compared, which applies to everyone who walks past and not only to people on the list. Moving from vans to street furniture removes the visible marker that a deployment is happening.",
+      "whoBoreIt": "People walking in the deployment areas. The Met reports 173 arrests across 24 operations in the Croydon pilot, from roughly 470,000 people who passed the cameras with one false alert. Press reporting of Met figures for September 2024 to September 2025 gives 962 arrests from 203 deployments and 2,077 alerts including ten false positive identifications; those figures are reported rather than read from a Met publication and should be checked before use.",
+      "strongestObjection": "Bridges did not hold that live facial recognition is inherently unlawful, and forces changed their policies in response to it. The accuracy objection is much weaker than it was: on the Met's own account the Croydon pilot produced one false alert against roughly 470,000 people passing the cameras. If the technology is accurate and the watchlists are lawful, the case against it rests on the absence of a statute rather than on demonstrated harm.",
+      "status": "documented",
+      "trajectory": "expanding",
+      "trajectoryEvidence": "Three specific expansion steps, each with a date. Ten Home Office-funded vans to seven forces in August 2025, a further forty announced in the policing white paper of 26 January 2026, which would put at least one van in every force in England and Wales, and the Met's statement of 13 May 2026 that it will continue using static cameras in Croydon as part of regular deployments. No sunset clause and no dedicated statute exist for any of it.",
+      "sources": [
+        {
+          "title": "Met makes one arrest every 35 minutes during live facial recognition pilot",
+          "author": "Metropolitan Police Service",
+          "year": "2026",
+          "kind": "government report",
+          "where": "Metropolitan Police news release, 13 May 2026, https://news.met.police.uk/news/met-makes-one-arrest-every-35-minutes-during-live-facial-recognition-pilot-509256"
+        },
+        {
+          "title": "R (Bridges) v Chief Constable of South Wales Police",
+          "year": "2020",
+          "kind": "court record",
+          "where": "Court of Appeal (Civil Division), [2020] EWCA Civ 1058, judgment 11 August 2020"
+        },
+        {
+          "title": "England: Police use of facial recognition technology growing rapidly",
+          "author": "Statewatch",
+          "year": "2026",
+          "kind": "investigation",
+          "where": "Statewatch news, June 2026, https://statewatch.org/news/2026/june/england-police-use-of-facial-recognition-technology-growing-rapidly/"
+        },
+        {
+          "title": "Cops get more facial recognition vans as UK bets big on AI policing",
+          "year": "2026",
+          "kind": "investigation",
+          "where": "The Register, 28 January 2026, reporting on the Home Office policing white paper published 26 January 2026, https://www.theregister.com/2026/01/28/tech_in_policing_white_paper/"
+        }
+      ]
+    },
+    {
+      "slug": "dwp-eligibility-verification-and-fraud-model",
+      "title": "The DWP gets statutory access to bank data and runs a fraud model its own analysis found skewed",
+      "years": "2024 to 2026",
+      "location": "United Kingdom",
+      "institution": "Department for Work and Pensions",
+      "funder": "HM Treasury. The vendor and contract value for the machine learning model are UNKNOWN.",
+      "mechanisms": ["continuous-measurement", "legibility", "goodhart"],
+      "claim": "Two things arrived together: a statutory power to make banks screen claimants' accounts, and a machine learning referral model that the department's own fairness analysis found produced statistically significant disparities across every protected characteristic it tested.",
+      "whatHappened": "The Public Authorities (Fraud, Error and Recovery) Act 2025 received Royal Assent on 2 December 2025 as 2025 c. 28. It lets the DWP issue Eligibility Verification Notices requiring banks and other financial institutions to examine data on specified accounts, and lets it recover debts by direct deduction from bank accounts without going to court. Separately, a DWP fairness analysis carried out in February 2024 on a machine learning model used to vet Universal Credit advances, released under freedom of information rules, found a statistically significant referral and outcome disparity for all the protected characteristics analysed, which included age, disability, marital status and nationality.",
+      "howItWorked": "The bank becomes the screening agent. The DWP does not have to inspect anyone; it requires the institution to run a check against its own records and report back, which converts routine banking into a compliance surface. On the model side the referral decision is made before any human looks at a case, so the disparity enters at the point where the claimant is selected for suspicion rather than at the point where a decision is made about them.",
+      "whoBoreIt": "Working-age benefit claimants in the UK, and people with DWP debts who are not on benefits or in PAYE employment. The number of accounts subject to Eligibility Verification Notices is UNKNOWN because the DWP said it would take a test and learn approach from 2026. The number of Universal Credit advances passed through the model is UNKNOWN.",
+      "strongestObjection": "An Eligibility Verification Notice returns a narrow set of specified details rather than bank statements, the Act is accompanied by codes of practice which were consulted on, and it provides for independent review. On the model, referral disparity is not the same as discrimination: if the underlying rate of incorrect claims genuinely differs between groups, a disparity in referrals can be a correct result rather than a biased one. The DWP has not published data that would settle which it is.",
+      "status": "documented",
+      "trajectory": "expanding",
+      "trajectoryEvidence": "The Act received Royal Assent on 2 December 2025 and is being brought into force in stages, with the Public Authorities (Fraud, Error and Recovery) Act 2025 (Commencement No. 3) Regulations 2026, SI 2026/601. The government's response to the DWP codes of practice consultation states that implementation of the measures begins from 2026. Nothing in the record consulted shows a provision that has been dropped or a power that has lapsed.",
+      "sources": [
+        {
+          "title": "Public Authorities (Fraud, Error and Recovery) Act 2025",
+          "year": "2025",
+          "kind": "government report",
+          "where": "legislation.gov.uk, 2025 c. 28, Royal Assent 2 December 2025, https://www.legislation.gov.uk/ukpga/2025/28"
+        },
+        {
+          "title": "The Public Authorities (Fraud, Error and Recovery) Act 2025 (Commencement No. 3) Regulations 2026",
+          "year": "2026",
+          "kind": "government report",
+          "where": "legislation.gov.uk, SI 2026/601, https://www.legislation.gov.uk/uksi/2026/601/made"
+        },
+        {
+          "title": "Government response to the Public Authorities (Fraud, Error and Recovery) Act DWP Codes of Practice consultation",
+          "author": "Department for Work and Pensions",
+          "year": "2026",
+          "kind": "government report",
+          "where": "GOV.UK consultation outcome, https://www.gov.uk/government/consultations/public-authorities-fraud-error-and-recovery-act-dwp-codes-of-practice-verifying-eligibility-in-the-welfare-system-obtaining-information-and-recovering/outcome/"
+        },
+        {
+          "title": "DWP fairness analysis reveals bias in AI fraud detection system",
+          "year": "2024",
+          "kind": "investigation",
+          "where": "Computer Weekly, article 366616983, reporting a DWP fairness analysis of February 2024 released under freedom of information rules, https://www.computerweekly.com/news/366616983/"
+        },
+        {
+          "title": "Eligibility Verification Measure in the Public Authorities Bill, Information Commissioner's response",
+          "author": "Information Commissioner's Office",
+          "year": "2025",
+          "kind": "government report",
+          "where": "ICO policy views, https://ico.org.uk/about-the-ico/what-we-do/ico-policy-views/eligibility-verification-measure-in-the-public-authorities-bill-information-commissioners-response/"
+        }
+      ]
+    },
+    {
+      "slug": "amazon-warehouse-quota-enforcement",
+      "title": "California fines Amazon for quotas it did not disclose, and the quota system carries on",
+      "years": "2021 to 2025",
+      "location": "United States, principally California and Washington state",
+      "institution": "Amazon.com Services LLC, regulated by the California Labor Commissioner's Office, Washington Department of Labor and Industries, and federal OSHA",
+      "funder": "Amazon. The penalties are paid by Amazon.",
+      "mechanisms": ["continuous-measurement", "goodhart", "legibility"],
+      "claim": "Algorithmic work quotas in warehouses are now regulated in two US states by disclosure rules and by injury law, and enforcement has produced fines and a national ergonomics settlement without stopping the quotas.",
+      "whatHappened": "California's Warehouse Quotas law, Assembly Bill 701, was enacted in 2021 and requires warehouse employers to give written notice of any quota and of the discipline attached to missing it. On 18 June 2024 the California Labor Commissioner cited Amazon $5,901,700 for 59,017 violations at its Moreno Valley and Redlands warehouses over the period 20 October 2023 to 9 March 2024. On 19 December 2024 the US Department of Labor announced a corporate-wide settlement with Amazon requiring ergonomic measures across its facilities, resolving multiple cases arising from inspections at ten facilities begun in summer 2022.",
+      "howItWorked": "The rate is set and tracked by the system rather than by a supervisor, and in the cited California warehouses it was a peer-to-peer comparison, which means the target moves with the fastest workers rather than being fixed. A worker cannot contest a number they were never told. AB 701 attacks exactly that: it does not cap the quota, it requires the employer to state it.",
+      "whoBoreIt": "Warehouse workers at the two named California sites over the cited period, and workers at the ten facilities covered by the OSHA settlement. Individual headcounts at each site are UNKNOWN.",
+      "strongestObjection": "The California citation is for failure to give written notice, not for the quotas themselves. On that reading it is evidence that a disclosure law was breached rather than that the pace of work harmed anyone, and the separate ergonomics cases were settled without an admission. Amazon has publicly disputed the characterisation of its productivity metrics; the current status of any appeal against the June 2024 citation is UNKNOWN.",
+      "status": "documented",
+      "trajectory": "contested",
+      "trajectoryEvidence": "Enforcement is real and repeated: a $5.9 million state citation in June 2024 and a corporate-wide federal ergonomics settlement in December 2024. Neither prohibits algorithmic quotas. Washington state extended quota disclosure to large distribution centres from 1 July 2024. The direction is towards more regulation of the same practice rather than towards its removal or its unimpeded growth, which is what 'contested' means here.",
+      "sources": [
+        {
+          "title": "Labor Commissioner cites Amazon $5.9 million for violations of the Warehouse Quotas law",
+          "author": "California Department of Industrial Relations",
+          "year": "2024",
+          "kind": "government report",
+          "where": "DIR news release 2024-46, 18 June 2024, https://dir.ca.gov/DIRNews/2024/2024-46.html"
+        },
+        {
+          "title": "US Department of Labor announces settlement with Amazon requiring corporate-wide ergonomic measures at facilities across the country",
+          "author": "Occupational Safety and Health Administration",
+          "year": "2024",
+          "kind": "government report",
+          "where": "OSHA national news release, 19 December 2024, https://www.osha.gov/news/newsreleases/osha-national-news-release/20241219"
+        },
+        {
+          "title": "Assembly Bill 701, Warehouse distribution centers",
+          "year": "2021",
+          "kind": "government report",
+          "where": "California Legislature, 2021 session, codified at California Labor Code sections 2100 to 2112"
+        },
+        {
+          "title": "Another Amazon fulfillment center cited for unsafe conditions",
+          "author": "Washington State Department of Labor and Industries",
+          "year": "2023",
+          "kind": "government report",
+          "where": "L&I news release 23-19, https://www.lni.wa.gov/news-events/article/23-19"
+        }
+      ]
+    },
+    {
+      "slug": "eu-platform-work-algorithmic-management",
+      "title": "Spain forces Glovo to employ its riders, and the EU directive that generalises the rule has not yet landed anywhere",
+      "years": "2021 to 2026",
+      "location": "Spain, and the European Union",
+      "institution": "Glovoapp23 SL, owned by Delivery Hero SE, regulated by Spain's Ministry of Labour and Social Economy; and the EU Platform Work Directive",
+      "funder": "Delivery Hero SE. The fines are paid by Glovo.",
+      "mechanisms": ["modulation", "continuous-measurement", "credential-laundering"],
+      "claim": "A single national law, enforced with fines and a criminal case, made one platform abandon the self-employment model outright, and the EU-wide version of the same rule has a transposition deadline that most member states have not met.",
+      "whatHappened": "Real Decreto-ley 9/2021 of 11 May 2021 amended Spain's Workers' Statute to presume an employment relationship for delivery work managed by algorithm, and to require employers to inform worker representatives of the parameters, rules and instructions behind algorithms affecting working conditions. It took effect on 12 August 2021. On 2 December 2024, one day before its founder was due before a Barcelona judge, Glovo announced it was abandoning the self-employment model and would hire around 15,000 riders in Spain as employees.",
+      "howItWorked": "The algorithmic transparency clause and the employment presumption attack the same thing from two sides. The presumption removes the legal category that made algorithmic direction cheap, and the transparency clause makes the parameters of that direction disclosable to union representatives. Enforcement was by labour inspection and fines, with Eurofound recording a 57 million euro fine in January 2023 and further sanctions in January 2024; press reporting gives a total of about 205 million euros across the fines, a figure that should be checked against the inspectorate's own records before use.",
+      "whoBoreIt": "Around 15,000 riders in Spain, per Glovo's own December 2024 announcement, who moved from self-employment to employment. Rider numbers under the previous model in earlier years are UNKNOWN.",
+      "strongestObjection": "Glovo's own stated reason was legal uncertainty and contingent liabilities, not a change of view about algorithmic management, and the company had operated the disputed model for more than three years after the law took effect. A law that takes three years, a criminal referral and nine figures of fines to be obeyed by one company is weak evidence that the instrument works. It is also possible the outcome reflects Spanish labour inspection capacity rather than the statute.",
+      "status": "documented",
+      "trajectory": "contested",
+      "trajectoryEvidence": "Two facts point in opposite directions and both are dated. Directive (EU) 2024/2831 on improving working conditions in platform work was adopted in October 2024 with a transposition deadline of 2 December 2026, which would generalise algorithmic management duties across the EU. As of May 2026, reporting by iuslaboris and Remote Work Europe records that the directive is not yet in national enforcement in any member state, with only Italy holding a draft legislative decree under parliamentary review and Spain running a consultation opened in late April 2026. Whether the Spanish outcome generalises depends on transposition, and transposition is late.",
+      "sources": [
+        {
+          "title": "Real Decreto-ley 9/2021, de 11 de mayo, por el que se modifica el texto refundido de la Ley del Estatuto de los Trabajadores",
+          "year": "2021",
+          "kind": "government report",
+          "where": "Boletin Oficial del Estado no. 113, 12 May 2021, BOE-A-2021-7840, in force 12 August 2021"
+        },
+        {
+          "title": "Glovo, Delivery Hero to hire riders as employees to avoid legal uncertainties",
+          "author": "Eurofound",
+          "year": "2024",
+          "kind": "dataset",
+          "where": "Eurofound Platform Economy Database, record 110197, citing El Pais, 2 December 2024"
+        },
+        {
+          "title": "Directive (EU) 2024/2831 on improving working conditions in platform work",
+          "year": "2024",
+          "kind": "government report",
+          "where": "Official Journal of the European Union, transposition deadline 2 December 2026, EUR-Lex summary at https://eur-lex.europa.eu/EN/legal-content/summary/working-conditions-in-platform-work.html"
+        },
+        {
+          "title": "EU Platform Work Directive: which countries have implemented?",
+          "year": "2026",
+          "kind": "investigation",
+          "where": "Ius Laboris, insight page, transposition tracker consulted for status as at May 2026, https://iuslaboris.com/insights/eu-platform-work-directive-which-countries-have-implemented/"
+        }
+      ]
+    },
+    {
+      "slug": "nyc-local-law-144-aedt-audits",
+      "title": "The first bias audit law for hiring algorithms produced two complaints and no penalties in two years",
+      "years": "2023 to 2025",
+      "location": "United States, New York City",
+      "institution": "New York City Department of Consumer and Worker Protection, enforcing Local Law 144 of 2021",
+      "funder": "New York City. Employers pay for their own audits; typical audit costs are UNKNOWN.",
+      "mechanisms": ["goodhart", "legibility", "patronage-boundary"],
+      "claim": "The world's first mandatory bias audit rule for hiring algorithms was written so that the employer decides whether it is in scope, and a state audit found the city issued no penalties in the first two years.",
+      "whatHappened": "Local Law 144 took effect on 5 July 2023 and requires an automated employment decision tool used for hiring or promotion in New York City to be independently audited each year for race and gender bias, with the audit published and a notice posted to candidates. A study presented at the 2024 ACM Conference on Fairness, Accountability and Transparency used 155 student investigators to check 391 employers, and found 18 posted audit reports and 13 posted transparency notices. The New York State Comptroller's audit 2024-N-6, issued on 2 December 2025 and covering July 2023 to June 2025, found the enforcing agency received two complaints, issued no penalties, and identified one potential non-compliance in a sample of 32 companies where the auditors found at least 17.",
+      "howItWorked": "The duty is triggered only when an employer determines that its tool substantially assists a hiring decision, which puts the scope question inside the regulated party. Enforcement then runs on complaints, and a candidate who never sees the tool has nothing to complain about. The result is a law that is on the books, is cited internationally as a model, and generates almost no enforcement.",
+      "whoBoreIt": "Job applicants in New York City. The number screened by automated employment decision tools is UNKNOWN, which is itself a finding, because the law does not require anyone to count them.",
+      "strongestObjection": "Low audit counts may mean few tools are genuinely in scope rather than that employers are hiding. The law targets a narrow category, and a firm using a resume parser that a recruiter overrides may correctly conclude it is outside the definition. The Comptroller's audit criticises the agency's process, not employers' behaviour, and does not establish that discriminatory tools are in use.",
+      "status": "documented",
+      "trajectory": "contested",
+      "trajectoryEvidence": "The direction of the mechanism and the direction of the safeguard diverge, and both are dated. The Comptroller's audit of 2 December 2025 records two complaints and no penalties over two years, and finds the agency lacks the technical expertise to evaluate the tools. No evidence was found that the law has been repealed or narrowed, and no evidence was found that enforcement has increased. Whether other US states have since enacted comparable duties was not verified in this pass and is recorded as UNKNOWN.",
+      "sources": [
+        {
+          "title": "Enforcement of Local Law 144, Automated Employment Decision Tools",
+          "author": "Office of the New York State Comptroller",
+          "year": "2025",
+          "kind": "government report",
+          "where": "Audit 2024-N-6, issued 2 December 2025, covering July 2023 to June 2025, https://www.osc.ny.gov/state-agencies/audits/2025/12/02/enforcement-local-law-144-automated-employment-decision-tools"
+        },
+        {
+          "title": "Null Compliance: NYC Local Law 144 and the challenges of algorithm accountability",
+          "year": "2024",
+          "kind": "peer-reviewed",
+          "where": "Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency, DOI 10.1145/3630106.3658998; preprint arXiv:2406.01399"
+        },
+        {
+          "title": "Automated Employment Decision Tools (AEDT)",
+          "author": "New York City Department of Consumer and Worker Protection",
+          "year": "2023",
+          "kind": "government report",
+          "where": "NYC.gov guidance page for Local Law 144 of 2021, enforcement from 5 July 2023, https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page"
+        }
+      ]
+    },
+    {
+      "slug": "lawrence-kansas-student-monitoring",
+      "title": "A school district drops Gaggle, keeps the monitoring, and switches vendor",
+      "years": "2023 to 2026",
+      "location": "United States, Lawrence, Kansas",
+      "institution": "Unified School District 497, Lawrence Public Schools, using Gaggle and then ManagedMethods",
+      "funder": "The school district. The Gaggle contract was reported at $162,000, signed in 2023; the district said the switch to ManagedMethods saves about $35,000 a year.",
+      "mechanisms": ["continuous-measurement", "counterproductive-institution", "legibility"],
+      "claim": "Student monitoring software scanned the files of student journalists in a public school district, and when the contract was dropped under litigation the district replaced it with a different product doing the same thing.",
+      "whatHappened": "Lawrence Public Schools contracted with Gaggle in 2023 to scan student files, email and accounts on district devices. In August 2025 nine current and former Lawrence High School and Free State High School students, including student journalists who had reported on Gaggle and artists whose work the system flagged and removed, sued the district in federal court alleging First and Fourth Amendment violations. The district let the Gaggle contract lapse in summer 2025 and adopted ManagedMethods, reportedly without a board vote, and the litigation continued.",
+      "howItWorked": "The scanning applies to everything a student produces on a district account, so a student newspaper draft about the monitoring software is itself scanned by the monitoring software. The chilling effect is not the punishment but the knowledge that the file is read before anyone decides whether it matters. Switching vendors changes the invoice and not the surface being watched.",
+      "whoBoreIt": "Students in the district. The number of accounts scanned is UNKNOWN. Nine students are named plaintiffs.",
+      "strongestObjection": "Districts adopt these tools under real pressure over self-harm and threats, and no court has yet held that the monitoring itself is unconstitutional. The rulings so far in this case concern the Kansas Open Records Act, not the Fourth Amendment. The district described the vendor change as a cost saving, and on that account it is procurement rather than evasion.",
+      "status": "partially documented",
+      "trajectory": "contested",
+      "trajectoryEvidence": "There is a real reversal and a real continuation, and they are the same event. The Gaggle contract ended in summer 2025 and was not renewed, which is a cancellation. ManagedMethods was adopted for the 2025 to 2026 year offering the same monitoring of student devices, files, email and accounts, which is not a reduction in monitoring. On the litigation side, Judge Kathryn H. Vratil found in April 2026 that the district violated the Kansas Open Records Act and in June 2026 ordered it to pay over $113,000 in the students' attorney fees, so the cost of the case to the district is rising. The federal docket number was not obtained in this pass and is UNKNOWN.",
+      "sources": [
+        {
+          "title": "Order finding Kansas Open Records Act violation, and subsequent attorney fee order",
+          "year": "2026",
+          "kind": "court record",
+          "where": "United States District Court for the District of Kansas, Judge Kathryn H. Vratil, rulings of April 2026 and June 2026. Case name and docket number UNKNOWN; reported by Lawrence Journal-World, 10 April 2026 and 4 June 2026"
+        },
+        {
+          "title": "Lawrence schools have ceased using Gaggle AI monitoring software, court documents say",
+          "year": "2025",
+          "kind": "investigation",
+          "where": "The Lawrence Times, 28 October 2025, https://lawrencekstimes.com/2025/10/28/usd497-ceased-gaggle-court-docs/"
+        },
+        {
+          "title": "School district replaces Gaggle with new monitoring software without board vote or mention in court filings",
+          "year": "2025",
+          "kind": "investigation",
+          "where": "Lawrence Journal-World, 30 October 2025, https://www2.ljworld.com/news/schools/2025/oct/30/"
+        },
+        {
+          "title": "In federal lawsuit, students allege Lawrence school district's AI surveillance tool violates their rights",
+          "year": "2025",
+          "kind": "investigation",
+          "where": "The Lawrence Times, 1 August 2025, https://lawrencekstimes.com/2025/08/01/usd497-gaggle-lawsuit-filed/"
+        }
+      ]
+    },
+    {
+      "slug": "moj-homicide-prediction-project",
+      "title": "The Ministry of Justice built a homicide prediction model, then renamed it",
+      "years": "2023 to 2025",
+      "location": "United Kingdom, England",
+      "institution": "Ministry of Justice, with the Home Office, Greater Manchester Police and the Metropolitan Police",
+      "funder": "Ministry of Justice. Budget UNKNOWN.",
+      "mechanisms": ["legibility", "continuous-measurement", "goodhart"],
+      "claim": "A UK government department developed a model to predict who will commit murder, using police and justice records on between 100,000 and 500,000 people, and it became public only through freedom of information requests.",
+      "whatHappened": "The Homicide Prediction Project was commissioned in January 2023 under the Sunak government. Statewatch obtained the Ministry of Justice Data Protection Impact Assessment, an internal risk assessment and the data sharing agreement with Greater Manchester Police under freedom of information rules and published them in April 2025. The data sharing agreement records that data on between 100,000 and 500,000 people was shared by Greater Manchester Police, and the project had by then been renamed to a title about sharing data to improve risk assessment.",
+      "howItWorked": "The model is built on records that already encode who the police have previously stopped, arrested and charged, which means the training data reflects past enforcement patterns as much as past offending. Statewatch's objection is that people from deprived areas, and Black people in particular, are over-represented in that data, so a model trained on it will reproduce the pattern and present it as a prediction about individuals.",
+      "whoBoreIt": "Between 100,000 and 500,000 people whose records were shared by Greater Manchester Police, per the data sharing agreement. Whether any individual has been subject to an operational decision based on the model is UNKNOWN.",
+      "strongestObjection": "On the Ministry's account this is research using data already lawfully held on people with convictions, not an operational tool, and research on risk factors for serious violence is a normal and defensible activity for a justice department. A data protection impact assessment existing at all is evidence of process rather than of concealment. The renaming may be accurate rather than evasive if the work moved from prediction to risk assessment.",
+      "status": "partially documented",
+      "trajectory": "unclear",
+      "trajectoryEvidence": "The direction genuinely cannot be read from the record. Reading one: it stays a research project, the report is published or quietly shelved, and nothing is deployed. Reading two: it becomes an operational risk tool inside probation or policing, which is the normal path for justice analytics. What would distinguish them: publication of the research output, an entry for the tool in the UK Algorithmic Transparency Recording Standard, a procurement notice, or a data protection impact assessment naming a live operational use. None of those was found in this pass.",
+      "sources": [
+        {
+          "title": "Ministry of Justice Data Protection Impact Assessment, internal risk assessment, and data sharing agreement with Greater Manchester Police for the Homicide Prediction Project",
+          "year": "2025",
+          "kind": "government report",
+          "where": "Documents released under the Freedom of Information Act and published by Statewatch, April 2025, https://statewatch.org/news/2025/april/uk-ministry-of-justice-secretly-developing-murder-prediction-system/"
+        },
+        {
+          "title": "Data use and the Homicide Prediction Project, a Freedom of Information request to Ministry of Justice",
+          "year": "2025",
+          "kind": "government report",
+          "where": "WhatDoTheyKnow, request 'data_use_and_the_homicide_predic', https://www.whatdotheyknow.com/request/data_use_and_the_homicide_predic"
+        },
+        {
+          "title": "UK's MoJ testing algorithms to uncover future killers",
+          "year": "2025",
+          "kind": "investigation",
+          "where": "The Register, 9 April 2025, https://www.theregister.com/on-prem/2025/04/09/uks_moj_testing_algorithms_to_uncover_future_killers/"
+        }
+      ]
+    },
+    {
+      "slug": "chicago-shotspotter-decommissioned",
+      "title": "Chicago decommissions ShotSpotter after its own inspector general found 9 per cent of alerts produced evidence of a gun crime",
+      "years": "2018 to 2024",
+      "location": "United States, Chicago, Illinois",
+      "institution": "Chicago Police Department, contracting with SoundThinking, formerly ShotSpotter Inc.",
+      "funder": "City of Chicago. Reported total spending since 2018 is about $49 million, including a three-year contract reported at $33 million in 2018 and an extension reported at about $10 million in 2023. These figures come from Chicago press reporting; the contract documents were not read.",
+      "mechanisms": ["continuous-measurement", "goodhart", "counterproductive-institution"],
+      "claim": "A city audit measured what an acoustic gunshot detection system actually produced, the number was low, and six years and a mayoral election later the city turned it off.",
+      "whatHappened": "The Chicago Office of Inspector General published an analysis on 24 August 2021 of 50,176 ShotSpotter alerts from 1 January 2020 to 31 May 2021. Of the 41,830 alerts that logged a police response, 4,556, or 9.1 per cent, produced evidence that a gun-related criminal offence had occurred, and 2.1 per cent were linked to investigatory stops. Mayor Brandon Johnson announced in February 2024 that the contract would not be renewed, the contract was extended to 22 September 2024 after a council fight, and the Chicago Police Department stopped using the technology at 00:01 on 23 September 2024.",
+      "howItWorked": "The OIG's second finding is the more interesting one: the presence of the technology changed police behaviour. Officers responding to a ShotSpotter alert arrived expecting a gun, which shaped how they treated people in the area, so a system justified as a detector also worked as a modifier of the encounter. That is a measurement changing the thing it measures.",
+      "whoBoreIt": "Residents of the Chicago police districts where the sensors were installed, which were concentrated on the South and West Sides. The exact resident population covered is UNKNOWN.",
+      "strongestObjection": "SoundThinking disputes the OIG's methodology and argues that arrest yield is the wrong measure, because the system's value lies in faster medical response to shooting victims and in detecting gunfire nobody calls in. Removal in Chicago was also a campaign promise delivered by one mayor over council opposition, so it reflects local politics rather than a settled finding about the technology. The vendor holds contracts in many other US cities and the technology was not banned.",
+      "status": "documented",
+      "trajectory": "being rolled back",
+      "trajectoryEvidence": "This is a rollback in one city and should not be read as more. The specific evidence is a decommissioning with a timestamp: the Chicago Police Department ceased use at 00:01 on 23 September 2024 after the extended contract expired, and the city issued a public statement about not renewing. What does not follow is national reversal: no evidence was found that SoundThinking lost contracts elsewhere as a result, and the city said it would run a request for information for alternatives.",
+      "sources": [
+        {
+          "title": "The Chicago Police Department's Use of ShotSpotter Technology",
+          "author": "Chicago Office of Inspector General",
+          "year": "2021",
+          "kind": "government report",
+          "where": "Chicago OIG, published 24 August 2021, https://igchicago.org/publications/cpd-use-of-shotspotter-technology/"
+        },
+        {
+          "title": "City of Chicago Statement on ShotSpotter Contract",
+          "author": "Office of the Mayor, City of Chicago",
+          "year": "2024",
+          "kind": "government report",
+          "where": "City of Chicago press release, January 2024, https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2024/january/city-of-chicago-statement-on-shotspotter-contract.html"
+        },
+        {
+          "title": "Chicago police no longer using ShotSpotter gunshot detection technology",
+          "year": "2024",
+          "kind": "investigation",
+          "where": "ABC7 Chicago, 23 September 2024, https://abc7chicago.com/post/chicago-police-longer-using-shotspotter-gunshot-detection-technology-mayor-brandon-johnson-exploring-other-options/15342988/"
+        },
+        {
+          "title": "City Inks ShotSpotter Contract Extension Through September",
+          "year": "2024",
+          "kind": "investigation",
+          "where": "Block Club Chicago, 16 February 2024, https://blockclubchicago.org/2024/02/16/city-inks-shotspotter-contract-extension-through-september/"
+        }
+      ]
+    },
+    {
+      "slug": "ftc-rite-aid-facial-recognition-ban",
+      "title": "The FTC bans a national pharmacy chain from using facial recognition for five years",
+      "years": "2012 to 2028",
+      "location": "United States, nationwide",
+      "institution": "Rite Aid Corporation, regulated by the Federal Trade Commission",
+      "funder": "Rite Aid paid for the system. The system vendor is UNKNOWN from the sources consulted.",
+      "mechanisms": ["continuous-measurement", "legibility", "modulation"],
+      "claim": "A US regulator prohibited a named company from using a named technology for a fixed period and required it to delete the models built from the data, which is the sharpest form of rollback found in this pass.",
+      "whatHappened": "The FTC alleged that between 2012 and 2020 Rite Aid used facial recognition in hundreds of stores to identify people it deemed likely to shoplift, and that the system falsely flagged customers who were then accused of wrongdoing by staff. The FTC's complaint states the technology was deployed disproportionately in stores in neighbourhoods with large Black, Latino and Asian populations. On 19 December 2023 the FTC announced a settlement barring Rite Aid from using facial recognition for surveillance for five years and requiring deletion of the images, the derived data and the models.",
+      "howItWorked": "The order attacks the residue as well as the practice. Deleting the photographs would leave the trained model intact and the capability recoverable, so the order requires the models and algorithms derived from those images to go too. That is a rare instance of a remedy matching the actual shape of the asset.",
+      "whoBoreIt": "Rite Aid customers in the hundreds of stores where the system ran between 2012 and 2020. The number of people falsely flagged is UNKNOWN; the FTC complaint describes instances rather than a count.",
+      "strongestObjection": "Rite Aid had already stopped using the system in 2020, three years before the order. On that reading the FTC banned a practice that had ended, and the order's practical effect is a deletion requirement plus a five-year prohibition on resuming. It binds one company, creates no rule for anyone else, and was settled without an admission of liability.",
+      "status": "documented",
+      "trajectory": "being rolled back",
+      "trajectoryEvidence": "The prohibition is specific, dated and time-limited: five years from the December 2023 order, so it expires in December 2028 unless renewed. The deletion requirement is the durable part. Against that, this is one company under one consumer protection statute and no general US rule on retail facial recognition was found in this pass, so the rollback is narrow and has an end date written into it.",
+      "sources": [
+        {
+          "title": "Rite Aid Banned from Using AI Facial Recognition After FTC Says Retailer Deployed Technology without Reasonable Safeguards",
+          "author": "Federal Trade Commission",
+          "year": "2023",
+          "kind": "government report",
+          "where": "FTC press release, 19 December 2023, https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without"
+        },
+        {
+          "title": "FTC v. Rite Aid Corporation, complaint and stipulated order for permanent injunction",
+          "year": "2023",
+          "kind": "court record",
+          "where": "Federal Trade Commission matter 2023190, case page at https://www.ftc.gov/legal-library/browse/cases-proceedings/2023190-rite-aid-corporation-ftc-v"
+        },
+        {
+          "title": "Coming face to face with Rite Aid's allegedly unfair use of facial recognition technology",
+          "author": "Federal Trade Commission",
+          "year": "2023",
+          "kind": "government report",
+          "where": "FTC business guidance blog, December 2023, https://www.ftc.gov/business-guidance/blog/2023/12/coming-face-face-rite-aids-allegedly-unfair-use-facial-recognition-technology"
+        }
+      ]
+    },
+    {
+      "slug": "uk-digital-id-programme-cancelled",
+      "title": "The UK announces a mandatory digital ID, makes it voluntary, then cancels it",
+      "years": "2025 to 2026",
+      "location": "United Kingdom",
+      "institution": "UK government. The delivery department changed during the period and the final position is UNKNOWN.",
+      "funder": "HM Treasury. Press reporting citing Downing Street gives a programme cost of £1.8 billion over three years, and the same reporting records a dispute over whether the money was ever allocated.",
+      "mechanisms": ["legibility", "emergency-permanence", "radical-monopoly"],
+      "claim": "A national digital identity scheme announced as compulsory for the right to work was reduced to voluntary within four months and cancelled within ten, after a petition of close to three million signatures.",
+      "whatHappened": "On 26 September 2025 the Prime Minister announced a digital ID scheme, with a commitment to make it mandatory for right-to-work checks by the end of the parliament. On 15 January 2026 the government confirmed it was dropping the mandatory element, and on 10 March 2026 it published a consultation on a voluntary scheme which closed on 5 May 2026. On 21 July 2026 the government announced the programme was cancelled, and Downing Street stated that a tax cut on electricity bills was being funded from the cancellation.",
+      "howItWorked": "The right-to-work check was the lever. Making a credential compulsory for employment does not require making it compulsory for citizens, because the employer becomes the enforcement point, and a person who cannot produce it cannot be hired. Removing the right-to-work mandate removed the mechanism, and what remained was a voluntary credential with a weaker case for existing at all.",
+      "whoBoreIt": "Nobody was enrolled compulsorily, because the mandate never came into force. The petition against the scheme attracted close to three million signatures, described in reporting as among the largest in British parliamentary history.",
+      "strongestObjection": "The cancellation followed a change of Prime Minister, so it may be a political inheritance being discarded rather than a scheme defeated on its merits. The UK also retains digital right-to-work checks, digital immigration status and GOV.UK One Login, so the identity infrastructure did not disappear; a universal credential was dropped while the components continued. Reading this as a public victory over a control mechanism overstates what was reversed.",
+      "status": "partially documented",
+      "trajectory": "being rolled back",
+      "trajectoryEvidence": "Three dated retreats in the same direction. The mandatory element was dropped on 15 January 2026 and reported to Parliament, the Home Affairs Committee reported on the scheme under the title 'Mandatory to manageable', and the programme was cancelled on 21 July 2026 with the saving publicly reallocated. Caveat on sourcing: the primary documents, the House of Commons Library briefing CBP-10369, the Hansard record of 15 January 2026 and the Lords statement of 21 July 2026, returned HTTP 403 to the fetch tool in this pass and were not read directly. The cancellation is therefore sourced to press reporting plus the existence of those parliamentary records, and should be confirmed against Hansard before publication.",
+      "sources": [
+        {
+          "title": "Digital ID in the UK",
+          "author": "House of Commons Library",
+          "year": "2026",
+          "kind": "government report",
+          "where": "Research briefing CBP-10369, https://commonslibrary.parliament.uk/research-briefings/cbp-10369/. Not read directly; the page returned HTTP 403."
+        },
+        {
+          "title": "Digital ID, Commons debate",
+          "year": "2026",
+          "kind": "government report",
+          "where": "Hansard, House of Commons, 15 January 2026, https://hansard.parliament.uk/commons/2026-01-15/debates/04B89325-7FA2-4541-946D-6E5571AEAAE4/DigitalID"
+        },
+        {
+          "title": "Mandatory to manageable: the government's plans for digital ID",
+          "author": "House of Commons Home Affairs Committee",
+          "year": "2026",
+          "kind": "government report",
+          "where": "HC 986, Session 2025-26, https://publications.parliament.uk/pa/cm5901/cmselect/cmhaff/986/report.html. Not read directly; the page returned HTTP 403."
+        },
+        {
+          "title": "UK government scraps plans for digital ID cards after millions of Brits opposed",
+          "year": "2026",
+          "kind": "investigation",
+          "where": "TechCrunch, 21 July 2026, https://techcrunch.com/2026/07/21/uk-government-scraps-plans-for-digital-id-cards-after-millions-of-brits-opposed/"
+        }
+      ]
+    },
+    {
+      "slug": "amsterdam-smart-check-welfare-algorithm",
+      "title": "Amsterdam built a welfare fraud algorithm by the book and stopped it because it could not show it was not discriminating",
+      "years": "2019 to 2023",
+      "location": "Netherlands, Amsterdam",
+      "institution": "City of Amsterdam, built in house with a Deloitte contract for part of the work",
+      "funder": "City of Amsterdam. Roughly 500,000 euros of internal development, which the city described as an estimate because the work was done in house, plus a 35,000 euro Deloitte contract.",
+      "mechanisms": ["legibility", "continuous-measurement", "goodhart"],
+      "claim": "A city that did every recommended fairness practice, including bias testing, external review, an explainable model and a public code repository, still could not make the system stop discriminating, and it withdrew the system rather than ship it.",
+      "whatHappened": "Amsterdam began designing Smart Check in 2019 to decide which welfare applications should get extra scrutiny. Testing in May 2022 found the model was nearly twice as likely to wrongly flag applicants with a non-Western nationality and 14 per cent more likely to wrongly flag men, and the team reweighted the data. In the live pilot from March to November 2023, covering around 1,600 welfare applications, the bias reappeared in a different shape, wrongly flagging Dutch nationals, women and applicants with children more often, and the responsible alderman stopped the pilot in late November 2023.",
+      "howItWorked": "The model was an explainable boosting machine using fifteen characteristics with demographic fields such as gender and nationality deliberately left out. Leaving them out did not remove the pattern, because other features carried the same information. The city also found the model was flagging more applicants than intended and was no better than a human caseworker at picking the cases that warranted scrutiny.",
+      "whoBoreIt": "Around 1,600 welfare applicants in Amsterdam during the pilot. Whether any of them suffered a delayed or refused payment as a result is UNKNOWN from the sources consulted.",
+      "strongestObjection": "Stopping a pilot is what pilots are for, so this is a governance process working rather than a reversal of a deployed system. Amsterdam also published documentation and code, which is why the failure is visible at all, and cities that publish less would not generate this record. Nothing here shows that Amsterdam stopped scrutinising welfare applicants; it stopped using this model to choose which ones.",
+      "status": "documented",
+      "trajectory": "being rolled back",
+      "trajectoryEvidence": "The pilot was halted in late November 2023 by the responsible city official, Rutger Groot Wassink, on the stated ground that the city could not say the system was not discriminating, and the reporting published in June 2025 records that it was not resumed. The reversal is narrow: one model, one city, one pilot. The Netherlands offers a second dated instance in the same direction, the DUO student grant fraud checks, suspended in July 2023 after journalism by NOS and Investico, confirmed as indirectly discriminatory by a PwC report in March 2024, followed by a government apology and compensation to around 10,000 students; that case was not written up here and is a candidate for its own entry.",
+      "sources": [
+        {
+          "title": "Inside Amsterdam's high-stakes experiment to create fair welfare AI",
+          "year": "2025",
+          "kind": "investigation",
+          "where": "MIT Technology Review, 11 June 2025, with Lighthouse Reports and Trouw, https://www.technologyreview.com/2025/06/11/1118233/amsterdam-fair-welfare-ai-discriminatory-algorithms-failure/"
+        },
+        {
+          "title": "City of Amsterdam Smart Check bias testing documents and pilot evaluation",
+          "year": "2022",
+          "kind": "government report",
+          "where": "Internal City of Amsterdam bias testing of May 2022 and pilot analysis of 2023, obtained and quoted by Lighthouse Reports and MIT Technology Review. Not read directly by this pass."
+        },
+        {
+          "title": "Profiled without protection, students' experiences with DUO's fraud detection system",
+          "author": "Amnesty International Netherlands",
+          "year": "2024",
+          "kind": "investigation",
+          "where": "Amnesty International Nederland research briefing, November 2024, https://www.amnesty.nl/content/uploads/2024/11/Amnesty-2024-Profiled-without-protection-research-briefing-DUO-1.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "eu-ai-act-high-risk-deferral",
+      "title": "The EU delays the AI Act's high-risk rules by more than two years while the prohibitions stay in force",
+      "years": "2024 to 2028",
+      "location": "European Union",
+      "institution": "European Commission, European Parliament and Council of the European Union",
+      "funder": "Not applicable. The lobbying spend behind the deferral is UNKNOWN.",
+      "mechanisms": ["patronage-boundary", "emergency-permanence", "goodhart"],
+      "claim": "The safeguard was rolled back, not the deployment. The AI Act's obligations on high-risk systems were postponed by a later regulation, while the outright prohibitions and the transparency duties remained in force.",
+      "whatHappened": "Regulation (EU) 2024/1689, the AI Act, entered into force in 2024 with a staged timetable. The prohibitions in Article 5 became applicable on 2 February 2025 and the transparency duties in Article 50 have applied since 2 August 2026. The Digital Omnibus on AI, Regulation (EU) 2026/1744, was published in the Official Journal on 24 July 2026 and entered into force on 27 July 2026, deferring the obligations for stand-alone high-risk systems under Annex III to 2 December 2027 and for AI embedded in regulated products under Annex I to 2 August 2028.",
+      "howItWorked": "The deferral does not repeal anything, which is what makes it hard to see. The prohibited practices list stays, including the Article 5(1)(d) ban on assessing or predicting the risk that a person will commit a criminal offence based solely on profiling or personality traits. What moves is the compliance regime for the much larger category of high-risk uses in employment, education, credit, essential services, migration and law enforcement, which is where most deployed systems sit.",
+      "whoBoreIt": "People subject to high-risk AI systems in the EU during the extra period. Numbers are UNKNOWN. The named beneficiaries are providers and deployers who gain roughly two more years before conformity assessment applies.",
+      "strongestObjection": "A delay is not a repeal, and the stated reason is documented and plausible: the harmonised technical standards, the notified bodies and the national supervisory infrastructure the timetable assumed were not ready by late 2025. Applying a conformity assessment regime with no conformity assessment bodies would have produced a paper exercise. The Article 5 prohibitions and the Article 50 transparency duties are in force and unaffected, so the strongest parts of the Act still bind.",
+      "status": "documented",
+      "trajectory": "being rolled back",
+      "trajectoryEvidence": "The rolled-back thing is the regulation, not the systems, and this entry should be read that way. Two dated instruments. Regulation (EU) 2026/1744 moved the Annex III high-risk date to 2 December 2027 and the Annex I date to 2 August 2028. In the United States the same pattern ran in Colorado: SB 24-205 was postponed from 1 February 2026 to 30 June 2026 by SB 25B-004, signed 28 August 2025, a federal court paused its enforcement on 27 April 2026, and SB 26-189, signed on 14 May 2026, repealed and replaced it with a narrower notice-based framework effective 1 January 2027. The Colorado dates come from law firm alerts and the Colorado General Assembly bill pages and were not read from the enrolled bills, so treat them as needing a check.",
+      "sources": [
+        {
+          "title": "Regulation (EU) 2026/1744, the Digital Omnibus on AI",
+          "year": "2026",
+          "kind": "government report",
+          "where": "Official Journal of the European Union, published 24 July 2026, in force 27 July 2026, https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng"
+        },
+        {
+          "title": "Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence, the AI Act",
+          "year": "2024",
+          "kind": "government report",
+          "where": "Official Journal of the European Union, EUR-Lex, Regulation (EU) 2024/1689, Article 5 prohibitions applicable 2 February 2025"
+        },
+        {
+          "title": "SB24-205 Consumer Protections for Artificial Intelligence, and SB25B-004 Increase Transparency for Algorithmic Systems",
+          "year": "2025",
+          "kind": "government report",
+          "where": "Colorado General Assembly bill pages, https://leg.colorado.gov/bills/sb24-205 and https://leg.colorado.gov/bills/sb25b-004"
+        },
+        {
+          "title": "As of February 2025: Harmful AI applications prohibited in the EU",
+          "author": "AlgorithmWatch",
+          "year": "2025",
+          "kind": "investigation",
+          "where": "AlgorithmWatch, https://algorithmwatch.org/en/ai-act-prohibitions-february-2025/"
+        }
+      ]
+    }
+  ]
+}

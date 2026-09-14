@@ -1,0 +1,485 @@
+{
+  "track": "G",
+  "question": "For each mechanism, has anyone refused it, limited it, evaded it, litigated it, regulated it or reversed it? Who, when, what did it cost them, and what actually changed?",
+  "generated": "2026-09-14",
+  "notes": "North Atlantic by default. Every entry carries at least two sources and at least one primary. Where a figure could not be established in this pass it is marked UNKNOWN rather than estimated. Durability is weighted deliberately toward reversal, because reversal is under-reported and carries more information than a win still holding.",
+  "capabilities": [
+    {
+      "slug": "uc-test-free-admissions",
+      "mechanism": "credential-laundering",
+      "kind": "legal challenge",
+      "who": "Kawika Smith and other California high school students, represented by Public Counsel and the Equal Justice Society, suing the Regents of the University of California in Alameda County Superior Court.",
+      "years": "2019 to 2025",
+      "whatTheyDid": "The students sued the Regents in December 2019, arguing that requiring SAT and ACT scores discriminated against low-income, Black, Latino and disabled applicants. In May 2020 the Regents voted to phase the tests out but planned to keep using them for two more admissions cycles. The plaintiffs then won a preliminary injunction in Alameda County Superior Court in September 2020 barring every UC campus from accepting the scores at all.",
+      "outcome": "A settlement reached in May 2021 made the University test-free rather than test-optional through at least 2025, so UC would not look at an SAT or ACT score even if an applicant sent one. The settlement agreement is public. Source: Smith v. Regents of the University of California, settlement agreement and release of all claims, Public Counsel.",
+      "cost": "Eighteen months of litigation carried without a fee award. Under the settlement each side bore its own attorneys' fees and expenses, so the plaintiffs' lawyers absorbed the whole cost of the case. The plaintiffs were also arguing against the University's own Academic Senate task force on standardized testing, which had reported in 2020 in favour of keeping the tests.",
+      "durability": "partially reversed",
+      "replicability": "Needed a public university system reachable by state law, a state court willing to enjoin an admissions policy mid-cycle, and lawyers able to work for eighteen months without being paid. Private universities are not reachable by that route, which is one reason the reversal started at private institutions. From early 2024 Dartmouth, Yale, Brown, Cornell, Harvard, Caltech, the University of Texas at Austin, the University of Tennessee system and the University of Wisconsin-Madison all reinstated the requirement.",
+      "scale": "All undergraduate campuses of the University of California, the largest selective public university system in the United States. The number of applicants covered per cycle is UNKNOWN in the sources checked here.",
+      "sources": [
+        {
+          "title": "Smith v. Regents of the University of California, settlement agreement and release of all claims",
+          "year": "2021",
+          "kind": "court record",
+          "where": "https://publiccounsel.org/wp-content/uploads/2021/12/Smith-v-UC-Regents_SETTLEMENT-AGREEMENT.pdf"
+        },
+        {
+          "title": "Judge issues preliminary injunction to bar SAT, ACT scores in UC admissions",
+          "year": "2020",
+          "kind": "investigation",
+          "where": "Daily Bruin, https://dailybruin.com/2020/09/01/judge-issues-preliminary-injunction-to-bar-sat-act-scores-in-uc-admissions"
+        },
+        {
+          "title": "Top colleges restore SAT requirements, rolling back pandemic policies",
+          "year": "2024",
+          "kind": "investigation",
+          "where": "The Washington Times, https://www.washingtontimes.com/news/2024/may/29/top-colleges-restore-sat-requirements-rolling-back/"
+        }
+      ]
+    },
+    {
+      "slug": "brown-williamson-documents-ucsf",
+      "mechanism": "manufactured-consent",
+      "kind": "disclosure",
+      "who": "Merrell Williams Jr, a paralegal at the Louisville law firm Wyatt, Tarrant and Combs, which was doing document work for Brown and Williamson Tobacco, and Professor Stanton Glantz at the University of California, San Francisco, who published what Williams took.",
+      "years": "1988 to 1998",
+      "whatTheyDid": "Williams was hired in 1988 to read and code internal Brown and Williamson documents for litigation. From Christmas 1988 he began copying the ones showing the company knew nicotine was addictive. After he was laid off in 1992 the papers reached Stanton Glantz at UCSF, who deposited them in the university library and published an analysis of them.",
+      "outcome": "Brown and Williamson sued the Regents of the University of California in San Francisco Superior Court to get the documents removed from the library. The court found a very strong public interest in access and the company lost on appeal. The papers became the founding collection of what is now the UCSF Industry Documents Library, which is open to anyone.",
+      "cost": "Williams was sued by Brown and Williamson and litigated against in federal court, including Brown and Williamson Tobacco Corp. v. Williams, 62 F.3d 408 (D.C. Cir. 1995). He was placed under court orders restricting what he could say about the documents. He had major heart surgery in 1993 while unemployed and without the income the job had provided.",
+      "durability": "holding",
+      "replicability": "Needed an insider with lawful access to the material, a university willing to take the legal risk of publishing stolen documents, and a court that treated public health as outweighing the company's claims over them. The last condition is the rare one, and it is not available where the material is covered by a criminal secrecy statute rather than by civil privilege.",
+      "scale": "The number of pages Williams took is UNKNOWN in the sources checked here. The collection he seeded is now part of a public library used by researchers worldwide.",
+      "sources": [
+        {
+          "title": "Brown & Williamson Tobacco Corp. v. Williams, 62 F.3d 408",
+          "year": "1995",
+          "kind": "court record",
+          "where": "United States Court of Appeals for the D.C. Circuit, https://law.justia.com/cases/federal/appellate-courts/F3/62/408/535000/"
+        },
+        {
+          "title": "UCSF Brown and Williamson Collection",
+          "kind": "archive",
+          "where": "UCSF Industry Documents Library, https://www.industrydocuments.ucsf.edu/tobacco/collections/ucsf-brown-williamson-collection/"
+        },
+        {
+          "author": "Glantz, Slade, Bero, Hanauer and Barnes",
+          "title": "The Cigarette Papers",
+          "year": "1996",
+          "kind": "book",
+          "where": "University of California Press, https://publishing.cdlib.org/ucpressebooks/public/book/the-cigarette-papers.html"
+        }
+      ]
+    },
+    {
+      "slug": "ldh-etat-durgence-qpc",
+      "mechanism": "emergency-permanence",
+      "kind": "legal challenge",
+      "who": "La Ligue des droits de l'Homme, which raised a priority constitutional question against the French state of emergency and had it referred to the Conseil constitutionnel by the Conseil d'Etat.",
+      "years": "2015 to 2021",
+      "whatTheyDid": "France declared a state of emergency on 14 November 2015 under the law of 3 April 1955. The Ligue des droits de l'Homme challenged article 11, which let prefects order searches without a judge and copy anything held on a computer found during the search. The Conseil d'Etat referred the question on 18 January 2016 and the Conseil constitutionnel ruled a month later.",
+      "outcome": "Decision no. 2016-536 QPC of 19 February 2016 declared the power to copy data found during an administrative search unconstitutional. It upheld the searches themselves. That is the whole of what was won.",
+      "cost": "The narrowness of the win is the cost, and the parallel challenges failed. On 11 December 2015 the Conseil d'Etat upheld the house arrest of environmental activists confined around the COP21 summit in the Domenjoud cases. Joel Domenjoud waited until 16 May 2024 for the European Court of Human Rights to find a violation of his freedom of movement, and his brother Cedric lost outright after nine years.",
+      "durability": "reversed since",
+      "replicability": "Needed a standing civil liberties organisation with the right to raise a priority constitutional question and a Conseil d'Etat willing to refer it. That route exists in France and in any system with abstract constitutional review. It does not stop a legislature re-enacting the same power in ordinary law, which is exactly what happened: the state of emergency ended on 1 November 2017 after six extensions, the law of 30 October 2017 moved the search power into ordinary law as visites domiciliaires, and the law of 30 July 2021 made those measures permanent. The emergency ended and the powers stayed.",
+      "scale": "The state of emergency covered metropolitan France for nearly two years, from 14 November 2015 to 1 November 2017. The number of administrative searches carried out under it is UNKNOWN in the sources checked here; parliamentary control figures were published at the time and were not verified in this pass.",
+      "sources": [
+        {
+          "title": "Decision no. 2016-536 QPC of 19 February 2016, Ligue des droits de l'homme (Perquisitions et saisies administratives dans le cadre de l'etat d'urgence)",
+          "year": "2016",
+          "kind": "court record",
+          "where": "Conseil constitutionnel, https://www.conseil-constitutionnel.fr/en/decision/2016/2016536QPC.htm"
+        },
+        {
+          "title": "Domenjoud c. France, judgment of 16 May 2024, Fifth Section",
+          "year": "2024",
+          "kind": "court record",
+          "where": "European Court of Human Rights, HUDOC, https://hudoc.echr.coe.int/eng?i=001-233902"
+        },
+        {
+          "title": "Assignations a residence prononcees a l'occasion de la COP 21 dans le cadre de l'etat d'urgence",
+          "year": "2015",
+          "kind": "court record",
+          "where": "Conseil d'Etat, https://conseil-etat.fr/actualites/assignations-a-residence-prononcees-a-l-occasion-de-la-cop-21-dans-le-cadre-de-l-etat-d-urgence"
+        },
+        {
+          "title": "Loi n. 2021-998 du 30 juillet 2021 relative a la prevention d'actes de terrorisme et au renseignement",
+          "year": "2021",
+          "kind": "government report",
+          "where": "Legifrance"
+        }
+      ]
+    },
+    {
+      "slug": "section-215-bulk-collection-ended",
+      "mechanism": "emergency-permanence",
+      "kind": "disclosure",
+      "who": "Edward Snowden, an NSA contractor employed by Booz Allen Hamilton, and the civil liberties organisations that litigated and lobbied after his disclosures, principally the American Civil Liberties Union and the Electronic Frontier Foundation.",
+      "years": "2013 to 2026",
+      "whatTheyDid": "In June 2013 Snowden gave journalists documents showing the NSA was collecting the telephone records of most Americans under section 215 of the USA PATRIOT Act. Section 215 had been passed as an emergency measure in October 2001 with a sunset clause and had been renewed repeatedly ever since. Litigation and a public campaign followed.",
+      "outcome": "The USA FREEDOM Act of 2015 ended the bulk telephone records programme. Section 215 itself lapsed on 15 March 2020 when Congress failed to agree a reauthorisation, and the business records power reverted to its narrower pre-2001 form, limited to common carriers, public accommodation facilities, physical storage facilities and vehicle rental facilities. It has not been restored.",
+      "cost": "Snowden was charged under the Espionage Act, left the United States in 2013 and has not returned. In a separate civil suit in the Eastern District of Virginia the government obtained a final judgment in 2020 taking more than $5.2 million in proceeds from his memoir and 56 paid speeches, with a constructive trust over any further earnings from them.",
+      "durability": "partially reversed",
+      "replicability": "Needed an insider with access who was willing to lose his country, and litigating organisations already in place to use what he produced. Almost nobody can pay that price, which is why this route is rare rather than normal. The separate authority, section 702 of FISA, was reauthorised in April 2024 for two years and then lapsed on 12 June 2026 after Congress again failed to agree; whether it returns is UNKNOWN.",
+      "scale": "The bulk telephone records programme covered the call records of most American telephone subscribers. A precise figure is UNKNOWN in the sources checked here.",
+      "sources": [
+        {
+          "title": "United States obtains final judgment and permanent injunction against Edward Snowden",
+          "year": "2020",
+          "kind": "government report",
+          "where": "United States Department of Justice, https://www.justice.gov/archives/opa/pr/united-states-obtains-final-judgment-and-permanent-injunction-against-edward-snowden"
+        },
+        {
+          "title": "Section 215 Expired: Year in Review 2020",
+          "year": "2020",
+          "kind": "investigation",
+          "where": "Electronic Frontier Foundation, https://www.eff.org/deeplinks/2020/12/section-215-expired-year-review-2020"
+        },
+        {
+          "title": "Three provisions of the USA PATRIOT Act expired",
+          "kind": "investigation",
+          "where": "ZwillGen, https://www.zwillgen.com/privacy/3-lapsed-usa-patriot-act-amendments/"
+        },
+        {
+          "title": "Victory! 702 has Expired!",
+          "year": "2026",
+          "kind": "investigation",
+          "where": "Electronic Frontier Foundation, https://www.eff.org/deeplinks/2026/06/victory-702-has-expired"
+        }
+      ]
+    },
+    {
+      "slug": "uber-robo-firing-amsterdam",
+      "mechanism": "continuous-measurement",
+      "kind": "legal challenge",
+      "who": "Worker Info Exchange and the App Drivers and Couriers Union, acting for named Uber and Ola drivers based in Great Britain and Portugal, in the Amsterdam courts.",
+      "years": "2020 to 2024",
+      "whatTheyDid": "Drivers deactivated by Uber's automated fraud detection asked for their data and for the logic behind the decision, using their access rights under the GDPR. The Amsterdam District Court largely refused in March 2021. They appealed, and the appeal was heard as three linked cases covering robo-firing, access to Uber data and access to Ola data.",
+      "outcome": "On 4 April 2023 the Amsterdam Court of Appeal held that the drivers were entitled to information about the automated decision making that dismissed them, including the profiling used and meaningful information about the logic, so that they could challenge it. The court also held that secret worker profiling and management assessments are personal data that must be disclosed. Uber and Ola were ordered to provide information about automated decisions on work allocation and pay.",
+      "cost": "Three years of litigation in a foreign jurisdiction, paid for by a small union and a non-profit, on behalf of drivers who had already lost their income. Uber then did not comply. In a later ruling the Amsterdam District Court ordered Uber to pay 584,000 euros in accrued penalties, with 4,000 euros for each further day of non-compliance, and the drivers still had not been given the logic of the decision that fired them.",
+      "durability": "holding",
+      "replicability": "Needed the GDPR, a Dutch forum because Uber's European entity is established in Amsterdam, and an organisation willing to litigate for years on behalf of people who cannot. Every worker covered by EU data protection law has the same right on paper. The penalty stage shows what the right is worth in practice when a company would rather pay than explain.",
+      "scale": "The judgments concerned a small number of named drivers, four in the robo-firing case, six in the Uber access case and three in the Ola case. The number of drivers deactivated by the same systems is UNKNOWN.",
+      "sources": [
+        {
+          "title": "Amsterdam Court of Appeal decision in Uber case, 4 April 2023",
+          "year": "2023",
+          "kind": "court record",
+          "where": "Eurofound Platform Economy Repository, https://apps.eurofound.europa.eu/platformeconomydb/amsterdam-court-of-appeal-decision-in-uber-case-110150"
+        },
+        {
+          "title": "Amsterdam Court upholds appeal in algorithmic decision-making test case: Drivers v Uber and Ola",
+          "year": "2023",
+          "kind": "investigation",
+          "where": "Fountain Court Chambers, https://fountaincourt.uk/2023/04/amsterdam-court-upholds-appeal-in-algorithmic-decision-making-test-case-drivers-v-uber-and-ola/"
+        },
+        {
+          "title": "Uber ordered to pay 584,000 euros for failure to comply with court order in robo-firing case",
+          "kind": "investigation",
+          "where": "Worker Info Exchange, https://www.workerinfoexchange.org/post/uber-ordered-to-pay-584-000-for-failure-to-comply-with-court-order-in-robo-firing-case"
+        }
+      ]
+    },
+    {
+      "slug": "garfield-map-test-boycott",
+      "mechanism": "continuous-measurement",
+      "kind": "refusal",
+      "who": "The teaching staff of Garfield High School in Seattle Public Schools, who voted unanimously to refuse, joined by staff at six other Seattle schools and supported by statements from eleven more.",
+      "years": "2013",
+      "whatTheyDid": "On 9 January 2013 nineteen Garfield teachers held a press conference to announce that the faculty would no longer administer the Measures of Academic Progress test, on the ground that it did not match what they taught and was being used to judge them. Six other Seattle schools joined the refusal. About 600 students opted out of the winter tests.",
+      "outcome": "Superintendent Jose Banda convened a task force and in May 2013 announced that the MAP test would be optional for Seattle high schools. The refusal changed district policy in four months.",
+      "cost": "Banda issued a written directive to Seattle principals that any teacher who refused to administer the MAP would be placed on a ten-day suspension without pay. The staff worked under that threat from January to May 2013. No teacher was in the end suspended, so the cost was carried as risk rather than paid in money, and the fact that it was never imposed is part of why the refusal held.",
+      "durability": "unknown",
+      "replicability": "Needed a whole staff to move at once, so that disciplining the refusers would have meant closing the school, plus a union and parents willing to back them. A single teacher refusing would simply have been suspended. This is the ordinary shape of a refusal that works, it is cheap, and it is far more representative than litigation.",
+      "scale": "Seattle Public Schools. About 600 students opted out of the winter 2013 tests. The May 2013 change covered district high schools only, not elementary and middle schools. What Seattle Public Schools does now is UNKNOWN in the sources checked here.",
+      "sources": [
+        {
+          "title": "Garfield High School teachers in Seattle, Washington boycott Measures of Academic Progress (MAP) test, 2012-2013",
+          "kind": "archive",
+          "where": "Global Nonviolent Action Database, Swarthmore College, https://nvdatabase.swarthmore.edu/content/garfield-high-school-teachers-seattle-washington-boycott-measures-academic-progress-map-test"
+        },
+        {
+          "title": "District threatens suspensions, Seattle teachers continue test boycott",
+          "year": "2013",
+          "kind": "investigation",
+          "where": "KUOW, https://archive.kuow.org/news/2013-01-24/district-threatens-suspensions-seattle-teachers-continue-test-boycott"
+        },
+        {
+          "title": "Seattle test boycott: our destination is not on the MAP",
+          "year": "2013",
+          "kind": "investigation",
+          "where": "Rethinking Schools, https://rethinkingschools.org/articles/action-education-seattle-test-boycott-our-destination-is-not-on-the-map-2/"
+        }
+      ]
+    },
+    {
+      "slug": "basaglia-law-180",
+      "mechanism": "counterproductive-institution",
+      "kind": "institutional redesign",
+      "who": "Franco Basaglia, director of the psychiatric hospitals at Gorizia and then Trieste, the Psichiatria Democratica network he founded, and the Italian Parliament, which passed Law 180 on 13 May 1978.",
+      "years": "1961 to 2000",
+      "whatTheyDid": "Basaglia took over the asylum at Gorizia in 1961 and began unlocking wards and abolishing physical restraint. He moved to Trieste in 1971 and closed the asylum there, replacing it with community centres. Law 180 of 13 May 1978 then barred new admissions to psychiatric hospitals across Italy and required community services in their place.",
+      "outcome": "The Italian psychiatric hospital population fell from 78,538 in 1978 to 7,704 in 1998, and the state asylum system was finished by 2000. No new psychiatric hospitals were built. Italy remains the clearest case of a country abolishing the psychiatric hospital by statute rather than by attrition.",
+      "cost": "Basaglia was charged with manslaughter twice, after patients he had released killed relatives, and was cleared both times. The reform also had a cost borne by patients: Law 180 did not fund the community services it required, and provision has been uneven between Italian regions ever since. Anyone using this case has to hold both facts at once.",
+      "durability": "partially reversed",
+      "replicability": "Needed a director with statutory control of an institution, roughly a decade of demonstrating the alternative in one city before asking for a law, and a parliament that would legislate. The weakness is visible in Trieste itself: a service that depends on a regional administration can be cut back by the next one. Law 180 has not been repealed and the asylums have not reopened, but the Trieste service, a WHO collaborating centre, has been reduced since the 2018 change of regional government in Friuli Venezia Giulia, and clinicians published a warning in The Lancet Psychiatry in 2021 titled Save Trieste's mental health system.",
+      "scale": "78,538 people were in Italian psychiatric hospitals in 1978. 7,704 remained in 1998. Compulsory admissions fell from more than 20,000 in 1978 to fewer than 9,000 in 2015.",
+      "sources": [
+        {
+          "title": "Legge 13 maggio 1978, n. 180 (Basaglia Law)",
+          "year": "1978",
+          "kind": "government report",
+          "where": "Gazzetta Ufficiale della Repubblica Italiana"
+        },
+        {
+          "title": "Forty years without mental hospitals in Italy",
+          "year": "2018",
+          "kind": "peer-reviewed",
+          "where": "International Journal of Mental Health Systems, https://ijmhs.biomedcentral.com/articles/10.1186/s13033-018-0223-1"
+        },
+        {
+          "author": "Badano, Valentina",
+          "title": "The Basaglia Law. Returning dignity to psychiatric patients: the historical, political and social factors that led to the closure of psychiatric hospitals in Italy in 1978",
+          "year": "2024",
+          "kind": "peer-reviewed",
+          "where": "History of Psychiatry, https://journals.sagepub.com/doi/10.1177/0957154X231224650"
+        },
+        {
+          "title": "Save Trieste's mental health system",
+          "year": "2021",
+          "kind": "peer-reviewed",
+          "where": "The Lancet Psychiatry, https://www.thelancet.com/journals/lanpsy/article/piis2215-0366(21)00252-2/fulltext"
+        }
+      ]
+    },
+    {
+      "slug": "massachusetts-right-to-repair-2020",
+      "mechanism": "radical-monopoly",
+      "kind": "regulatory limit",
+      "who": "Massachusetts voters and the independent repair trade that funded the ballot campaign, then the Massachusetts Attorney General defending the resulting law against the Alliance for Automotive Innovation in federal court.",
+      "years": "2020 to 2025",
+      "whatTheyDid": "Question 1 on the November 2020 Massachusetts ballot required carmakers to give owners and independent garages access to the telematics data their cars send back to the manufacturer. It passed with 74.9 per cent of the vote. The carmakers' trade body sued the state the same month to stop it taking effect.",
+      "outcome": "On 11 February 2025 Judge Denise Casper of the United States District Court for the District of Massachusetts upheld the law and rejected the argument that federal vehicle safety law preempted it. Alliance for Automotive Innovation v. Campbell, docket 1:20-cv-12090 (D. Mass.). The law stands.",
+      "cost": "The carmakers spent about $26 million campaigning against the measure and lost at the ballot box, then delayed it in court for more than four years. Judge Douglas Woodlock held a trial in 2021 and issued no decision for roughly three and a half years, so the law went largely unenforced for most of its life. The cost also landed on the people the measure was meant to help: rather than open the data, Subaru disabled its Starlink telematics on Massachusetts cars from the 2022 model year in November 2021 and Kia did the same with Kia Connect, so Massachusetts buyers lost remote start and stolen vehicle tracking, services sold elsewhere for roughly $100 to $150 a year.",
+      "durability": "partially reversed",
+      "replicability": "Needed a state with a citizen ballot initiative, an aftermarket repair industry with enough money to fight a $26 million campaign, and an attorney general willing to defend the result for five years. The manufacturers' answer, withdrawing the feature rather than opening it, is available to them in any jurisdiction and is the response to expect.",
+      "scale": "One state. Question 1 passed with 74.9 per cent of votes cast. The number of vehicles covered is UNKNOWN in the sources checked here.",
+      "sources": [
+        {
+          "title": "Massachusetts Question 1, Right to Repair Law Vehicle Data Access Requirement Initiative (2020), results and campaign finance",
+          "year": "2020",
+          "kind": "dataset",
+          "where": "Ballotpedia, https://ballotpedia.org/Massachusetts_Question_1,_%22Right_to_Repair_Law%22_Vehicle_Data_Access_Requirement_Initiative_(2020)"
+        },
+        {
+          "title": "Alliance for Automotive Innovation v. Healey / Campbell, docket 1:20-cv-12090",
+          "year": "2020",
+          "kind": "court record",
+          "where": "United States District Court for the District of Massachusetts, https://dockets.justia.com/docket/massachusetts/madce/1:2020cv12090/228016"
+        },
+        {
+          "title": "Federal judge upholds Massachusetts automotive right-to-repair law",
+          "year": "2025",
+          "kind": "investigation",
+          "where": "The Boston Globe, https://www.bostonglobe.com/2025/02/11/business/automotive-right-to-repair-federal-judge-approves/"
+        },
+        {
+          "title": "Mass. AG: Subaru disables telematics in 2022 vehicles to comply with state's disputed Right-to-Repair law",
+          "year": "2021",
+          "kind": "investigation",
+          "where": "Repairer Driven News, https://www.repairerdrivennews.com/2021/10/25/mass-ag-subaru-disables-telematics-in-2022-vehicles-to-comply-with-states-disputed-right-to-repair-law/"
+        }
+      ]
+    },
+    {
+      "slug": "uk-identity-cards-repeal",
+      "mechanism": "legibility",
+      "kind": "collective action",
+      "who": "NO2ID, a single-issue campaign founded in 2004, and the coalition government elected in 2010 which repealed the scheme.",
+      "years": "2004 to 2011",
+      "whatTheyDid": "The Identity Cards Act 2006 created a National Identity Register holding fingerprints, facial images and an audit trail of every time a person's identity was checked. NO2ID campaigned against it for six years, including a public pledge by people who said they would refuse to register. The incoming government repealed the Act within seven months of taking office.",
+      "outcome": "The Identity Documents Act 2010 received Royal Assent on 21 December 2010. It cancelled the cards and required the Secretary of State to ensure that all information recorded in the National Identity Register was destroyed within two months. The Register was destroyed by the end of February 2011.",
+      "cost": "Six years of campaigning by an organisation funded by subscriptions. When the win came the money fell on individuals: about 15,000 people had already bought cards at a fee of 30 pounds and the Identity Documents Act 2010 contains no provision for refunding them. Whether any were refunded in practice is UNKNOWN in the sources checked here.",
+      "durability": "partially reversed",
+      "replicability": "Needed a change of government and a scheme that had not yet been made compulsory. A register that is already populated is far harder to destroy than one that is half built, which is the practical argument for objecting early rather than waiting for harm. State identity checking has since returned in a different form: the GOV.UK One Login and GOV.UK ID Check app now handle face and document verification for some HMRC services, and the government ran a People's Panel on Digital ID in 2026. Whether a compulsory scheme follows is UNKNOWN.",
+      "scale": "The Register was designed to cover the adult population of the United Kingdom. About 15,000 cards had been issued when the scheme was cancelled.",
+      "sources": [
+        {
+          "title": "Identity Documents Act 2010 (c. 40), repeal of Identity Cards Act 2006 and destruction of information recorded in the National Identity Register",
+          "year": "2010",
+          "kind": "government report",
+          "where": "legislation.gov.uk, https://www.legislation.gov.uk/ukpga/2010/40/crossheading/repeal-of-identity-cards-act-2006"
+        },
+        {
+          "title": "Identity Documents Bill, explanatory notes, HL Bill 19",
+          "year": "2010",
+          "kind": "government report",
+          "where": "UK Parliament, https://publications.parliament.uk/pa/ld201011/ldbills/019/2011019.pdf"
+        },
+        {
+          "title": "Using the GOV.UK ID Check app",
+          "year": "2026",
+          "kind": "government report",
+          "where": "gov.uk"
+        },
+        {
+          "title": "People's Panel on Digital ID",
+          "year": "2026",
+          "kind": "government report",
+          "where": "gov.uk"
+        }
+      ]
+    },
+    {
+      "slug": "wells-fargo-sales-goals",
+      "mechanism": "goodhart",
+      "kind": "disclosure",
+      "who": "Yesenia Guitron, a Wells Fargo banker in St Helena, California, who reported the practice internally from 2008; E. Scott Reckard of the Los Angeles Times, who published the investigation in December 2013; and Los Angeles City Attorney Mike Feuer, who sued the bank in May 2015.",
+      "years": "2008 to 2025",
+      "whatTheyDid": "Wells Fargo set branch staff daily quotas for selling additional products to each customer, a metric the bank called cross-sell and reported to investors. Staff met the number by opening accounts and credit cards customers had not asked for. Guitron reported it to her branch manager, to human resources and to the bank's ethics line, and was ignored each time.",
+      "outcome": "The Consumer Financial Protection Bureau, the Office of the Comptroller of the Currency and the Los Angeles City Attorney settled with Wells Fargo on 8 September 2016 for $185 million. Five days later the bank announced it was abolishing product sales goals for retail bankers, with the chief executive saying it was doing so to restore customer confidence. Source: CFPB consent order 2016-CFPB-0015.",
+      "cost": "Guitron was fired in 2010 without warning. She sued, lost, and lost again in the Ninth Circuit in 2015, because the court held that sales targets are not illegal even if unreasonable and may still be used to measure performance. That was despite a finding that her belief that fraud was occurring had been objectively reasonable. The bank had by then dismissed about 5,300 employees over the conduct its own quotas produced, so the metric cost the jobs of the people at the bottom of it before it cost anything at the top.",
+      "durability": "partially reversed",
+      "replicability": "Needed an insider who kept reporting after being ignored, a newspaper willing to fund interviews with 35 current and former employees across nine states, and a city attorney with consumer protection powers. The Guitron judgment is the part to carry forward: the insider route on its own does not work, because refusing a quota is not a protected act.",
+      "scale": "About 5,300 employees were dismissed. The number of accounts opened without consent is UNKNOWN in the sources checked here and the figures reported at the time were later revised. The Federal Reserve imposed a cap on the bank's total assets in February 2018 and removed it on 3 June 2025, at which point the bank announced a special employee award; the 2016 CFPB order had already ended in 2021.",
+      "sources": [
+        {
+          "title": "Consent order, In the Matter of Wells Fargo Bank, N.A., 2016-CFPB-0015",
+          "year": "2016",
+          "kind": "government report",
+          "where": "Consumer Financial Protection Bureau, https://files.consumerfinance.gov/f/documents/092016_cfpb_WFBconsentorder.pdf"
+        },
+        {
+          "author": "Reckard, E. Scott",
+          "title": "Wells Fargo's pressure-cooker sales culture comes at a cost",
+          "year": "2013",
+          "kind": "investigation",
+          "where": "Los Angeles Times, December 2013"
+        },
+        {
+          "title": "Yesenia Guitron v. Wells Fargo Bank, No. 13-16023",
+          "year": "2015",
+          "kind": "court record",
+          "where": "United States Court of Appeals for the Ninth Circuit, https://law.justia.com/cases/federal/appellate-courts/ca9/13-16023/13-16023-2015-07-27.html"
+        },
+        {
+          "title": "Federal Reserve Board enforcement action announcement, 3 June 2025, termination of the asset growth restriction on Wells Fargo",
+          "year": "2025",
+          "kind": "government report",
+          "where": "Board of Governors of the Federal Reserve System, https://www.federalreserve.gov/newsevents/pressreleases/enforcement20250603a.htm"
+        }
+      ]
+    },
+    {
+      "slug": "cure-the-nhs-mid-staffordshire",
+      "mechanism": "goodhart",
+      "kind": "collective action",
+      "who": "Julie Bailey, a cafe owner in Stafford whose mother Bella died in Stafford Hospital in 2007, and Cure the NHS, the group of bereaved relatives she formed around her cafe.",
+      "years": "2007 to 2014",
+      "whatTheyDid": "Bailey's mother died at Stafford Hospital in 2007. Bailey gathered accounts from other families in her cafe, covered the walls with their photographs and formed Cure the NHS to demand an inquiry into the trust, which had cut staff while pursuing Foundation Trust status and the four-hour accident and emergency target. The group campaigned for five years against a hospital that was one of the largest employers in the town.",
+      "outcome": "A full public inquiry chaired by Robert Francis QC reported in February 2013 with 290 recommendations, having examined how a trust chasing financial and waiting-time targets produced the opposite of care. Bailey was appointed CBE in the 2014 New Year Honours. Correspondence between Cure the NHS and the regulator Monitor has since been released under freedom of information.",
+      "cost": "Bailey received threatening letters and telephone calls, was abused in the street, and her mother's grave was vandalised. One card thanked her for closing Stafford hospital. Police dropped the harassment investigation for lack of evidence. She left Stafford in 2013.",
+      "durability": "partially reversed",
+      "replicability": "Needed a bereaved relative with the time, a physical place where other families could gather, and five years. The costs were social rather than legal and fell entirely on one person, which is the usual shape when the institution being challenged is the town's largest employer. Target-driven management of the NHS did not end: the four-hour accident and emergency standard remains in force in England.",
+      "scale": "One NHS trust in Staffordshire. The widely quoted figure of 400 to 1,200 excess deaths at Stafford is contested and should not be repeated as established; the number of patients harmed is genuinely disputed.",
+      "sources": [
+        {
+          "author": "Francis, Robert",
+          "title": "Report of the Mid Staffordshire NHS Foundation Trust Public Inquiry",
+          "year": "2013",
+          "kind": "government report",
+          "where": "The Stationery Office, published at gov.uk"
+        },
+        {
+          "title": "Stafford Hospital whistleblower forced out of town by hate campaign",
+          "year": "2013",
+          "kind": "investigation",
+          "where": "Express and Star, https://expressandstar.com/news/2013/05/27/stafford-hospital-whistleblower-forced-out-of-town-by-hate-campaign"
+        },
+        {
+          "title": "FOI: correspondence between Cure the NHS and Monitor regarding Mid Staffordshire NHS Foundation Trust",
+          "kind": "archive",
+          "where": "gov.uk, https://www.gov.uk/government/publications/foi-correspondence-between-cure-the-nhs-and-monitor-regarding-mid-staffordshire-nhs-foundation-trust"
+        }
+      ]
+    },
+    {
+      "slug": "ramparts-nsa-cia-funding",
+      "mechanism": "patronage-boundary",
+      "kind": "disclosure",
+      "who": "Michael Wood, a former National Student Association staff member, and Ramparts magazine under editor Warren Hinckle.",
+      "years": "1966 to 1967",
+      "whatTheyDid": "Wood was told in 1966 by the association's president that its international work was covertly funded by the CIA, a disclosure made to stop him resigning over the secrecy around the accounts. He took the story to Ramparts. On 14 February 1967 Ramparts ran full-page advertisements in the New York Times and the Washington Post announcing that its March issue would document fifteen years of CIA involvement in American student politics, which made suppressing the issue pointless.",
+      "outcome": "President Johnson appointed a committee on 15 February 1967 under Under Secretary of State Nicholas Katzenbach, with John Gardner and CIA Director Richard Helms. Its report of 29 March 1967 recommended that no federal agency provide covert financial assistance, direct or indirect, to any American educational or private voluntary organisation. Johnson adopted the recommendation the same day.",
+      "cost": "Wood broke a confidence given to him in his own organisation and ended his standing in it, with no institutional protection and no legal cover. The CIA compiled material on Ramparts and its staff, some of which is now in the agency's own reading room, and that surveillance of a domestic publication was outside its charter. Ramparts ceased publication in 1975.",
+      "durability": "reversed since",
+      "replicability": "Needed one person on the inside who had been told, and a publication willing to make the story unstoppable before anyone could act against it. Buying advertisements to announce a story in advance is cheap and still available. The limit of the win is the shape of the rule: the 1967 policy banned covert funding of American organisations only, said nothing about funding foreign ones, and open funding of comparable work resumed with the creation of the National Endowment for Democracy in 1983.",
+      "scale": "The National Student Association claimed to speak for students at hundreds of American campuses and the covert funding had run for about fifteen years. A precise membership figure is UNKNOWN in the sources checked here.",
+      "sources": [
+        {
+          "title": "Editorial Note on the Katzenbach Committee and its report of 29 March 1967",
+          "year": "1967",
+          "kind": "government report",
+          "where": "Foreign Relations of the United States, 1964-1968, volume XXXIII, Office of the Historian, https://history.state.gov/historicaldocuments/frus1964-68v33/d260"
+        },
+        {
+          "title": "The National Student Association and the CIA, Ramparts, March 1967",
+          "year": "1967",
+          "kind": "archive",
+          "where": "Internet Archive, https://archive.org/details/nsa-and-the-cia"
+        },
+        {
+          "title": "The article in the February 1967 issue of Ramparts",
+          "year": "1967",
+          "kind": "archive",
+          "where": "CIA FOIA Reading Room, https://cia.gov/readingroom/document/cia-rdp70b00338r000300030011-0"
+        }
+      ]
+    },
+    {
+      "slug": "illinois-bipa-biometric-limit",
+      "mechanism": "modulation",
+      "kind": "regulatory limit",
+      "who": "The Illinois General Assembly, which passed the Biometric Information Privacy Act in 2008, and the Illinois Facebook users who used it to sue over the tag suggestion feature.",
+      "years": "2008 to 2024",
+      "whatTheyDid": "Illinois made it unlawful to collect a person's face or fingerprint data without written consent and, unusually, gave individuals the right to sue rather than leaving enforcement to a regulator. Illinois Facebook users sued over the tag suggestion feature, which built face templates from uploaded photographs without asking. The case ran in the Northern District of California as In re Facebook Biometric Information Privacy Litigation.",
+      "outcome": "Judge James Donato gave final approval to a $650 million settlement on 26 February 2021, covering about 1.6 million Illinois Facebook users, who received roughly $397 each. In November 2021 Facebook announced it was shutting down its face recognition system and deleting the face templates of more than a billion people.",
+      "cost": "Six years of class litigation from 2015 to 2021 before any money moved. The larger cost was paid in the statute itself. After the Illinois Supreme Court held in 2023 that a claim accrued on every separate scan, and White Castle argued in its briefing that this exposed it to more than $17 billion, the legislature amended the Act. Senate Bill 2979, signed on 2 August 2024, made repeated collection of the same identifier by the same method a single violation with at most one recovery, which removed most of the damages exposure that had made the law work.",
+      "durability": "partially reversed",
+      "replicability": "Needed a state statute with a private right of action, which is the ingredient almost no other privacy law has. Regulator-only enforcement does not produce $650 million. The 2024 amendment shows how the ingredient is removed once it bites, and shows that the moment a remedy becomes expensive it becomes a legislative target.",
+      "scale": "About 1.6 million Illinois Facebook users in the settlement class. More than a billion face templates deleted in the 2021 shutdown, on the company's own statement. The consent requirement still works as a geographic limit: when Meta reintroduced facial recognition in October 2024 for scam detection and account recovery it excluded Illinois and Texas, along with the United Kingdom, the European Union and South Korea.",
+      "sources": [
+        {
+          "title": "Biometric Information Privacy Act, 740 ILCS 14",
+          "year": "2008",
+          "kind": "government report",
+          "where": "Illinois General Assembly, ilga.gov"
+        },
+        {
+          "title": "In re Facebook Biometric Information Privacy Litigation, No. 3:15-cv-03747, final approval of settlement",
+          "year": "2021",
+          "kind": "court record",
+          "where": "United States District Court for the Northern District of California, https://www.rgrdlaw.com/cases-in-re-facebook-biometric-info-privacy-litig.html"
+        },
+        {
+          "title": "Illinois Senate Bill 2979 amending the Biometric Information Privacy Act, signed 2 August 2024",
+          "year": "2024",
+          "kind": "government report",
+          "where": "Illinois General Assembly, ilga.gov; summarised at https://www.kslaw.com/news-and-insights/illinois-bipa-reform-takes-effect"
+        },
+        {
+          "title": "Facebook to shut down facial recognition system and delete face print data of 1 billion users",
+          "year": "2021",
+          "kind": "investigation",
+          "where": "ABC News, https://www.abc.net.au/news/2021-11-03/facebook-to-shut-down-facial-recognition-system/100589540"
+        },
+        {
+          "title": "Meta reintroduces facial recognition for scam ads and account recovery",
+          "year": "2024",
+          "kind": "investigation",
+          "where": "Fortune, https://fortune.com/2024/10/22/meta-facebook-instagram-facial-recognition-tech-account-recovery"
+        }
+      ]
+    }
+  ],
+  "nulls": []
+}

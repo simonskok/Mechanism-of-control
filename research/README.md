@@ -39,9 +39,44 @@ the same view.
 | `track-e-current.json` | E | what is live between 2020 and 2026, with the rollback quota |
 | `track-f-verification.json` | F | what the site asserts that has not been checked |
 
-## Status
+## Status: incomplete first pass, nothing verified
 
-First pass, 14 September 2026. Targets were set at 6 to 10 solid entries per track rather
-than the brief's 12 to 20, on the brief's own principle that three checkable cases beat
-twenty thin ones. Nulls and UNKNOWN are first-class results here and are meant to be
-published rather than filled.
+Run 14 September 2026. It did not finish. Seven tracks were started in parallel and all
+seven were terminated part way by a session rate limit. Three had written their file first.
+
+| track | file | state |
+|---|---|---|
+| A manifestations | none | not written. Nothing to join the other tracks to |
+| G counter-practice | `track-g-counter-practice.json` | written, 13 entries, 0 nulls |
+| B exposure | `track-b-exposure.json` | written, 12 exposures, 6 recorded gaps |
+| C positions | none | not written |
+| D channels | none | not written |
+| E current systems | `track-e-current.json` | written, 14 cases |
+| F verification | none | not written |
+
+**Nothing in these three files has been checked, and no agent returned its own account of
+what it was least sure about, because all of them died before reporting.** Every entry is a
+claim awaiting verification, not a finding.
+
+Two problems are already visible without opening them.
+
+Track G returned thirteen entries and no nulls. The brief says a null is a first-class
+result and the amendments say explicitly not to fill a gap with a weak entry to satisfy the
+coverage rule. Zero nulls across ten mechanisms is the exact failure the track was written
+to avoid, so the entries need reading against that suspicion rather than at face value.
+
+Track G exists without Track A. The two key on the same mechanism vocabulary so they can be
+paired in one view, which is what reception rule 1 requires, and the mechanism half of that
+pair was never written.
+
+Targets had been set at 6 to 10 solid entries per track rather than the brief's 12 to 20, on
+the brief's own principle that three checkable cases beat twenty thin ones. Two of the three
+files exceed that, which is a further reason to read them sceptically.
+
+## Before any of this reaches a page
+
+1. Re-run tracks A, C, D and F.
+2. Spot-check citations in the three existing files. The brief's first rule is that every
+   claim traces to a source someone can check, and no one has checked one yet.
+3. Read Track G against the zero-nulls problem. Expect to delete entries.
+4. Only then pair A with G and write content.
