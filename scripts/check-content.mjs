@@ -148,6 +148,21 @@ for (const file of files) {
   if (slug && section) routes.add(`/${section}/${slug}`);
 }
 
+// Every internal link in an entry body resolves. The roster and the works index
+// were checked from the start and page prose was not, so a dead link inside a
+// paragraph shipped silently. Caught the first time the method page linked to a
+// figure page that does not exist.
+for (const file of files) {
+  const raw = fs.readFileSync(file, 'utf8');
+  const relative = path.relative(process.cwd(), file);
+  for (const match of raw.matchAll(/\]\((\/[^)\s]*)\)/g)) {
+    const href = match[1].split('#')[0].replace(/\/$/, '') || '/';
+    if (href !== '/' && !routes.has(href)) {
+      fail(relative, `link ${match[1]} does not resolve to a page`);
+    }
+  }
+}
+
 const roster = fs.readFileSync(path.join(CONTENT, 'roster.ts'), 'utf8');
 const worksSource = fs.readFileSync(path.join(CONTENT, 'works.ts'), 'utf8');
 for (const [source, label] of [[roster, 'content/roster.ts'], [worksSource, 'content/works.ts']]) {
