@@ -40,7 +40,16 @@ The ordering principle, and it decides where anything new goes:
     npm run new -- <type> <slug> "<Title>"      scaffold an entry
 
 `npm run verify` installs dependencies first if they are missing, so it works on a container
-that has just started. From completely cold it takes about 40s, most of it the install.
+that has just started. Three states, all measured, because the first one looks broken if you
+are not expecting it:
+
+| State | Time |
+|---|---|
+| No `node_modules`, first run on a new container | about 40s, most of it the install |
+| `node_modules` present, no `.next` build cache | about 34s |
+| Fully warm | 9 to 10s |
+
+Only the third is representative. The first turn of a session pays one of the other two.
 
 The hooks run on their own:
 
@@ -144,7 +153,8 @@ Named here so it does not get proposed again.
 
 ## 7. Check in two weeks, or this was decoration
 
-The point of all of it is fewer corrections. Record these now and again on two weeks from the date in AGENT_WORKFLOW_PLAN.md:
+Tier 1 landed on 2026-09-14 with all three numbers below at zero, because nothing had run
+against it yet. That is the baseline. Take the same three readings on **2026-09-28**:
 
 - Corrections per task. How often does a session have to be told "no, do X instead".
 - Sessions needing a clear because the context filled with noise.
