@@ -36,6 +36,14 @@ export interface Frontmatter {
   eyebrow?: string;
   /** Glossary terms this entry introduces, for the rail and for checking coverage. */
   terms?: string[];
+  /** Reception rule 1. Routes to the counter-practice this mechanism is paired
+      with, rendered in the same view, never on a page of its own. Every path
+      must resolve. An entry with no pairing sets noCounterPracticeFound instead
+      and says so on the page. One or the other, never neither, never both. */
+  capabilities?: string[];
+  /** Reception rule 1 and rule 7. No documented counter-practice was found, and
+      the page says so and links to the open questions. Absence is published. */
+  noCounterPracticeFound?: boolean;
 }
 
 export interface Entry {

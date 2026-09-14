@@ -156,6 +156,54 @@ for (const [source, label] of [[roster, 'content/roster.ts'], [worksSource, 'con
   }
 }
 
+// Reception rule 1, pairing. A thinker entry carries either a non-empty
+// capabilities array whose every path resolves, or noCounterPracticeFound.
+// One or the other, never neither and never both.
+//
+// UNPAIRED is debt, not an exemption. These six entries predate the rule and
+// none of them puts a counter-practice in its own view. Separate pages do not
+// count, which is what the rule means by same view. The list must only ever
+// shrink, and a name comes off it by pairing that page, never by editing this
+// line. A new thinker entry is not on the list and so fails the build.
+const UNPAIRED = new Set([
+  'agamben', 'bourdieu', 'foucault', 'gramsci', 'illich', 'schmitt',
+]);
+
+for (const file of files) {
+  const raw = fs.readFileSync(file, 'utf8');
+  const relative = path.relative(process.cwd(), file);
+  const [, frontmatter = ''] = raw.split(/^---$/m);
+  if (!/^type:\s*thinker/m.test(frontmatter)) continue;
+
+  const slug = frontmatter.match(/^slug:\s*(.+)$/m)?.[1]?.trim() ?? '';
+  const flagged = /^noCounterPracticeFound:\s*true\s*$/m.test(frontmatter);
+  const capabilities = [
+    ...(frontmatter.match(/^capabilities:\n((?:\s+-\s+.+\n?)+)/m)?.[1] ?? '').matchAll(/-\s+(.+)/g),
+  ].map((match) => match[1].trim());
+
+  if (capabilities.length > 0 && flagged) {
+    fail(relative, 'reception rule 1: both capabilities and noCounterPracticeFound. Pick one');
+  }
+  for (const route of capabilities) {
+    if (!routes.has(route)) {
+      fail(relative, `reception rule 1: capability ${route} does not resolve to a page`);
+    }
+  }
+  if (capabilities.length === 0 && !flagged && !UNPAIRED.has(slug)) {
+    fail(
+      relative,
+      'reception rule 1: a mechanism with no capabilities and no noCounterPracticeFound. ' +
+        'Pair it in the same view, or state that no counter-practice was found',
+    );
+  }
+  if (capabilities.length > 0 && UNPAIRED.has(slug)) {
+    fail(
+      'scripts/check-content.mjs',
+      `${slug} is paired now. Take it out of UNPAIRED, the debt list only shrinks`,
+    );
+  }
+}
+
 // Nobody the research document names disappears from the site. This rule exists
 // because the site once failed it: a hundred and forty people were inside the
 // prose with no way to reach any of them.

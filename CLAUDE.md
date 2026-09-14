@@ -109,8 +109,16 @@ documented counter-practice was found, linking to the open questions page. It mu
 render silently as a mechanism alone, and it must not be filled with a weak or
 inspirational substitute.
 
-Enforce this in the content model. A mechanism MDX file with an empty `capabilities`
-array and no `noCounterPracticeFound: true` flag should fail the build.
+Enforced in the content model. A thinker entry must carry either a non-empty `capabilities`
+array whose every path resolves, or `noCounterPracticeFound: true`. One or the other, never
+neither and never both, or the build fails.
+
+Currently unmet, and recorded in the build rather than hidden. The six thinker entries that
+predate this rule are listed in `UNPAIRED` in `scripts/check-content.mjs`. None of them links
+to a counter-practice in its own view, and `/counter-tradition` and `/tools` do not satisfy
+the rule, because the rule says same view and those are separate pages. Any new thinker entry
+fails the build without a pairing. That list is debt. It must only ever shrink, and removing
+a name from it means putting a real pairing on that page, not deleting the check.
 
 ### 2. Relief before threat
 
