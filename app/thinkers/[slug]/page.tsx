@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { crossRefs, getEntries, getEntry } from '@/lib/content';
 import { renderEntry } from '@/lib/mdx';
 import { EntryLayout } from '@/components/EntryLayout';
+import { Pairing } from '@/components/Pairing';
 
 export function generateStaticParams() {
   return getEntries('thinker').map((entry) => ({ slug: entry.frontmatter.slug }));
@@ -39,6 +40,13 @@ export default async function ThinkerPage({ params }: { params: Promise<{ slug: 
       ]}
     >
       <div className="prose">{content}</div>
+      {/* Reception rule 1. Rendered here rather than left to the MDX so that no
+          thinker page can ship without it, and so the check and the page agree. */}
+      <Pairing
+        capabilities={frontmatter.capabilities}
+        noCounterPracticeFound={frontmatter.noCounterPracticeFound}
+        note={frontmatter.noCounterPracticeNote}
+      />
     </EntryLayout>
   );
 }
