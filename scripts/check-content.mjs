@@ -129,7 +129,7 @@ if (!/<WorkedExample[\s\S]*COVID/i.test(agamben)) {
   fail('content/thinkers/agamben.mdx', 'the COVID worked example is gone or is no longer featured');
 }
 
-const EXPECTED = { thinker: 6, figure: 29, domain: 5, milieu: 12, essay: 11 };
+const EXPECTED = { thinker: 6, figure: 30, domain: 5, milieu: 12, essay: 11 };
 for (const [type, count] of Object.entries(EXPECTED)) {
   if (seen[type] !== count) {
     fail('content', `expected ${count} ${type} entries, found ${seen[type]}`);
@@ -201,6 +201,43 @@ for (const file of files) {
       'scripts/check-content.mjs',
       `${slug} is paired now. Take it out of UNPAIRED, the debt list only shrinks`,
     );
+  }
+}
+
+// A person with an entry of their own is linked to it. Adding a figure page
+// leaves roster.ts and works.ts pointing at whatever page used to mention them,
+// every href still resolves, and the build stays green while the index sends
+// the reader somewhere else. Found exactly that way when the Lifton page was
+// added, so it is checked now.
+//
+// Matched on the whole name, not the surname. The first version of this check
+// keyed on surname and reported Gina Perry as a broken link to William Perry's
+// page, who is a different person. Two people can share a surname and only one
+// of them has the page.
+function normalise(name) {
+  return name.toLowerCase().replace(/[^a-zà-ÿ ]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+const ownPages = new Map();
+for (const file of files) {
+  const raw = fs.readFileSync(file, 'utf8');
+  const type = raw.match(/^type:\s*(\w+)/m)?.[1];
+  const slug = raw.match(/^slug:\s*(.+)$/m)?.[1]?.trim();
+  const title = raw.match(/^title:\s*(.+)$/m)?.[1]?.trim();
+  if (!slug || !title || (type !== 'thinker' && type !== 'figure')) continue;
+  ownPages.set(normalise(title), `/${type === 'thinker' ? 'thinkers' : 'figures'}/${slug}`);
+}
+
+for (const [source, label, pattern] of [
+  [roster, 'content/roster.ts', /name: '([^']+)'[\s\S]{0,400}?href: '([^']+)'/g],
+  [worksSource, 'content/works.ts', /author: '([^']+)'[\s\S]{0,400}?href: '([^']+)'/g],
+]) {
+  for (const [, listed, href] of source.matchAll(pattern)) {
+    const [surname, forenames = ''] = listed.split(',');
+    const own = ownPages.get(normalise(`${forenames} ${surname}`));
+    if (own && href !== own) {
+      fail(label, `${listed} has an entry at ${own}, but this points at ${href}`);
+    }
   }
 }
 

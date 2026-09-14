@@ -133,13 +133,21 @@ console.log(`  updated  scripts/check-content.mjs`);
 console.log(`
   Still to do by hand:
 
-    1. Write the entry. Replace the thesis and the body.
-    ${needsObjections ? '2. The objections block is required and the build enforces it.' : '2. -'}
-    3. Any <Term id="..."> must already exist in content/glossary.ts.
-    4. House style: no em dashes, no maritime metaphors, no banned phrases.
-    ${type === 'essay' ? '5. Add a link in components/SiteFooter.tsx if it belongs in the nav.' : '5. -'}
+${[
+  'Write the entry. Replace the thesis and the body.',
+  needsObjections && 'The objections block is required and the build enforces it.',
+  'Any <Term id="..."> must already exist in content/glossary.ts. Add it there first,\n       never inline.',
+  type === 'thinker' &&
+    'Reception rule 1: either a capabilities array whose paths resolve, or\n       noCounterPracticeFound: true. Never neither, never both.',
+  'Point content/roster.ts and content/works.ts at this page. If this person was\n       already listed against some other page, that entry is now stale and the\n       check will say so.',
+  'House style: no em dashes, no maritime metaphors, no banned phrases.',
+  type === 'essay' && 'Add a link in components/SiteFooter.tsx if it belongs in the nav.',
+]
+  .filter(Boolean)
+  .map((line, index) => `    ${index + 1}. ${line}`)
+  .join('\n')}
 
   Then:
 
-    npm run check && npx tsc --noEmit && npm run build
+    npm run verify
 `);

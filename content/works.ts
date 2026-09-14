@@ -108,7 +108,7 @@ export const works: Work[] = [
   { author: 'Lazarsfeld, Paul', title: 'Remarks on Administrative and Critical Communications Research', year: '1941', note: 'Short, and the key document in this cluster', href: '/milieus/radio-project' },
   { author: 'Lazarsfeld, Berelson and Gaudet', title: 'The People’s Choice', year: '1944', href: '/milieus/radio-project' },
   { author: 'Le Bon, Gustave', title: 'The Crowd', year: '1895', href: '/milieus/older-foundations', contested: 'Weak as science, included for its historical effect' },
-  { author: 'Lifton, Robert Jay', title: 'Thought Reform and the Psychology of Totalism', year: '1961', href: '/domains/psychology' },
+  { author: 'Lifton, Robert Jay', title: 'Thought Reform and the Psychology of Totalism', year: '1961', href: '/figures/lifton' },
   { author: 'Lippmann, Walter', title: 'Public Opinion', year: '1922', note: 'Coined the manufacture of consent', href: '/figures/lippmann' },
   { author: 'MacLean, Nancy', title: 'Democracy in Chains', year: '2017', href: '/milieus/mont-pelerin', contested: 'Vigorously contested. Use with the rebuttals' },
   { author: 'Mann, Michael', title: 'The Sources of Social Power', year: '1986 to 2012', note: 'Four volumes', href: '/milieus/infrastructural-power' },

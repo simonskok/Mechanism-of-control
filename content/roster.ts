@@ -101,7 +101,7 @@ export const roster: RosterEntry[] = [
   { name: 'Le Bon, Gustave', note: 'Weak as science, historically decisive. Included for its effect, not its truth', href: '/milieus/older-foundations' },
   { name: 'Lerner, Melvin', note: 'The just-world hypothesis, producing victim-blaming and self-blame', href: '/domains/psychology' },
   { name: 'Lewin, Kurt', note: 'In the room at the Macy Conferences, carrying feedback into social psychology', href: '/milieus/macy-conferences' },
-  { name: 'Lifton, Robert Jay', note: 'Eight criteria of thought reform, including loading the language', href: '/domains/psychology' },
+  { name: 'Lifton, Robert Jay', note: 'Eight criteria of thought reform, including loading the language', href: '/figures/lifton', page: true },
   { name: 'Lippmann, Walter', note: 'Coined the manufacture of consent, and meant it approvingly', href: '/figures/lippmann', page: true },
   { name: 'Llewellyn, Karl', note: 'American Legal Realism and the first break with law as logic', href: '/domains/law' },
   { name: 'MacLean, Nancy', note: 'Democracy in Chains, vigorously contested. Use it with the rebuttals', href: '/milieus/mont-pelerin' },

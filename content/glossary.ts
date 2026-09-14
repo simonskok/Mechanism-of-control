@@ -142,6 +142,13 @@ export const glossary: GlossaryTerm[] = [
     attribution: 'Bourdieu',
   },
   {
+    slug: 'thought-terminating-cliche',
+    term: 'Thought-terminating cliche',
+    definition:
+      'A short phrase that ends an argument instead of answering it. It feels like a point has been made, and the question it displaced stops being asked. Lifton lists it under loading the language, and it is the item on his list with the widest reach outside the extreme case he studied.',
+    attribution: 'Lifton',
+  },
+  {
     slug: 'symbolic-violence',
     term: 'Symbolic violence',
     definition:
