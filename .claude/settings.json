@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/hook.mjs check",
+            "statusMessage": "content check",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/hook.mjs verify",
+            "statusMessage": "verify: content check, typecheck, build",
+            "timeout": 600
+          }
+        ]
+      }
+    ]
+  }
+}
