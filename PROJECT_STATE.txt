@@ -1,5 +1,5 @@
 INVISIBLE CONTROL
-State of the project, 12 September 2026
+State of the project, 14 September 2026
 
 Plain text on purpose. Paste it anywhere. Everything below is what is true today, not
 what is planned.
@@ -18,7 +18,8 @@ Every page on the site is rewritten from it in plain language.
 
   Live at:     https://invisible-control.vercel.app
   Repository:  github.com/simonskok/Mechanism-of-control
-  Branch:      main, the only branch and the repository default
+  Branch:      main is the repository default. Current work is on
+               claude/eloquent-mayer-boe27w and is not merged
   Deploys:     Vercel project "invisible-control", automatically on every push
 
 Note: Vercel Authentication is currently switched on, so the URL asks anyone who is not
@@ -30,15 +31,16 @@ domain, makes it public.
 2. WHAT EXISTS
 -------------------------------------------------------------------------------
 
-  72 pages built
-  19 commits
-  37,652 words of site content, against 14,963 words in the source document
+  73 pages built
+  31 commits
+  39,465 words of site content, against 14,963 words in the source document
 
   6    thinker entries      Bourdieu, Gramsci, Schmitt, Foucault, Illich, Agamben
-  29   figure entries       Twenty from the research document, in the order their key
+  30   figure entries       Twenty-one from the research document, in the order their key
                             work appeared: La Boetie, Mosca, Michels, Pareto, Lippmann,
                             Bernays, Mumford, Innis, Wiener, Milosz, Mills, Goffman,
-                            Ellul, Havel, Rose, Deleuze, Scott, Mbembe, Han, Zuboff.
+                            Ellul, Havel, Rose, Deleuze, Scott, Mbembe, Han, Zuboff,
+                            Lifton.
                             Nine more behind the reception rules, who are not in the
                             research document: Mezirow, Sloterdijk, Kegan, McClelland,
                             Adler, Fromm, Perry, Janoff-Bulman, Tyler
@@ -59,7 +61,7 @@ domain, makes it public.
                             counter-tradition, provenance and status, tools, this site
                             by its own standards, revelation, what control reveals,
                             and ritual
-  72   glossary terms       one link target each, the single source of truth for tooltips
+  73   glossary terms       one link target each, the single source of truth for tooltips
 
 Routes: / /thinkers /thinkers/[slug] /figures /figures/[slug] /domains /domains/[slug]
 /milieus /milieus/[slug] /east-west /method /tools /reflexive /revelation
@@ -96,7 +98,7 @@ Content lives in /content and is read at build time.
   content/domains/*.mdx
   content/milieus/*.mdx
   content/essays/*.mdx
-  content/glossary.ts        72 term definitions, the single source of truth
+  content/glossary.ts        73 term definitions, the single source of truth
   content/roster.ts          146 people, name, one line, link
   content/works.ts           151 works, author, title, year, link, contested flag
 
@@ -159,10 +161,43 @@ build on any of these:
   - the Schmitt framing block losing the Nazi party membership or the phrase apologist
   - the Agamben COVID worked example going missing
   - a link in the roster or the works index that does not resolve to a real page
+  - an internal link inside any entry that does not resolve to a real page
+  - a person with an entry of their own who is linked to some other page instead
   - a person named in INVISIBLE_CONTROL.md who appears nowhere on the site
+  - a thinker entry carrying neither a counter-practice pairing nor a published
+    absence, or carrying both, or naming a capability route that does not resolve
 
 That last rule exists because the site failed it once. It was verified by running the
 check against an empty corpus, where it correctly reports every name as missing.
+
+
+-------------------------------------------------------------------------------
+4b. HOW AGENT SESSIONS ARE SET UP
+-------------------------------------------------------------------------------
+
+There is no separate Claude project. Everything is this repository plus GitHub, so the
+setup travels with a clone. AGENT_SETUP.md is the operating manual and
+AGENT_WORKFLOW_PLAN.md holds the reasoning and the evidence behind it.
+
+  CLAUDE.md                            loaded every session, the standing rules
+  .claude/settings.json                hooks
+  .claude/skills/content-entry/        how to add an entry and what breaks
+  .claude/agents/source.md             reads INVISIBLE_CONTROL.md so a session does not
+  scripts/verify.mjs                   npm run verify, one command and one exit code
+  scripts/hook.mjs                     makes a failed check something a hook can report
+
+The hooks run the content check after every write or edit, and the full verify at the
+end of every turn, so nothing depends on anyone remembering. hook.mjs exists because a
+hook command that exits 1 does not block and shows only its first line of stderr, and
+the first line check-content.mjs writes is blank. Only exit 2 blocks. It also stops
+blocking after three identical failures, so a Stop hook cannot trap a session.
+
+npm run verify timings, all measured: about 40s with no node_modules, about 34s with
+dependencies present but no .next cache, 9 to 10s fully warm.
+
+The source agent read about 400 of 1563 lines to answer its first question and returned
+about 2k tokens, having spent 71k in its own window. It removes noise and does not save
+tokens. Use it when context is the constraint, not for what one grep answers.
 
 
 -------------------------------------------------------------------------------
@@ -230,11 +265,28 @@ greengrocer, Illich's car, the Prussian Volksschule. There is almost nothing sho
 these mechanisms operating in documented cases with named institutions, dates and
 records. RESEARCH_BRIEF.md exists to fix that.
 
-Open TODO in the content:
+Reception rule 1 is met and the debt list is empty. Every thinker entry carries either a
+counter-practice pairing rendered in the same view, or a published statement that no
+counter-practice was found, linking to the open questions. The split is two to four:
+Gramsci pairs to Mont Pelerin and to Mitchell on coal, Illich pairs to Scott on metis,
+and Bourdieu, Foucault, Schmitt and Agamben each publish an absence. Four out of six is
+what the research document supports, not a shortfall. In three of those four the nearest
+thing available was Scott on the agency problem, which answers a charge against the
+theory rather than supplying a practice against the mechanism.
+
+Reception rule 8 is met. The sequencing logic, the pairing rule, the current two to four
+score and the contested status of the psychology behind all of it are on the method page
+rather than operating quietly.
+
+Open TODOs in the content:
 
   content/thinkers/schmitt.mdx - the Night of the Long Knives essay needs its title and
   year checked against a primary bibliography. The research document names the subject
   but not the citation, so the site does not give one.
+
+  content/figures/lifton.mdx - the APA report is named DIMPAC in most accounts and the
+  year is usually given as 1987. The exact title, the board that rejected it and the
+  date need checking against an APA primary source before any of it goes on the page.
 
 North Atlantic by default. Every milieu on the site is North Atlantic. The colonial
 testing-ground argument, which Mbembe and Mitchell make, would produce a different site.
